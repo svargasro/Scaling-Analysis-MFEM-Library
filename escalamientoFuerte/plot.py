@@ -34,7 +34,7 @@ timeDesv  = np.std(timeArray)
 
 errorbar= 3.0*timeDesv
 
-plt.style.use('https://github.com/dhaitz/matplotlib-stylesheets/raw/master/pitayasmoothie-light.mplstyle')
+plt.style.use('ggplot')
 
 fig, axes = plt.subplots(1, 1, figsize=(7, 6))
 
