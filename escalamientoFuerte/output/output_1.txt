@@ -1,8 +1,96 @@
-9.18405 82561
-9.69404 82561
-9.67475 82561
-9.84941 82561
-8.58752 82561
-9.30857 82561
-9.42075 82561
-9.31493 82561
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37843,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37828,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37830,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37851,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37855,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37849,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37852,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
+ex1p: error while loading shared libraries: libmpi_cxx.so.40: cannot open shared object file: No such file or directory
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[37831,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------
