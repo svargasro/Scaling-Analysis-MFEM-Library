@@ -9,18 +9,21 @@
 # done
 
 
+ORDER=$(seq 1 4)
 
+REPS=$(seq 1 10)
 
-
-
-for orden in {1..3}
+for orden in $ORDER
 
 do
 echo "$orden ----------------------------------------"
-parallel -N0 "mpirun -np 1 ex1p -m ../data/star.mesh -o $orden" ::: {1..8} 2>./output/output_${orden}.txt
+parallel -N0 "mpirun -np 1 ex1p -m ../data/star.mesh -o $orden" ::: $REPS 2>./output/output_${orden}.txt
 done
 
 
+python plot.py
+
+rm ./output/output_*.txt
 
 # parallel -N0 "echo funciona" ::: {1..3}
 
