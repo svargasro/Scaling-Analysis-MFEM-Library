@@ -11,10 +11,10 @@ for thread in $THREADS; do
 done
 
 TARGET=ex1p
-MAX_THREADS=16
+MAX_THREADS=3
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 10)
-ORDER=4
+ORDER=1
 
 
 # Loop para ejecutar comandos
@@ -22,7 +22,7 @@ for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
-        /usr/bin/time -f "%S" mpirun -np $thread ../${TARGET} -o $ORDER >> /dev/null 2>>time$thread.txt
+        /usr/bin/time -f "%S" mpirun -np $thread ./${TARGET} -o $ORDER >> /dev/null 2>>time$thread.txt
     done
     # Calcular el promedio
     average=$(awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' time$thread.txt)
