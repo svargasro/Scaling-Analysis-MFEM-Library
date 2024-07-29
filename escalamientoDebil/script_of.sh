@@ -4,7 +4,7 @@
 #SBATCH --error=error_%j.err
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8  # Ajusta según tus necesidades
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --time=01:00:00
 
 # Cargar módulos necesarios
@@ -22,4 +22,4 @@ sockets=$(lscpu | grep 'Socket(s):' | awk '{print $2}')
 physical_ids=$(seq -s, 0 $((physical_cores * sockets - 1)))
 
 # Ejecutar el programa MFEM con afinidad de CPU a núcleos físicos
-taskset -c $physical_ids ./NOMBRE_SCRIPT.sh 
+taskset -c $physical_ids ./weak_scaling.sh 
