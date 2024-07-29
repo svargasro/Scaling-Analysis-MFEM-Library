@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import os
 
 # Ruta del directorio que quieres verificar
-directorio = './output/'
+directorio = os.getcwd()
 # Obtener la lista de archivos en el directorio
-archivos = os.listdir(directorio)
-# Contar la cantidad de archivos
-cantidadArchivos = len(archivos)
+archivos_txt = [archivo for archivo in os.listdir(directorio) if archivo.endswith('.txt')]
+#contar la cantidad de archivos
+cantidadArchivos = len(archivos_txt)
 
 
 time = np.zeros(cantidadArchivos)
@@ -15,9 +15,9 @@ timeDesv = np.zeros(cantidadArchivos)
 size = np.zeros(cantidadArchivos)
 
 
-for i, archivo in enumerate(archivos):
+for i, archivo in enumerate(archivos_txt):
 
-    timeArray, sizeArray = np.genfromtxt(f'./output/{archivo}',delimiter=' ', usecols=(0,1),unpack=True)
+    timeArray, sizeArray = np.genfromtxt(f'/{archivo}',delimiter=' ', usecols=(0,1),unpack=True)
 
     meanTime = np.mean(timeArray)
 

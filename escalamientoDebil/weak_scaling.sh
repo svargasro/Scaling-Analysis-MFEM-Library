@@ -11,10 +11,10 @@ for thread in $THREADS; do
 done
 
 TARGET=ex1p
-MAX_THREADS=3
+MAX_THREADS=12
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 10)
-ORDER=1
+ORDER=10
 
 
 # Loop para ejecutar comandos

@@ -5,7 +5,7 @@
 # for i in {1..3}
 # do
 # echo "$i ----------------------------------------"
-# parallel "mpirun -np 1 ex1p -m ../data/star-surf.mesh -o {}" ::: 1 2 2>./output/output_${i}.txt
+# parallel "mpirun -np 1 ../ex1p -m ../data/star-surf.mesh -o {}" ::: 1 2 2>./output/output_${i}.txt
 # done
 
 
@@ -17,13 +17,14 @@ for orden in $ORDER
 
 do
 echo "$orden ----------------------------------------"
-parallel -N0 "mpirun -np 1 ex1p -m ../data/star.mesh -o $orden" ::: $REPS 2>./output/output_${orden}.txt
+parallel -N0 "mpirun -np 1 ../ex1p -m ../data/star.mesh -o $orden" ::: $REPS 2> output_${orden}.txt
 done
 
 
 python plot.py
 
-rm ./output/output_*.txt
+
+#orm output_*.txt
 
 # parallel -N0 "echo funciona" ::: {1..3}
 
