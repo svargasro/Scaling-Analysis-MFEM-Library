@@ -40,13 +40,13 @@ fig, axes = plt.subplots(1, 1, figsize=(7, 6))
 
 
 #Se grafica el tiempo de ejecución normalizado vs. tamaño de la matriz.
-axes.errorbar(size, time, yerr= errorbar, fmt='bo', ecolor='black', markersize=4, label="Puntos con barras de error.")
+axes.errorbar(size, time, yerr= errorbar, fmt='go', ecolor='black', markersize=6, label="Puntos con barras de error.")
 
 #Se ajustan demás detalles del gráfico.
 axes.set_xlabel('Número de incógnitas en el sistema de ecuaciones.', fontsize=12)
 axes.set_ylabel(r'Tiempo de ejecución normalizado [ ]',fontsize=12)
 axes.legend(loc='upper left')
-axes.grid(True, linestyle='--')
+axes.grid(True)
 axes.set_title("Tiempo de ejecución normalizado vs. Número de incógnitas.\n 10 iteraciones", fontsize=14)
 
 axes.ticklabel_format(style='sci', axis='x', scilimits=(0,0))
