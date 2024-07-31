@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
    bool pa = false;
    bool fa = false;
    const char *device_config = "cpu";
-   bool visualization = true;
+   bool visualization = false; //-----------------------------------Modified-----------------------------------
    bool algebraic_ceed = false;
    double refLevelsParameter = 10000.0;
 
@@ -120,13 +120,13 @@ int main(int argc, char *argv[])
    {
       if (myid == 0)
       {
-         args.PrintUsage(cout);
+ //        args.PrintUsage(cout); //-----------------------------------Modified-----------------------------------
       }
       return 1;
    }
    if (myid == 0)
    {
-      args.PrintOptions(cout);
+//      args.PrintOptions(cout); //-----------------------------------Modified-----------------------------------
    }
 
    auto start = std::chrono::system_clock::now(); // measures wall time
@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
    // 3. Enable hardware devices such as GPUs, and programming models such as
    //    CUDA, OCCA, RAJA and OpenMP based on command line options.
    Device device(device_config);
-   if (myid == 0) { device.Print(); }
+//   if (myid == 0) { device.Print(); } //-----------------------------------Modified-----------------------------------
 
    // 4. Read the (serial) mesh from the given mesh file on all processors.  We
    //    can handle triangular, quadrilateral, tetrahedral, hexahedral, surface
@@ -189,7 +189,7 @@ int main(int argc, char *argv[])
       delete_fec = false;
       if (myid == 0)
       {
-         cout << "Using isoparametric FEs: " << fec->Name() << endl;
+//         cout << "Using isoparametric FEs: " << fec->Name() << endl; //-----------------------------------Modified-----------------------------------
       }
    }
    else
@@ -201,7 +201,7 @@ int main(int argc, char *argv[])
    HYPRE_BigInt size = fespace.GlobalTrueVSize();
    if (myid == 0)
    {
-      cout << "Number of finite element unknowns: " << size << endl;
+//      cout << "Number of finite element unknowns: " << size << endl; //-----------------------------------Modified-----------------------------------
    }
 
    // 8. Determine the list of true (i.e. parallel conforming) essential
@@ -281,7 +281,15 @@ int main(int argc, char *argv[])
    CGSolver cg(MPI_COMM_WORLD);
    cg.SetRelTol(1e-12);
    cg.SetMaxIter(2000);
-   cg.SetPrintLevel(1);
+   cg.SetPrintLevel(-1); //-----------------------------------Modified-----------------------------------
+    /* Adaptado de solvers.cpp
+      IterativeSolver::PrintLevel IterativeSolver::FromLegacyPrintLevel
+      -1: PrintLevel();
+      0: PrintLevel().Errors().Warnings();
+      1: PrintLevel().Errors().Warnings().Iterations();
+      2: PrintLevel().Errors().Warnings().Summary();
+      3: PrintLevel().Errors().Warnings().FirstAndLast();
+      */
    if (prec) { cg.SetPreconditioner(*prec); }
    cg.SetOperator(*A);
    cg.Mult(B, X);
@@ -293,7 +301,8 @@ int main(int argc, char *argv[])
 
    // 15. Save the refined mesh and the solution in parallel. This output can
    //     be viewed later using GLVis: "glvis -np <np> -m mesh -g sol".
-   {
+
+   /*{
       ostringstream mesh_name, sol_name;
       mesh_name << "mesh." << setfill('0') << setw(6) << myid;
       sol_name << "sol." << setfill('0') << setw(6) << myid;
@@ -305,7 +314,7 @@ int main(int argc, char *argv[])
       ofstream sol_ofs(sol_name.str().c_str());
       sol_ofs.precision(8);
       x.Save(sol_ofs);
-   }
+      }*/ //-------------------Modified-------------------
 
    auto end = std::chrono::system_clock::now(); // wall time
 
