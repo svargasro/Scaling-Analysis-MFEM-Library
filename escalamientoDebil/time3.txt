@@ -6,7 +6,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.76
+2.32
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -15,7 +15,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.76
+1.91
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -24,7 +24,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.76
+2.70
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -33,7 +33,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.96
+2.30
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -42,9 +42,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.82
-Command exited with non-zero status 1
-0.01
+2.58
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -53,7 +51,16 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.97
+2.52
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node sala9 exited on signal 15 (Terminated).
+--------------------------------------------------------------------------
+Command exited with non-zero status 143
+0.60
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -62,7 +69,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.96
+2.23
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -71,7 +78,7 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.73
+1.70
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
@@ -80,4 +87,4 @@ a non-zero exit code. Per user-direction, the job has been aborted.
 mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
 --------------------------------------------------------------------------
 Command exited with non-zero status 143
-1.86
+2.34

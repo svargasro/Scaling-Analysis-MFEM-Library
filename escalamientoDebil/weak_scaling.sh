@@ -45,4 +45,4 @@ for ((i=1; i<=$MAX_THREADS; i++)); do
     rm time${i}.txt
 done
 
-#rm mesh* sol*
+rm mesh* sol* stdout*

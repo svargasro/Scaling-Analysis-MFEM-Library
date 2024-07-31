@@ -412,3 +412,15 @@ Device configuration: cpu
 Memory configuration: host-std
 Number of Nedelec finite element unknowns: 1025600
 Number of H1 finite element unknowns: 513601
+Options used:
+   --mesh ../data/star.mesh
+   --order 20
+   --problem-type 0
+   --no-static-condensation
+   --no-partial-assembly
+   --device cpu
+   --visualization
+Device configuration: cpu
+Memory configuration: host-std
+Number of Nedelec finite element unknowns: 1025600
+Number of H1 finite element unknowns: 513601
