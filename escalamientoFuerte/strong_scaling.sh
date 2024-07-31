@@ -13,11 +13,15 @@ ORDER=$(seq 1 4)
 
 REPS=$(seq 1 10)
 
+TARGET=exp1_time
+
+MESH = ../data/star.mesh
+
 for orden in $ORDER
 
 do
 echo "$orden ----------------------------------------"
-parallel -N0 "mpirun -np 1 ../ex1p -m ../data/star.mesh -o $orden" ::: $REPS 2> output_${orden}.txt
+parallel -N0 "mpirun -np 1 $TARGET -m $MESH -o $orden" ::: $REPS 2> output_${orden}.txt
 done
 
 

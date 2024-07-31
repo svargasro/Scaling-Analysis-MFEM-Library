@@ -17,7 +17,7 @@ size = np.zeros(cantidadArchivos)
 
 for i, archivo in enumerate(archivos_txt):
 
-    timeArray, sizeArray = np.genfromtxt(f'/{archivo}',delimiter=' ', usecols=(0,1),unpack=True)
+    timeArray, sizeArray = np.genfromtxt(f'{archivo}',delimiter=' ', usecols=(0,1),unpack=True)
 
     meanTime = np.mean(timeArray)
 

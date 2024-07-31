@@ -1,42 +1,120 @@
 --------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node sala9 exited on signal 15 (Terminated).
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       sala10
+Executable: exp1_time
 --------------------------------------------------------------------------
