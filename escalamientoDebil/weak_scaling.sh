@@ -10,20 +10,19 @@ for thread in $THREADS; do
     > time$thread.txt
 done
 
-TARGET=ex24p
-MAX_THREADS=12
+TARGET=ex1p_v3
+MAX_THREADS=16
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 10)
-ORDER=20
-MESH=../data/star.mesh
-#MESH=../../../data/
+ORDER=3
+
 
 # Loop para ejecutar comandos
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
-        /usr/bin/time -f "%S" mpirun -np $thread ./${TARGET} -o $ORDER -m $MESH 1>>stdout$Nreps.txt 2>>time$thread.txt
+        /usr/bin/time -f "%S" mpirun -np $thread ./${TARGET} -o $ORDER >> /dev/null 2>>time$thread.txt
     done
     # Calcular el promedio
     average=$(awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' time$thread.txt)
@@ -45,4 +44,4 @@ for ((i=1; i<=$MAX_THREADS; i++)); do
     rm time${i}.txt
 done
 
-rm mesh* sol* stdout*
+#rm mesh* sol*
