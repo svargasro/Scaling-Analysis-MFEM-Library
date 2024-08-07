@@ -14,4 +14,4 @@ module load mfem
 export OMP_NUM_THREADS=16  # Ajusta según el número de núcleos físicos y lógicos
 
 # Ejecutar el programa MFEM sin restricciones de afinidad de CPU
-srun --mpi=pmi2 ./weak_scaling.sh 
+srun --mpi=pmi2 ./strong_scaling.sh 
