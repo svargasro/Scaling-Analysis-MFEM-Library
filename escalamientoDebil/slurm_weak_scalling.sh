@@ -66,7 +66,7 @@ cat time_${exec_name}.txt
 
 # Asegurarse de que metrics.txt se llena correctamente
 echo "Generando metrics_${exec_name}.txt"
-awk '{ print $1, '$T1'/$2, '$T1'/$2/$1 }' time_${exec_name}.txt > metrics_${exec_name}.txt
+awk '{ print $1, '$T1'/$2, '$T1'/$3, '$T1'/$2/$1, '$T1'/$3/$1}' time_${exec_name}.txt > metrics_${exec_name}.txt
 
 # Verificar el contenido de metrics.txt
 echo "Contenido de metrics_${exec_name}.txt:"
