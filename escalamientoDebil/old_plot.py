@@ -5,6 +5,7 @@ from matplotlib.ticker import MaxNLocator
 
 # Leer datos desde el archivo metrics.txt
 data = np.loadtxt('metrics.txt')
+path_out = "/graficos"
 
 nThreads = data[:, 0]
 speedup = data[:, 1]
@@ -22,9 +23,12 @@ with PdfPages('weak_scaling.pdf') as pdf:
     plt.ylim(0, len(nThreads)+0.2)
     plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
     plt.legend()
-    pdf.savefig() 
+    pdf.savefig(path_out) 
     plt.close()
     
+
+	
+
     #Efficiency Plot
     plt.plot([0, len(nThreads)+0.2], [1, 1], color='red')  # Ideal Efficiency
     plt.plot([0, len(nThreads)+0.2], [0.6, 0.6], color='blue')  #Aceptable Efficiency
@@ -36,6 +40,7 @@ with PdfPages('weak_scaling.pdf') as pdf:
     plt.ylim(0, 1.1)
     plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
     plt.legend()
-    pdf.savefig()  
+    pdf.savefig(path_out)  
     plt.close()
 
+    

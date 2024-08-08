@@ -1,1 +1,0 @@
-slurmstepd: error: *** JOB 2010 ON sala24 CANCELLED AT 2024-08-08T09:26:13 ***

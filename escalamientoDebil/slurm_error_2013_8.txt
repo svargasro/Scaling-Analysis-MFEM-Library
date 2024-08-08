@@ -1,7 +1,0 @@
-awk: cmd. line:1: {print $1, $2/4.155, $2/4.155/}
-awk: cmd. line:1:                               ^ syntax error
-  File "/home/zbarreto/Documents/IntroHPC_MFEM/escalamientoDebil/plot.py", line 65
-    output_directory = /home/zbarreto/Documents/IntroHPC_MFEM/escalamientoDebil/Gráficos/
-                       ^
-SyntaxError: invalid syntax
-rm: cannot remove 'times*': No such file or directory

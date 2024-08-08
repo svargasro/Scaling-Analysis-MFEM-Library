@@ -1,1 +1,0 @@
-slurmstepd: error: *** JOB 2044 ON sala22 CANCELLED AT 2024-08-08T10:32:40 ***
