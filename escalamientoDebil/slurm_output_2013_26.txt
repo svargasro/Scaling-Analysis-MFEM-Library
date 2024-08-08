@@ -1,0 +1,229 @@
+executables
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 7
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 8
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 9
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 10
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 11
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+

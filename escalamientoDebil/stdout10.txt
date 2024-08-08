@@ -1,330 +1,1441 @@
+Unrecognized option: -m
+
+Usage: ./examples/ex37p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -r <int>, --refine <int>, current value: 5
+	Number of times to refine the mesh uniformly.
+   -o <int>, --order <int>, current value: 1
+	Order (degree) of the finite elements.
+   -alpha <double>, --alpha-step-length <double>, current value: 1
+	Step length for gradient descent.
+   -epsilon <double>, --epsilon-thickness <double>, current value: 0.01
+	Length scale for ρ.
+   -mi <int>, --max-it <int>, current value: 1000
+	Maximum number of gradient descent iterations.
+   -ntol <double>, --rel-tol <double>, current value: 0.0001
+	Normalized exit tolerance.
+   -itol <double>, --abs-tol <double>, current value: 0.1
+	Increment exit tolerance.
+   -vf <double>, --volume-fraction <double>, current value: 0.5
+	Volume fraction for the material density.
+   -lambda <double>, --lambda <double>, current value: 1
+	Lamé constant λ.
+   -mu <double>, --mu <double>, current value: 1
+	Lamé constant μ.
+   -rmin <double>, --psi-min <double>, current value: 1e-06
+	Minimum of density coefficient.
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+   -pv, --paraview, -no-pv, --no-paraview, current option: --no-paraview
+	Enable or disable ParaView output.
+Options used:
+   --mesh ../data/star.mesh
+   --refine-serial 1
+   --refine-parallel 1
+   --order 1
+   --problem-type 0
+   --eigenmode 1
+   --stiffness-coef 0
+   --mass-coef 1
+   --damping-coef 2
+   --permeability 1
+   --permittivity 1
+   --conductivity 2
+   --frequency -1
+   --port-bc-attr ''
+   --hermitian
+   --visualization
+   --mixed-mesh
+   --no-partial-assembly
+   --device cpu
+Device configuration: cpu
+Memory configuration: host-std
+Number of finite element unknowns: 361
+Number of finite element port BC unknowns: 0
+
+Solving generalized eigenvalue problem with preconditioning
+
+block size 5
+
+No constraints
+
+DPOTRF INFO = 1
+
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+
+0 iterations
+Size of linear system: 722
+
+GLVis visualization paused. Press space (in the GLVis window) to resume it.
 Options used:
    --mesh ../data/star.mesh
    --order 1
-Number of unknowns: 101
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+Element Attribute Set Names: 
+Boundary Attribute Set Names: 
+Options used:
+   --mesh ../data/star.mesh
+   --problem 0
+   --nfeatures 1
+   --order 1
+   --max-err 0.0001
+   --hysteresis 0.25
+   --ref-levels 0
+   --nc-limit 3
+   --t-final 1
+   --estimator 0
+   --visualization
+   --no-visit-datafiles
+
+Time 0
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 3.12536e-12
+
+Time 0.01
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 1.75118e-10
+
+Time 0.02
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 7.57907e-09
+
+Time 0.03
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 2.53064e-07
+
+Time 0.04
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 6.50924e-06
+
+Time 0.05
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 0.000128735
+
+Time 0.06
+
+Refinement:
+Iteration: 1, number of unknowns: 31, total error: 0.00195289
+Iteration: 2, number of unknowns: 41, total error: 10.7384
+Iteration: 3, number of unknowns: 151, total error: 5.0752
+Iteration: 4, number of unknowns: 581, total error: 1.02124
+Iteration: 5, number of unknowns: 2281, total error: 0.426121
+Iteration: 6, number of unknowns: 2541, total error: 0.221057
+Iteration: 7, number of unknowns: 3176, total error: 0.113869
+Iteration: 8, number of unknowns: 4536, total error: 0.067776
+
+Derefined elements.
+
+Time 0.07
+
+Refinement:
+Iteration: 1, number of unknowns: 2851, total error: 0.0955431
+Iteration: 2, number of unknowns: 3741, total error: 0.0743875
+
+Derefined elements.
+
+Time 0.08
+
+Refinement:
+Iteration: 1, number of unknowns: 3326, total error: 0.0993899
+Iteration: 2, number of unknowns: 3836, total error: 0.0843954
+
+Derefined elements.
+
+Time 0.09
+
+Refinement:
+Iteration: 1, number of unknowns: 3736, total error: 0.112974
+Iteration: 2, number of unknowns: 4341, total error: 0.0943062
+
+Derefined elements.
+
+Time 0.1
+
+Refinement:
+Iteration: 1, number of unknowns: 4226, total error: 0.123226
+Iteration: 2, number of unknowns: 4756, total error: 0.103694
+Iteration: 3, number of unknowns: 4801, total error: 0.102381
+
+Derefined elements.
+
+Time 0.11
+
+Refinement:
+Iteration: 1, number of unknowns: 4661, total error: 0.131757
+Iteration: 2, number of unknowns: 5426, total error: 0.111191
+
+Derefined elements.
+
+Time 0.12
+
+Refinement:
+Iteration: 1, number of unknowns: 5201, total error: 0.145056
+Iteration: 2, number of unknowns: 5921, total error: 0.121017
+
+Derefined elements.
+
+Time 0.13
+
+Refinement:
+Iteration: 1, number of unknowns: 5556, total error: 0.157007
+Iteration: 2, number of unknowns: 6441, total error: 0.129426
+
+Derefined elements.
+
+Time 0.14
+
+Refinement:
+Iteration: 1, number of unknowns: 6171, total error: 0.165595
+Iteration: 2, number of unknowns: 7011, total error: 0.139223
+Iteration: 3, number of unknowns: 7041, total error: 0.138588
+
+Derefined elements.
+
+Time 0.15
+
+Refinement:
+Iteration: 1, number of unknowns: 6511, total error: 0.178184
+Iteration: 2, number of unknowns: 7456, total error: 0.148906
+Iteration: 3, number of unknowns: 7501, total error: 0.147664
+
+Derefined elements.
+
+Time 0.16
+
+Refinement:
+Iteration: 1, number of unknowns: 6796, total error: 0.187709
+Iteration: 2, number of unknowns: 7846, total error: 0.157694
+
+Derefined elements.
+
+Time 0.17
+
+Refinement:
+Iteration: 1, number of unknowns: 7391, total error: 0.19797
+Iteration: 2, number of unknowns: 8571, total error: 0.166192
+
+Derefined elements.
+
+Time 0.18
+
+Refinement:
+Iteration: 1, number of unknowns: 7681, total error: 0.219426
+Iteration: 2, number of unknowns: 9181, total error: 0.177972
+Iteration: 3, number of unknowns: 9211, total error: 0.177112
+
+Derefined elements.
+
+Time 0.19
+
+Refinement:
+Iteration: 1, number of unknowns: 8336, total error: 0.229165
+Iteration: 2, number of unknowns: 9546, total error: 0.190729
+Iteration: 3, number of unknowns: 9601, total error: 0.186449
+
+Derefined elements.
+
+Time 0.2
+
+Refinement:
+Iteration: 1, number of unknowns: 8471, total error: 0.234893
+Iteration: 2, number of unknowns: 9851, total error: 0.197422
+Iteration: 3, number of unknowns: 9896, total error: 0.196283
+
+Derefined elements.
+
+Time 0.21
+
+Refinement:
+Iteration: 1, number of unknowns: 8926, total error: 0.245365
+Iteration: 2, number of unknowns: 10381, total error: 0.205704
+
+Derefined elements.
+
+Time 0.22
+
+Refinement:
+Iteration: 1, number of unknowns: 9261, total error: 0.257742
+Iteration: 2, number of unknowns: 10831, total error: 0.215356
+
+Derefined elements.
+
+Time 0.23
+
+Refinement:
+Iteration: 1, number of unknowns: 9691, total error: 0.271413
+Iteration: 2, number of unknowns: 11431, total error: 0.224639
+Iteration: 3, number of unknowns: 11461, total error: 0.223882
+
+Derefined elements.
+
+Time 0.24
+
+Refinement:
+Iteration: 1, number of unknowns: 9976, total error: 0.285372
+Iteration: 2, number of unknowns: 11831, total error: 0.240958
+Iteration: 3, number of unknowns: 11846, total error: 0.238996
+
+Derefined elements.
+
+Time 0.25
+
+Refinement:
+Iteration: 1, number of unknowns: 10521, total error: 0.306221
+Iteration: 2, number of unknowns: 12316, total error: 0.248462
+Iteration: 3, number of unknowns: 12391, total error: 0.246759
+
+Derefined elements.
+
+Time 0.26
+
+Refinement:
+Iteration: 1, number of unknowns: 10886, total error: 0.309219
+Iteration: 2, number of unknowns: 12806, total error: 0.254307
+Iteration: 3, number of unknowns: 12861, total error: 0.252861
+
+Derefined elements.
+
+Time 0.27
+
+Refinement:
+Iteration: 1, number of unknowns: 11176, total error: 0.319603
+Iteration: 2, number of unknowns: 13366, total error: 0.26241
+
+Derefined elements.
+
+Time 0.28
+
+Refinement:
+Iteration: 1, number of unknowns: 11811, total error: 0.328869
+Iteration: 2, number of unknowns: 13846, total error: 0.272698
+Iteration: 3, number of unknowns: 13876, total error: 0.271816
+
+Derefined elements.
+
+Time 0.29
+
+Refinement:
+Iteration: 1, number of unknowns: 11971, total error: 0.341255
+Iteration: 2, number of unknowns: 14196, total error: 0.286908
+
+Derefined elements.
+
+Time 0.3
+
+Refinement:
+Iteration: 1, number of unknowns: 12611, total error: 0.364592
+Iteration: 2, number of unknowns: 14976, total error: 0.295813
+Iteration: 3, number of unknowns: 15021, total error: 0.292594
+Iteration: 4, number of unknowns: 15066, total error: 0.291554
+
+Derefined elements.
+
+Time 0.31
+
+Refinement:
+Iteration: 1, number of unknowns: 13036, total error: 0.367113
+Iteration: 2, number of unknowns: 15631, total error: 0.298851
+
+Derefined elements.
+
+Time 0.32
+
+Refinement:
+Iteration: 1, number of unknowns: 13316, total error: 0.376243
+Iteration: 2, number of unknowns: 15721, total error: 0.311625
+
+Derefined elements.
+
+Time 0.33
+
+Refinement:
+Iteration: 1, number of unknowns: 13906, total error: 0.388694
+Iteration: 2, number of unknowns: 16521, total error: 0.320936
+Iteration: 3, number of unknowns: 16551, total error: 0.320087
+
+Derefined elements.
+
+Time 0.34
+
+Refinement:
+Iteration: 1, number of unknowns: 14181, total error: 0.408797
+Iteration: 2, number of unknowns: 16656, total error: 0.337693
+Iteration: 3, number of unknowns: 16701, total error: 0.334528
+
+Derefined elements.
+
+Time 0.35
+
+Refinement:
+Iteration: 1, number of unknowns: 14736, total error: 0.415561
+Iteration: 2, number of unknowns: 17606, total error: 0.337059
+
+Derefined elements.
+
+Time 0.36
+
+Refinement:
+Iteration: 1, number of unknowns: 15286, total error: 0.42324
+Iteration: 2, number of unknowns: 17991, total error: 0.34976
+Iteration: 3, number of unknowns: 18051, total error: 0.348069
+
+Derefined elements.
+
+Time 0.37
+
+Refinement:
+Iteration: 1, number of unknowns: 15636, total error: 0.43763
+Iteration: 2, number of unknowns: 18591, total error: 0.358239
+Iteration: 3, number of unknowns: 18621, total error: 0.356788
+
+Derefined elements.
+
+Time 0.38
+
+Refinement:
+Iteration: 1, number of unknowns: 16041, total error: 0.442106
+Iteration: 2, number of unknowns: 18766, total error: 0.369503
+Iteration: 3, number of unknowns: 18826, total error: 0.368082
+
+Derefined elements.
+
+Time 0.39
+
+Refinement:
+Iteration: 1, number of unknowns: 16041, total error: 0.464101
+Iteration: 2, number of unknowns: 19396, total error: 0.378753
+Iteration: 3, number of unknowns: 19426, total error: 0.377983
+
+Derefined elements.
+
+Time 0.4
+
+Refinement:
+Iteration: 1, number of unknowns: 17061, total error: 0.4689
+Iteration: 2, number of unknowns: 20216, total error: 0.385616
+Iteration: 3, number of unknowns: 20261, total error: 0.38278
+
+Derefined elements.
+
+Time 0.41
+
+Refinement:
+Iteration: 1, number of unknowns: 17296, total error: 0.474278
+Iteration: 2, number of unknowns: 20451, total error: 0.39448
+
+Derefined elements.
+
+Time 0.42
+
+Refinement:
+Iteration: 1, number of unknowns: 17666, total error: 0.4905
+Iteration: 2, number of unknowns: 20956, total error: 0.404986
+Iteration: 3, number of unknowns: 20986, total error: 0.404407
+
+Derefined elements.
+
+Time 0.43
+
+Refinement:
+Iteration: 1, number of unknowns: 18281, total error: 0.507542
+Iteration: 2, number of unknowns: 21531, total error: 0.41805
+Iteration: 3, number of unknowns: 21591, total error: 0.416068
+
+Derefined elements.
+
+Time 0.44
+
+Refinement:
+Iteration: 1, number of unknowns: 18261, total error: 0.522628
+Iteration: 2, number of unknowns: 21711, total error: 0.430075
+Iteration: 3, number of unknowns: 21766, total error: 0.428066
+
+Derefined elements.
+
+Time 0.45
+
+Refinement:
+Iteration: 1, number of unknowns: 18731, total error: 0.534535
+Iteration: 2, number of unknowns: 22336, total error: 0.43844
+Iteration: 3, number of unknowns: 22411, total error: 0.434872
+
+Derefined elements.
+
+Time 0.46
+
+Refinement:
+Iteration: 1, number of unknowns: 19541, total error: 0.537977
+Iteration: 2, number of unknowns: 23061, total error: 0.443168
+Iteration: 3, number of unknowns: 23121, total error: 0.44177
+
+Derefined elements.
+
+Time 0.47
+
+Refinement:
+Iteration: 1, number of unknowns: 19711, total error: 0.546105
+Iteration: 2, number of unknowns: 23356, total error: 0.453485
+Iteration: 3, number of unknowns: 23386, total error: 0.452633
+
+Derefined elements.
+
+Time 0.48
+
+Refinement:
+Iteration: 1, number of unknowns: 20291, total error: 0.559459
+Iteration: 2, number of unknowns: 23901, total error: 0.465739
+Iteration: 3, number of unknowns: 23961, total error: 0.464321
+
+Derefined elements.
+
+Time 0.49
+
+Refinement:
+Iteration: 1, number of unknowns: 20661, total error: 0.57541
+Iteration: 2, number of unknowns: 24376, total error: 0.477263
+Iteration: 3, number of unknowns: 24426, total error: 0.476463
+
+Derefined elements.
+
+Time 0.5
+
+Refinement:
+Iteration: 1, number of unknowns: 21126, total error: 0.593084
+Iteration: 2, number of unknowns: 25086, total error: 0.483835
+Iteration: 3, number of unknowns: 25191, total error: 0.479528
+
+Derefined elements.
+
+Time 0.51
+
+Refinement:
+Iteration: 1, number of unknowns: 21686, total error: 0.593847
+Iteration: 2, number of unknowns: 25531, total error: 0.491216
+Iteration: 3, number of unknowns: 25586, total error: 0.489737
+
+Derefined elements.
+
+Time 0.52
+
+Refinement:
+Iteration: 1, number of unknowns: 22036, total error: 0.603322
+Iteration: 2, number of unknowns: 26066, total error: 0.499015
+
+Derefined elements.
+
+Time 0.53
+
+Refinement:
+Iteration: 1, number of unknowns: 22481, total error: 0.611541
+Iteration: 2, number of unknowns: 26331, total error: 0.512121
+Iteration: 3, number of unknowns: 26436, total error: 0.509233
+
+Derefined elements.
+
+Time 0.54
+
+Refinement:
+Iteration: 1, number of unknowns: 22836, total error: 0.624194
+Iteration: 2, number of unknowns: 27016, total error: 0.518331
+
+Derefined elements.
+
+Time 0.55
+
+Refinement:
+Iteration: 1, number of unknowns: 23176, total error: 0.645393
+Iteration: 2, number of unknowns: 27386, total error: 0.534657
+Iteration: 3, number of unknowns: 27461, total error: 0.531712
+Iteration: 4, number of unknowns: 27486, total error: 0.53074
+
+Derefined elements.
+
+Time 0.56
+
+Refinement:
+Iteration: 1, number of unknowns: 23571, total error: 0.664279
+Iteration: 2, number of unknowns: 28041, total error: 0.540991
+Iteration: 3, number of unknowns: 28131, total error: 0.536362
+
+DerefiOptions used:
+   --mesh ../data/star.mesh
+   --refine-serial 2
+   --refine-parallel 1
+   --order 1
+   --num-eigs 5
+   --visualization
+Number of H(Curl) unknowns: 4001
+Number of H(Div) unknowns: 3920
+
+Solving generalized eigenvalue problem with preconditioning
+
+block size 5
+
+No constraints
 
 
- Num MPI tasks = 1
+Initial Max. Residual   8.58395325606651e+02
+Iteration 1 	bsize 5 	maxres   5.46752909261997e+01
+Iteration 2 	bsize 5 	maxres   1.25474196229305e+01
+Iteration 3 	bsize 5 	maxres   8.78468846536350e+00
+Iteration 4 	bsize 5 	maxres   3.96871611846642e+00
+Iteration 5 	bsize 5 	maxres   1.66287610387507e+00
+Iteration 6 	bsize 5 	maxres   4.10004244711819e-01
+Iteration 7 	bsize 5 	maxres   1.10436152141608e-01
+Iteration 8 	bsize 5 	maxres   3.87772695344274e-02
+Iteration 9 	bsize 5 	maxres   2.09085042244690e-02
+Iteration 10 	bsize 5 	maxres   7.35178128059598e-03
+Iteration 11 	bsize 5 	maxres   3.14849156706518e-03
+Iteration 12 	bsize 5 	maxres   1.06779638914187e-03
+Iteration 13 	bsize 4 	maxres   3.66288339212058e-04
+Iteration 14 	bsize 2 	maxres   1.22748067720199e-04
+Iteration 15 	bsize 2 	maxres   4.86128577317953e-05
+Iteration 16 	bsize 1 	maxres   1.71094011039341e-05
+Iteration 17 	bsize 1 	maxres   5.50864315439169e-06
+Iteration 18 	bsize 1 	maxres   2.26518527427365e-06
 
- Num OpenMP threads = 1
+Eigenvalue lambda   7.34316514989572e-01
+Eigenvalue lambda   1.32846212622543e+00
+Eigenvalue lambda   1.92963230502514e+00
+Eigenvalue lambda   2.22987410437844e+00
+Eigenvalue lambda   2.88522888355759e+00
+Residual   1.79637857647700e-07
+Residual   3.42948042138388e-07
+Residual   1.62670163563108e-06
+Residual   5.22787512050651e-07
+Residual   2.26518527427365e-06
 
+18 iterations
+nement:
+Iteration: 1, number of unknowns: 26831, total error: 0.744201
+Iteration: 2, number of unknowns: 31891, total error: 0.616601
 
-BoomerAMG SETUP PARAMETERS:
+Derefined elements.
 
- Max levels = 25
- Num levels = 2
+Time 0.65
 
- Strength Threshold = 0.250000
- Interpolation Truncation Factor = 0.000000
- Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+Refinement:
+Iteration: 1, number of unknowns: 27226, total error: 0.771349
+Iteration: 2, number of unknowns: 32326, total error: 0.630685
+Iteration: 3, number of unknowns: 32451, total error: 0.626733
 
- Coarsening Type = HMIS 
+Derefined elements.
 
- No. of levels of aggressive coarsening: 1
+Time 0.66
 
- Interpolation on agg. levels= multipass interpolation
- measures are determined locally
+Refinement:
+Iteration: 1, number of unknowns: 27881, total error: 0.767293
+Iteration: 2, number of unknowns: 33136, total error: 0.630338
+Iteration: 3, number of unknowns: 33236, total error: 0.627825
 
+Derefined elements.
 
- No global partition option chosen.
+Time 0.67
 
- Interpolation = extended+i interpolation
+Refinement:
+Iteration: 1, number of unknowns: 28406, total error: 0.770528
+Iteration: 2, number of unknowns: 33591, total error: 0.642118
+Iteration: 3, number of unknowns: 33621, total error: 0.641269
 
-Operator Matrix Information:
+Derefined elements.
 
-             nonzero            entries/row          row sums
-lev    rows  entries sparse   min  max     avg      min         max
-======================================================================
-  0     101      781  0.077     4   11     7.7  -7.216e-16   1.915e+00
-  1       1        1  1.000     1    1     1.0   1.469e+01   1.469e+01
+Time 0.68
 
+Refinement:
+Iteration: 1, number of unknowns: 28696, total error: 0.795505
+Iteration: 2, number of unknowns: 33786, total error: 0.65842
+Iteration: 3, number of unknowns: 33861, total error: 0.656549
 
-Interpolation Matrix Information:
-                    entries/row        min        max            row sums
-lev  rows x cols  min  max  avgW     weight      weight       min         max
-================================================================================
-  0   101 x 1       0    1   0.6   3.171e-01   1.000e+00   0.000e+00   1.000e+00
+Derefined elements.
 
+Time 0.69
 
-     Complexity:   grid = 1.009901
-               operator = 1.001280
-                 memory = 1.079385
+Refinement:
+Iteration: 1, number of unknowns: 29246, total error: 0.80895
+Iteration: 2, number of unknowns: 34791, total error: 0.660425
+Iteration: 3, number of unknowns: 34846, total error: 0.658526
 
+Derefined elements.
 
+Time 0.7
 
+Refinement:
+Iteration: 1, number of unknowns: 29576, total error: 0.81114
+Iteration: 2, number of unknowns: 35136, total error: 0.669603
+Iteration: 3, number of unknowns: 35211, total error: 0.66754
 
-BoomerAMG SOLVER PARAMETERS:
+Derefined elements.
 
-  Maximum number of cycles:         1 
-  Stopping Tolerance:               0.000000e+00 
-  Cycle type (1 = V, 2 = W, etc.):  1
+Time 0.71
 
-  Relaxation Parameters:
-   Visiting Grid:                     down   up  coarse
-            Number of sweeps:            1    1     1 
-   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
-   Point types, partial sweeps (1=C, -1=F):
-                  Pre-CG relaxation (down):   0
-                   Post-CG relaxation (up):   0
-                             Coarsest grid:   0
+Refinement:
+Iteration: 1, number of unknowns: 30426, total error: 0.818617
+Iteration: 2, number of unknowns: 35661, total error: 0.679273
+Iteration: 3, number of unknowns: 35811, total error: 0.675385
 
-   Iteration :   0  (B r, r) = 0.562478
-   Iteration :   1  (B r, r) = 0.00939076
-   Iteration :   2  (B r, r) = 1.85353e-06
-   Iteration :   3  (B r, r) = 6.34651e-09
-   Iteration :   4  (B r, r) = 8.79518e-12
-   Iteration :   5  (B r, r) = 2.47897e-14
-   Iteration :   6  (B r, r) = 1.15117e-17
-   Iteration :   7  (B r, r) = 2.68133e-19
-   Iteration :   8  (B r, r) = 3.35841e-24
-   Iteration :   9  (B r, r) = 2.32176e-27
-Average reduction factor = 0.0342142
+Derefined elements.
+
+Time 0.72
+
+Refinement:
+Iteration: 1, number of unknowns: 30571, total error: 0.822496
+Iteration: 2, number of unknowns: 35741, total error: 0.691767
+Iteration: 3, number of unknowns: 35851, total error: 0.68929
+
+Derefined elements.
+
+Time 0.73
+
+Refinement:
+Iteration: 1, number of unknowns: 30776, total error: 0.844343
+Iteration: 2, number of unknowns: 36516, total error: 0.702362
+Iteration: 3, number of unknowns: 36561, total error: 0.701331
+
+Derefined elements.
+
+Time 0.74
+
+Refinement:
+Iteration: 1, number of unknowns: 31421, total error: 0.865881
+Iteration: 2, number of unknowns: 37216, total error: 0.711435
+Iteration: 3, number of unknowns: 37246, total error: 0.709769
+
+Derefined elements.
+
+Time 0.75
+
+Refinement:
+Iteration: 1, number of unknowns: 31366, total error: 0.882278
+Iteration: 2, number of unknowns: 37571, total error: 0.718703
+Iteration: 3, number of unknowns: 37646, total error: 0.716155
+
+Derefined elements.
+
+Time 0.76
+
+Refinement:
+Iteration: 1, number of unknowns: 32211, total error: 0.879809
+Iteration: 2, number of unknowns: 38086, total error: 0.72748
+Iteration: 3, number of unknowns: 38171, total error: 0.725277
+
+Derefined elements.
+
+Time 0.77
+
+Refinement:
+Iteration: 1, number of unknowns: 32846, total error: 0.887346
+Iteration: 2, number of unknowns: 38491, total error: 0.741033
+Iteration: 3, number of unknowns: 38551, total error: 0.738492
+
+Derefined elements.
+
+Time 0.78
+
+Refinement:
+Iteration: 1, number of unknowns: 32786, total error: 0.908561
+Iteration: 2, number of unknowns: 38921, total error: 0.747449
+Iteration: 3, number of unknowns: 39046, total error: 0.744221
+
+Derefined elements.
+
+Time 0.79
+
+Refinement:
+Iteration: 1, number of unknowns: 33646, total error: 0.91013
+Iteration: 2, number of unknowns: 39816, total error: 0.754389
+Iteration: 3, number of unknowns: 39906, total error: 0.752175
+
+Derefined elements.
+
+Time 0.8
+
+Refinement:
+Iteration: 1, number of unknowns: 34151, total error: 0.924835
+Iteration: 2, number of unknowns: 40276, total error: 0.766364
+Iteration: 3, number of unknowns: 40431, total error: 0.761655
+
+Derefined elements.
+
+Time 0.81
+
+Refinement:
+Iteration: 1, number of unknowns: 34476, total error: 0.933766
+Iteration: 2, number of unknowns: 40546, total error: 0.77579
+Iteration: 3, number of unknowns: 40671, total error: 0.772044
+
+Derefined elements.
+
+Time 0.82
+
+Refinement:
+Iteration: 1, number of unknowns: 34731, total error: 0.942563
+Iteration: 2, number of unknowns: 40936, total error: 0.785107
+Iteration: 3, number of unknowns: 40966, total error: 0.784266
+
+Derefined elements.
+
+Time 0.83
+
+Refinement:
+Iteration: 1, number of unknowns: 34901, total error: 0.95769
+Iteration: 2, number of unknowns: 41546, total error: 0.793596
+
+Derefined elements.
+
+Time 0.84
+
+Refinement:
+Iteration: 1, number of unknowns: 35496, total error: 0.97327
+Iteration: 2, number of unknowns: 42086, total error: 0.804103
+Iteration: 3, number of unknowns: 42146, total error: 0.801669
+
+Derefined elements.
+
+Time 0.85
+
+Refinement:
+Iteration: 1, number of unknowns: 35776, total error: 0.989658
+Iteration: 2, number of unknowns: 42421, total error: 0.817551
+Iteration: 3, number of unknowns: 42591, total error: 0.812593
+Iteration: 4, number of unknowns: 42636, total error: 0.811289
+
+Derefined elements.
+
+Time 0.86
+
+Refinement:
+Iteration: 1, number of unknowns: 36446, total error: 0.994547
+Iteration: 2, number of unknowns: 42986, total error: 0.825184
+Iteration: 3, number of unknowns: 43046, total error: 0.823513
+
+Derefined elements.
+
+Time 0.87
+
+Refinement:
+Iteration: 1, number of unknowns: 36681, total error: 1.01393
+Iteration: 2, number of unknowns: 43581, total error: 0.833997
+Iteration: 3, number of unknowns: 43641, total error: 0.832154
+
+Derefined elements.
+
+Time 0.88
+
+Refinement:
+Iteration: 1, number of unknowns: 36821, total error: 1.0258
+Iteration: 2, number of unknowns: 43756, total error: 0.846158
+Iteration: 3, number of unknowns: 43786, total error: 0.844248
+
+Derefined elements.
+
+Time 0.89
+
+Refinement:
+Iteration: 1, number of unknowns: 37911, total error: 1.02626
+Iteration: 2, number of unknowns: 44846, total error: 0.849113
+Iteration: 3, number of unknowns: 44876, total error: 0.847913
+
+Derefined elements.
+
+Time 0.9
+
+Refinement:
+Iteration: 1, number of unknowns: 38156, total error: 1.04371
+Iteration: 2, number of unknowns: 45196, total error: 0.861083
+Iteration: 3, number of unknowns: 45351, total error: 0.856138
+
+Derefined elements.
+
+Time 0.91
+
+Refinement:
+Iteration: 1, number of unknowns: 38716, total error: 1.05102
+Iteration: 2, number of unknowns: 45366, total error: 0.877034
+Iteration: 3, number of unknowns: 45616, total error: 0.870224
+
+Derefined elements.
+
+Time 0.92
+
+Refinement:
+Iteration: 1, number of unknowns: 38991, total error: 1.05916
+Iteration: 2, number of unknowns: 46036, total error: 0.880856
+
+Derefined elements.
+
+Time 0.93
+
+Refinement:
+Iteration: 1, number of unknowns: 38961, total error: 1.07797
+Iteration: 2, number of unknowns: 46481, total error: 0.888636
+Iteration: 3, number of unknowns: 46541, total error: 0.886794
+
+Derefined elements.
+
+Time 0.94
+
+Refinement:
+Iteration: 1, number of unknowns: 39721, total error: 1.07991
+Iteration: 2, number of unknowns: 47056, total error: 0.895693
+
+Derefined elements.
+
+Time 0.95
+
+Refinement:
+Iteration: 1, number of unknowns: 40236, total error: 1.08867
+Iteration: 2, number of unknowns: 47456, total error: 0.904902
+Iteration: 3, number of unknowns: 47591, total error: 0.901389
+
+Derefined elements.
+
+Time 0.96
+
+Refinement:
+Iteration: 1, number of unknowns: 40631, total error: 1.09075
+Iteration: 2, number of unknowns: 47741, total error: 0.910817
+Iteration: 3, number of unknowns: 47906, total error: 0.905931
+
+Derefined elements.
+
+Time 0.97
+
+Refinement:
+Iteration: 1, number of unknowns: 40861, total error: 1.08487
+Iteration: 2, number of unknowns: 47976, total error: 0.90528
+Iteration: 3, number of unknowns: 48086, total error: 0.902935
+
+Derefined elements.
+
+Time 0.98
+
+Refinement:
+Iteration: 1, number of unknowns: 41046, total error: 1.07856
+Iteration: 2, number of unknowns: 48346, total error: 0.899898
+Iteration: 3, number of unknowns: 48396, total error: 0.899101
+
+Derefined elements.
+
+Time 0.99
+
+Refinement:
+Iteration: 1, number of unknowns: 40686, total error: 1.08292
+Iteration: 2, number of unknowns: 47771, total error: 0.902444
+Iteration: 3, number of unknowns: 47831, total error: 0.89929
+
+Derefined elements.
+
+Time 1
+
+Refinement:
+Iteration: 1, number of unknowns: 40806, total error: 1.05875
+Iteration: 2, number of unknowns: 47386, total error: 0.894312
+Iteration: 3, number of unknowns: 47446, total error: 0.892812
+
+Derefined elements.
 Options used:
    --mesh ../data/star.mesh
    --order 1
-Number of unknowns: 101
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+Element Attribute Set Names: 
+Boundary Attribute Set Names: 
+Unrecognized option: -m
 
+Usage: ./examples/ex37p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -r <int>, --refine <int>, current value: 5
+	Number of times to refine the mesh uniformly.
+   -o <int>, --order <int>, current value: 1
+	Order (degree) of the finite elements.
+   -alpha <double>, --alpha-step-length <double>, current value: 1
+	Step length for gradient descent.
+   -epsilon <double>, --epsilon-thickness <double>, current value: 0.01
+	Length scale for ρ.
+   -mi <int>, --max-it <int>, current value: 1000
+	Maximum number of gradient descent iterations.
+   -ntol <double>, --rel-tol <double>, current value: 0.0001
+	Normalized exit tolerance.
+   -itol <double>, --abs-tol <double>, current value: 0.1
+	Increment exit tolerance.
+   -vf <double>, --volume-fraction <double>, current value: 0.5
+	Volume fraction for the material density.
+   -lambda <double>, --lambda <double>, current value: 1
+	Lamé constant λ.
+   -mu <double>, --mu <double>, current value: 1
+	Lamé constant μ.
+   -rmin <double>, --psi-min <double>, current value: 1e-06
+	Minimum of density coefficient.
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+   -pv, --paraview, -no-pv, --no-paraview, current option: --no-paraview
+	Enable or disable ParaView output.
+Unrecognized option: -m
 
- Num MPI tasks = 2
+Usage: ./examples/ex34p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -rs <int>, --refine-serial <int>, current value: 1
+	Number of times to refine the mesh uniformly in serial.
+   -rp <int>, --refine-parallel <int>, current value: 1
+	Number of times to refine the mesh uniformly in parallel.
+   -o <int>, --order <int>, current value: 1
+	Finite element order (polynomial degree).
+   -mc <double>, --magnetic-cond <double>, current value: 1e-06
+	Magnetic Conductivity
+   -sc, --static-condensation, -no-sc, --no-static-condensation, current option: --no-static-condensation
+	Enable static condensation.
+   -mixed, --mixed-mesh, -hex, --hex-mesh, current option: --mixed-mesh
+	Mixed mesh of hexahedral mesh.
+   -pa, --partial-assembly, -no-pa, --no-partial-assembly, current option: --no-partial-assembly
+	Enable Partial Assembly.
+   -d <string>, --device <string>, current value: cpu
+	Device configuration string, see Device::Configure().
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+Unrecognized option: -m
 
- Num OpenMP threads = 1
-
-
-BoomerAMG SETUP PARAMETERS:
-
- Max levels = 25
- Num levels = 2
-
- Strength Threshold = 0.250000
- Interpolation Truncation Factor = 0.000000
- Maximum Row Sum Threshold for Dependency Weakening = 0.900000
-
- Coarsening Type = HMIS 
-
- No. of levels of aggressive coarsening: 1
-
- Interpolation on agg. levels= multipass interpolation
- measures are determined locally
-
-
- No global partition option chosen.
-
- Interpolation = extended+i interpolation
-
-Operator Matrix Information:
-
-             nonzero            entries/row          row sums
-lev    rows  entries sparse   min  max     avg      min         max
-======================================================================
-  0     101      781  0.077     4   11     7.7  -7.216e-16   1.915e+00
-  1       3        9  1.000     3    3     3.0   3.575e+00   5.781e+00
-
-
-Interpolation Matrix Information:
-                    entries/row        min        max            row sums
-lev  rows x cols  min  max  avgW     weight      weight       min         max
-================================================================================
-  0   101 x 3       0    2   0.7   2.236e-02   1.000e+00   0.000e+00   1.000e+00
-
-
-     Complexity:   grid = 1.029703
-               operator = 1.011524
-                 memory = 1.103713
-
-
-
-
-BoomerAMG SOLVER PARAMETERS:
-
-  Maximum number of cycles:         1 
-  Stopping Tolerance:               0.000000e+00 
-  Cycle type (1 = V, 2 = W, etc.):  1
-
-  Relaxation Parameters:
-   Visiting Grid:                     down   up  coarse
-            Number of sweeps:            1    1     1 
-   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
-   Point types, partial sweeps (1=C, -1=F):
-                  Pre-CG relaxation (down):   0
-                   Post-CG relaxation (up):   0
-                             Coarsest grid:   0
-
-   Iteration :   0  (B r, r) = 0.557288
-   Iteration :   1  (B r, r) = 0.0130645
-   Iteration :   2  (B r, r) = 5.21027e-05
-   Iteration :   3  (B r, r) = 5.60209e-07
-   Iteration :   4  (B r, r) = 5.79696e-09
-   Iteration :   5  (B r, r) = 5.48976e-11
-   Iteration :   6  (B r, r) = 1.28021e-13
-   Iteration :   7  (B r, r) = 2.08635e-16
-   Iteration :   8  (B r, r) = 7.22558e-19
-   Iteration :   9  (B r, r) = 1.84511e-21
-   Iteration :  10  (B r, r) = 2.47071e-24
-   Iteration :  11  (B r, r) = 4.3382e-27
-Average reduction factor = 0.0650486
+Usage: ./examples/ex36p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -o <int>, --order <int>, current value: 1
+	Finite element order (polynomial degree).
+   -r <int>, --refs <int>, current value: 3
+	Number of h-refinements.
+   -mi <int>, --max-it <int>, current value: 10
+	Maximum number of iterations
+   -tol <double>, --tol <double>, current value: 1e-05
+	Stopping criteria based on the difference betweensuccessive solution updates
+   -step <double>, --step <double>, current value: 1
+	Step size alpha
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
 Options used:
    --mesh ../data/star.mesh
    --order 1
-Number of unknowns: 101
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+Element Attribute Set Names: 
+Boundary Attribute Set Names: 
+Options used:
+   --mesh ../data/star.mesh
+   --refine-serial 1
+   --refine-parallel 1
+   --order 1
+   --problem-type 0
+   --eigenmode 1
+   --stiffness-coef 0
+   --mass-coef 1
+   --damping-coef 2
+   --permeability 1
+   --permittivity 1
+   --conductivity 2
+   --frequency -1
+   --port-bc-attr ''
+   --hermitian
+   --visualization
+   --mixed-mesh
+   --no-partial-assembly
+   --device cpu
+Device configuration: cpu
+Memory configuration: host-std
+Number of finite element unknowns: 361
+Number of finite element port BC unknowns: 0
 
+Solving generalized eigenvalue problem with preconditioning
 
- Num MPI tasks = 3
+block size 5
 
- Num OpenMP threads = 1
+No constraints
 
+DPOTRF INFO = 1
 
-BoomerAMG SETUP PARAMETERS:
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
 
- Max levels = 25
- Num levels = 2
+0 iterations
+Size of linear system: 722
 
- Strength Threshold = 0.250000
- Interpolation Truncation Factor = 0.000000
- Maximum Row Sum Threshold for Dependency Weakening = 0.900000
-
- Coarsening Type = HMIS 
-
- No. of levels of aggressive coarsening: 1
-
- Interpolation on agg. levels= multipass interpolation
- measures are determined locally
-
-
- No global partition option chosen.
-
- Interpolation = extended+i interpolation
-
-Operator Matrix Information:
-
-             nonzero            entries/row          row sums
-lev    rows  entries sparse   min  max     avg      min         max
-======================================================================
-  0     101      781  0.077     4   11     7.7  -7.216e-16   1.915e+00
-  1       5       21  0.840     3    5     4.2   2.424e+00   3.705e+00
-
-
-Interpolation Matrix Information:
-                    entries/row        min        max            row sums
-lev  rows x cols  min  max  avgW     weight      weight       min         max
-================================================================================
-  0   101 x 5       0    3   0.7   8.941e-02   1.000e+00   0.000e+00   1.000e+00
-
-
-     Complexity:   grid = 1.049505
-               operator = 1.026889
-                 memory = 1.124200
-
-
-
-
-BoomerAMG SOLVER PARAMETERS:
-
-  Maximum number of cycles:         1 
-  Stopping Tolerance:               0.000000e+00 
-  Cycle type (1 = V, 2 = W, etc.):  1
-
-  Relaxation Parameters:
-   Visiting Grid:                     down   up  coarse
-            Number of sweeps:            1    1     1 
-   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
-   Point types, partial sweeps (1=C, -1=F):
-                  Pre-CG relaxation (down):   0
-                   Post-CG relaxation (up):   0
-                             Coarsest grid:   0
-
-   Iteration :   0  (B r, r) = 0.557627
-   Iteration :   1  (B r, r) = 0.0159633
-   Iteration :   2  (B r, r) = 0.000110823
-   Iteration :   3  (B r, r) = 6.11616e-07
-   Iteration :   4  (B r, r) = 1.64879e-09
-   Iteration :   5  (B r, r) = 4.70023e-12
-   Iteration :   6  (B r, r) = 1.80892e-14
-   Iteration :   7  (B r, r) = 7.74274e-17
-   Iteration :   8  (B r, r) = 4.26211e-19
-   Iteration :   9  (B r, r) = 2.47901e-21
-   Iteration :  10  (B r, r) = 6.52895e-24
-   Iteration :  11  (B r, r) = 2.01811e-26
-Average reduction factor = 0.0697546
+GLVis visualization paused. Press space (in the GLVis window) to resume it.
 Options used:
    --mesh ../data/star.mesh
    --order 1
-Number of unknowns: 101
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+Element Attribute Set Names: 
+Boundary Attribute Set Names: 
+Unrecognized option: -m
+
+Usage: ./examples/ex37p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -r <int>, --refine <int>, current value: 5
+	Number of times to refine the mesh uniformly.
+   -o <int>, --order <int>, current value: 1
+	Order (degree) of the finite elements.
+   -alpha <double>, --alpha-step-length <double>, current value: 1
+	Step length for gradient descent.
+   -epsilon <double>, --epsilon-thickness <double>, current value: 0.01
+	Length scale for ρ.
+   -mi <int>, --max-it <int>, current value: 1000
+	Maximum number of gradient descent iterations.
+   -ntol <double>, --rel-tol <double>, current value: 0.0001
+	Normalized exit tolerance.
+   -itol <double>, --abs-tol <double>, current value: 0.1
+	Increment exit tolerance.
+   -vf <double>, --volume-fraction <double>, current value: 0.5
+	Volume fraction for the material density.
+   -lambda <double>, --lambda <double>, current value: 1
+	Lamé constant λ.
+   -mu <double>, --mu <double>, current value: 1
+	Lamé constant μ.
+   -rmin <double>, --psi-min <double>, current value: 1e-06
+	Minimum of density coefficient.
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+   -pv, --paraview, -no-pv, --no-paraview, current option: --no-paraview
+	Enable or disable ParaView output.
+Options used:
+   --mesh ../data/star.mesh
+   --refine-serial 2
+   --refine-parallel 1
+   --order 1
+   --num-eigs 5
+   --visualization
+Number of H(Curl) unknowns: 4001
+Number of H(Div) unknowns: 3920
+
+Solving generalized eigenvalue problem with preconditioning
+
+block size 5
+
+No constraints
 
 
- Num MPI tasks = 4
+Initial Max. Residual   8.92426162302286e+02
+Iteration 1 	bsize 5 	maxres   6.27831665941842e+01
+Iteration 2 	bsize 5 	maxres   8.78902718703150e+00
+Iteration 3 	bsize 5 	maxres   2.64305638739581e+00
+Iteration 4 	bsize 5 	maxres   4.96427023818081e+00
+Iteration 5 	bsize 5 	maxres   2.12366866818164e+00
+Iteration 6 	bsize 5 	maxres   8.42371946063223e-01
+Iteration 7 	bsize 5 	maxres   2.30793584505482e-01
+Iteration 8 	bsize 5 	maxres   9.14219862315182e-02
+Iteration 9 	bsize 5 	maxres   2.30155160702582e-02
+Iteration 10 	bsize 5 	maxres   8.98576104358829e-03
+Iteration 11 	bsize 5 	maxres   3.89909749613339e-03
+Iteration 12 	bsize 5 	maxres   1.26396763802608e-03
+Iteration 13 	bsize 4 	maxres   3.63945599350623e-04
+Iteration 14 	bsize 3 	maxres   1.73109152198374e-04
+Iteration 15 	bsize 1 	maxres   5.43943862986459e-05
+Iteration 16 	bsize 1 	maxres   1.84287469862915e-05
+Iteration 17 	bsize 1 	maxres   8.10118633516436e-06
+Iteration 18 	bsize 1 	maxres   5.35785026409915e-06
+Iteration 19 	bsize 1 	maxres   1.80638626939254e-06
 
- Num OpenMP threads = 1
+Eigenvalue lambda   7.34316514989426e-01
+Eigenvalue lambda   1.32846212622526e+00
+Eigenvalue lambda   1.92963230502464e+00
+Eigenvalue lambda   2.22987410437671e+00
+Eigenvalue lambda   2.88522888355610e+00
+Residual   3.69173341151139e-07
+Residual   7.16876659738700e-07
+Residual   6.01843250462402e-07
+Residual   1.80638626939254e-06
+Residual   1.75818232135623e-06
+
+19 iterations
+Eigenmode 1/5, Lambda = 0.734317
+press (q)uit or (c)ontinue --> Unrecognized option: -m
+
+Usage: ./examples/ex36p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -o <int>, --order <int>, current value: 1
+	Finite element order (polynomial degree).
+   -r <int>, --refs <int>, current value: 3
+	Number of h-refinements.
+   -mi <int>, --max-it <int>, current value: 10
+	Maximum number of iterations
+   -tol <double>, --tol <double>, current value: 1e-05
+	Stopping criteria based on the difference betweensuccessive solution updates
+   -step <double>, --step <double>, current value: 1
+	Step size alpha
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+Options used:
+   --mesh ../data/star.mesh
+   --refine-serial 1
+   --refine-parallel 1
+   --order 1
+   --problem-type 0
+   --eigenmode 1
+   --stiffness-coef 0
+   --mass-coef 1
+   --damping-coef 2
+   --permeability 1
+   --permittivity 1
+   --conductivity 2
+   --frequency -1
+   --port-bc-attr ''
+   --hermitian
+   --visualization
+   --mixed-mesh
+   --no-partial-assembly
+   --device cpu
+Device configuration: cpu
+Memory configuration: host-std
+Number of finite element unknowns: 361
+Number of finite element port BC unknowns: 0
+
+Solving generalized eigenvalue problem with preconditioning
+
+block size 5
+
+No constraints
+
+DPOTRF INFO = 1
+
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+
+0 iterations
+Size of linear system: 722
+
+GLVis visualization paused. Press space (in the GLVis window) to resume it.
+Options used:
+   --mesh ../data/star.mesh
+   --order 1
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+Element Attribute Set Names: 
+Boundary Attribute Set Names: 
+Options used:
+   --mesh ../data/star.mesh
+   --order 1
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+--refine <int>, current value: 5
+	Number of times to refine the mesh uniformly.
+   -o <int>, --order <int>, current value: 1
+	Order (degree) of the finite elements.
+   -alpha <double>, --alpha-step-length <double>, current value: 1
+	Step length for gradient descent.
+   -epsilon <double>, --epsilon-thickness <double>, current value: 0.01
+	Length scale for ρ.
+   -mi <int>, --max-it <int>, current value: 1000
+	Maximum number of gradient descent iterations.
+   -ntol <double>, --rel-tol <double>, current value: 0.0001
+	Normalized exit tolerance.
+   -itol <double>, --abs-tol <double>, current value: 0.1
+	Increment exit tolerance.
+   -vf <double>, --volume-fraction <double>, current value: 0.5
+	Volume fraction for the material density.
+   -lambda <double>, --lambda <double>, current value: 1
+	Lamé constant λ.
+   -mu <double>, --mu <double>, current value: 1
+	Lamé constant μ.
+   -rmin <double>, --psi-min <double>, current value: 1e-06
+	Minimum of density coefficient.
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+   -pv, --paraview, -no-pv, --no-paraview, current option: --no-paraview
+	Enable or disable ParaView output.
+Options used:
+   --mesh ../data/star.mesh
+   --refine-serial 1
+   --refine-parallel 1
+   --order 1
+   --problem-type 0
+   --eigenmode 1
+   --stiffness-coef 0
+   --mass-coef 1
+   --damping-coef 2
+   --permeability 1
+   --permittivity 1
+   --conductivity 2
+   --frequency -1
+   --port-bc-attr ''
+   --hermitian
+   --visualization
+   --mixed-mesh
+   --no-partial-assembly
+   --device cpu
+Device configuration: cpu
+Memory configuration: host-std
+Number of finite element unknowns: 361
+Number of finite element port BC unknowns: 0
+
+Solving generalized eigenvalue problem with preconditioning
+
+block size 5
+
+No constraints
+
+DPOTRF INFO = 1
+
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Eigenvalue lambda                    nan
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+Residual   0.00000000000000e+00
+
+0 iterations
+Size of linear system: 722
+
+GLVis visualization paused. Press space (in the GLVis window) to resume it.
+Unrecognized option: -m
+
+Usage: ./examples/ex36p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -o <int>, --order <int>, current value: 1
+	Finite element order (polynomial degree).
+   -r <int>, --refs <int>, current value: 3
+	Number of h-refinements.
+   -mi <int>, --max-it <int>, current value: 10
+	Maximum number of iterations
+   -tol <double>, --tol <double>, current value: 1e-05
+	Stopping criteria based on the difference betweensuccessive solution updates
+   -step <double>, --step <double>, current value: 1
+	Step size alpha
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+Unrecognized option: -m
+
+Usage: ./examples/ex34p [options] ...
+Options:
+   -h, --help
+	Print this help message and exit.
+   -rs <int>, --refine-serial <int>, current value: 1
+	Number of times to refine the mesh uniformly in serial.
+   -rp <int>, --refine-parallel <int>, current value: 1
+	Number of times to refine the mesh uniformly in parallel.
+   -o <int>, --order <int>, current value: 1
+	Finite element order (polynomial degree).
+   -mc <double>, --magnetic-cond <double>, current value: 1e-06
+	Magnetic Conductivity
+   -sc, --static-condensation, -no-sc, --no-static-condensation, current option: --no-static-condensation
+	Enable static condensation.
+   -mixed, --mixed-mesh, -hex, --hex-mesh, current option: --mixed-mesh
+	Mixed mesh of hexahedral mesh.
+   -pa, --partial-assembly, -no-pa, --no-partial-assembly, current option: --no-partial-assembly
+	Enable Partial Assembly.
+   -d <string>, --device <string>, current value: cpu
+	Device configuration string, see Device::Configure().
+   -vis, --visualization, -no-vis, --no-visualization, current option: --visualization
+	Enable or disable GLVis visualization.
+Options used:
+   --mesh ../data/star.mesh
+   --order 1
+   --source-attr-name Rose Even
+   --ess-attr-name Boundary
+   --visualization
+Element Attribute Set Names: 
+Boundary Attribute Set Names: 
+Options used:
+   --mesh ../data/star.mesh
+   --refine-serial 2
+   --refine-parallel 1
+   --order 1
+   --num-eigs 5
+   --visualization
+Number of H(Curl) unknowns: 4001
+Number of H(Div) unknowns: 3920
+
+Solving generalized eigenvalue problem with preconditioning
+
+block size 5
+
+No constraints
 
 
-BoomerAMG SETUP PARAMETERS:
+Initial Max. Residual   8.59137804446771e+02
+Iteration 1 	bsize 5 	maxres   6.07577368714063e+01
+Iteration 2 	bsize 5 	maxres   9.93968137300505e+00
+Iteration 3 	bsize 5 	maxres   2.78496511352174e+00
+Iteration 4 	bsize 5 	maxres   4.04001984538232e+00
+Iteration 5 	bsize 5 	maxres   3.76452883517296e+00
+Iteration 6 	bsize 5 	maxres   1.19350958203427e+00
+Iteration 7 	bsize 5 	maxres   4.26075798587279e-01
+Iteration 8 	bsize 5 	maxres   1.90885251219010e-01
+Iteration 9 	bsize 5 	maxres   7.53147058673160e-02
+Iteration 10 	bsize 5 	maxres   3.95070476327110e-02
+Iteration 11 	bsize 5 	maxres   1.39486551312305e-02
+Iteration 12 	bsize 5 	maxres   3.56895754307479e-03
+Iteration 13 	bsize 5 	maxres   1.20688262524997e-03
+Iteration 14 	bsize 4 	maxres   4.09652781939119e-04
+Iteration 15 	bsize 2 	maxres   1.87898235324379e-04
+Iteration 16 	bsize 1 	maxres   5.99474731430219e-05
+Iteration 17 	bsize 1 	maxres   4.05500169354864e-05
+Iteration 18 	bsize 1 	maxres   1.77802393521353e-05
+Iteration 19 	bsize 1 	maxres   9.41627800473357e-06
+Iteration 20 	bsize 1 	maxres   3.26785265797641e-06
+Iteration 21 	bsize 1 	maxres   1.28063388175083e-06
 
- Max levels = 25
- Num levels = 2
+Eigenvalue lambda   7.34316514989412e-01
+Eigenvalue lambda   1.32846212622528e+00
+Eigenvalue lambda   1.92963230502468e+00
+Eigenvalue lambda   2.22987410437660e+00
+Eigenvalue lambda   2.88522888355607e+00
+Residual   2.53086644253445e-07
+Residual   5.01682810032943e-07
+Residual   8.99335140025311e-07
+Residual   1.28063388175083e-06
+Residual   9.92002473068538e-07
 
- Strength Threshold = 0.250000
- Interpolation Truncation Factor = 0.000000
- Maximum Row Sum Threshold for Dependency Weakening = 0.900000
-
- Coarsening Type = HMIS 
-
- No. of levels of aggressive coarsening: 1
-
- Interpolation on agg. levels= multipass interpolation
- measures are determined locally
-
-
- No global partition option chosen.
-
- Interpolation = extended+i interpolation
-
-Operator Matrix Information:
-
-             nonzero            entries/row          row sums
-lev    rows  entries sparse   min  max     avg      min         max
-======================================================================
-  0     101      781  0.077     4   11     7.7  -7.216e-16   1.915e+00
-  1       3        9  1.000     3    3     3.0   3.150e+00   5.200e+00
-
-
-Interpolation Matrix Information:
-                    entries/row        min        max            row sums
-lev  rows x cols  min  max  avgW     weight      weight       min         max
-================================================================================
-  0   101 x 3       0    3   0.7   5.666e-02   1.000e+00   0.000e+00   1.000e+00
-
-
-     Complexity:   grid = 1.029703
-               operator = 1.011524
-                 memory = 1.106274
-
-
-
-
-BoomerAMG SOLVER PARAMETERS:
-
-  Maximum number of cycles:         1 
-  Stopping Tolerance:               0.000000e+00 
-  Cycle type (1 = V, 2 = W, etc.):  1
-
-  Relaxation Parameters:
-   Visiting Grid:                     down   up  coarse
-            Number of sweeps:            1    1     1 
-   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
-   Point types, partial sweeps (1=C, -1=F):
-                  Pre-CG relaxation (down):   0
-                   Post-CG relaxation (up):   0
-                             Coarsest grid:   0
-
-   Iteration :   0  (B r, r) = 0.564489
-   Iteration :   1  (B r, r) = 0.0155529
-   Iteration :   2  (B r, r) = 0.000111125
-   Iteration :   3  (B r, r) = 1.95248e-06
-   Iteration :   4  (B r, r) = 9.7215e-09
-   Iteration :   5  (B r, r) = 8.5842e-11
-   Iteration :   6  (B r, r) = 5.45754e-13
-   Iteration :   7  (B r, r) = 1.12081e-15
-   Iteration :   8  (B r, r) = 1.38081e-18
-   Iteration :   9  (B r, r) = 2.44998e-21
-   Iteration :  10  (B r, r) = 4.38739e-24
-   Iteration :  11  (B r, r) = 6.38711e-27
-Average reduction factor = 0.0661638
+21 iterations
+Eigenmode 1/5, Lambda = 0.734317
+press (q)uit or (c)ontinue --> 

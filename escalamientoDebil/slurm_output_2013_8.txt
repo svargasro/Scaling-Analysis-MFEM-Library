@@ -1,0 +1,396 @@
+executables
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 7
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 8
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 9
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 10
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 11
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 12
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 13
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 14
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 15
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 16
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+T1: 4.155
+Contenido de time.txt:
+13 4.155 1.73406
+7 0.00375 0.0160202
+9 0.0007 0.00605245
+7 0.448 0.616052
+1 0.000764706 0.0032641
+8 0.0035625 0.0146381
+9 0.00254682 0.0146473
+2 0.000423077 0.00219991
+9 0.0221324 0.396158
+3 0.000363636 0.00217499
+10 0.0127052 0.276659
+10 0.0121313 0.267009
+4 0.000325 0.00215778
+10 0.0121391 0.264235
+14 21.654 39.8722
+8 0.0856213 0.343772
+11 0.00178512 0.0159195
+5 0.000255319 0.00182926
+6 0.000222222 0.0017085
+12 0.00375 0.0176175
+11 0.00981633 0.255915
+7 0.00410839 0.0663437
+13 0.104085 0.684307
+11 0.00976096 0.252874
+8 0.0171731 0.156781
+9 0.0192003 0.277155
+15 10.717 8.60271
+10 0.0066973 0.195132
+9 0.0240103 0.292605
+11 0.0052416 0.183651
+14 1.27753 10.5246
+12 0.0108313 0.280809
+12 0.00988802 0.267776
+13 0.0154342 0.264105
+15 0.642118 3.21441
+12 0.0102672 0.265133
+14 0.169813 3.85023
+15 0.081 1.15751
+16 0.248759 2.16783
+Generando metrics.txt
+Contenido de metrics.txt:

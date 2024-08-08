@@ -62,7 +62,7 @@ def get_unique_filename(base_name, directory):
     return unique_name
 
 # Directorio donde se guardarán los gráficos
-output_directory = "/home/zbarreto/Downloads/mfem-4.7/examples/graficas_obtenidas"
+output_directory = /home/zbarreto/Documents/IntroHPC_MFEM/escalamientoDebil/Gráficos/
 
 # Asegúrate de que el directorio exista
 os.makedirs(output_directory, exist_ok=True)

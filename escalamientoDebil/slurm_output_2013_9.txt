@@ -1,0 +1,5 @@
+executables
+Ejecucion para el thread: 1
+
+Repeticion: 1
+

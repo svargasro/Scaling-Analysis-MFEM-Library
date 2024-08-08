@@ -1,0 +1,393 @@
+executables
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 7
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 8
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 9
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 10
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 11
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 12
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 13
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 14
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 15
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 16
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+T1: 
+Contenido de time.txt:
+3  
+1 0.02 0
+13 1.52 
+1 0.019 0.00875595
+2 0.044 0.0142984
+1 0.019 0.00875595
+4 0.00536842 0.0534188
+5 0.00111111 0.00374953
+4 0.00493023 0.0502877
+2 0.0547059 0.0540969
+3 0.075 0.0430116
+3 0.06375 0.0366742
+4 0.00742222 0.0505287
+5 0.00151194 0.00825752
+14 2.228 1.99413
+6 0.0015748 0.00659788
+4 0.015431 0.10481
+5 0.00204433 0.00993848
+5 0.00287805 0.0131944
+5 0.00363855 0.0148426
+6 0.00405099 0.0177344
+6 0.00449132 0.0189639
+6 0.00439252 0.0187015
+7 0.00165414 0.0100137
+6 0.00446953 0.0187596
+15 2.479 0.869233
+7 0.0068169 0.0367348
+7 0.00727528 0.0376888
+8 0.00479452 0.0232592
+7 0.00666667 0.0349406
+8 0.00851735 0.0723346
+8 0.00886792 0.0724905
+8 0.00809384 0.0698077
+9 0.0138813 0.120241
+9 0.00671795 0.0314839
+16 3.754 1.19162
+Generando metrics.txt
+Contenido de metrics.txt:

@@ -1,20 +1,13 @@
-Command exited with non-zero status 1
-0.00
-Command exited with non-zero status 1
-0.01
-Command exited with non-zero status 1
-0.01
-Command exited with non-zero status 1
-0.01
-Command exited with non-zero status 1
-0.02
-Command exited with non-zero status 1
-0.01
-Command exited with non-zero status 1
-0.01
-Command exited with non-zero status 1
-0.00
-Command exited with non-zero status 1
-0.01
-Command exited with non-zero status 1
-0.01
+Error in LOBPCG:
+Bad initial vectors: orthonormalization failed
+3.16
+Error in LOBPCG:
+Bad initial vectors: orthonormalization failed
+1.94
+Error in LOBPCG:
+Bad initial vectors: orthonormalization failed
+3.33
+Error in LOBPCG:
+Bad initial vectors: orthonormalization failed
+8.09
+mpirun: Forwarding signal 18 to job
