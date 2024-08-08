@@ -5,10 +5,7 @@
 #como sh (Shell estándar de UNIX).
 
 # Limpiar archivos de salida al comienzo
-> time.txt
-for thread in $THREADS; do
-    > time$thread.txt
-done
+> metrics.txt
 
 TARGET=ex1p_v3
 MAX_THREADS=16
@@ -44,4 +41,4 @@ for ((i=1; i<=$MAX_THREADS; i++)); do
     rm time${i}.txt
 done
 
-#rm mesh* sol*
+rm mesh* sol*

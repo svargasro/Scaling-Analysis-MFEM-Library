@@ -9,8 +9,24 @@
 #SBATCH --array=0-39 # Ajusta esto al número total de ejecutables
 #SBATCH --partition=AMDRyzen7PRO5750G # Aquí especificas la partición "Intel"
 
+
+#Limpiar metrics
+>metrics.txt
+
+# Inicializar lista de ejecutables
+executables=()
+
+# Llenar lista de ejecutables recorriendo la carpeta examples
+for exe in examples/*; do
+  if [[ -x "$exe" ]]; then
+    executables+=("$exe")
+  fi
+done
+
 # Lista de ejecutables
-executables=(ex0p ex1p ex2p ex3p ex4p ex5p ex6p ex7p ex8p ex9p ex10p ex11p ex12p ex13p ex14p ex15p ex16p ex17p ex18p ex19p ex20p ex21p ex22p ex23p ex24p ex25p ex26p ex27p ex28p ex29p ex30p ex31p ex32p ex33p ex34p ex35p ex36p ex37p ex39p)
+#executables=(ex0p ex1p ex2p ex3p ex4p ex5p ex6p ex7p ex8p ex9p ex10p ex11p ex12p ex13p ex14p ex15p ex16p ex17p ex18p ex19p ex20p ex21p ex22p ex23p ex24p ex25p ex26p ex27p ex28p ex29p ex30p ex31p ex32p ex33p ex34p ex35p ex36p ex37p ex39p)
+
+echo executables
 
 # Seleccionar el ejecutable basado en el índice del array
 executable=${executables[$SLURM_ARRAY_TASK_ID]}
@@ -67,4 +83,4 @@ for ((i=1; i<=$(nproc); i++)); do
     rm time${i}.txt
 done
 
-
+rm times* mesh* sol*
