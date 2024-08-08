@@ -22,7 +22,7 @@ for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
-        /usr/bin/time -f "%S" mpirun -np $thread ./${TARGET} -o $ORDER >> /dev/null 2>>time$thread.txt
+        /usr/bin/time -f "%S" mpirun -np $thread ./${TARGET} -o $ORDER  1>> /dev/null 2>>time$thread.txt
     done
     # Calcular el promedio
     average=$(awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' time$thread.txt)
