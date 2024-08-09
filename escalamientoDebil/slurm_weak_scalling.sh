@@ -4,14 +4,13 @@
 #SBATCH --error=slurm_outputs/slurm_error_%A_%a.txt
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8 # Ajusta este valor según la configuración de tu clúster
-#SBATCH --array=0 # Ajusta esto al número total de ejecutables
+#SBATCH --array=0-39 # Ajusta esto al número total de ejecutables
 #SBATCH --partition=AMDRyzen7PRO5750G # Aquí especificas la partición 
 
 
 #Limpiar archivos previos
+rm -r graficos/*
 rm -f metrics* time* 
-#rm -r slurm_outputs/*
-
 
 for thread in $(seq 1 $(nproc)); do
     rm -f time${thread}_*.txt
@@ -115,15 +114,14 @@ patterns_to_delete=(
     "slurm_error_2004_*.txt"
     "slurm_error_2013_*.txt"
     "sol.*"
+    "time*"
+    "metrics*"
 )
 
 # Recorrer y eliminar archivos según los patrones
 for pattern in "${patterns_to_delete[@]}"; do
     rm -f $pattern
 done
-# Limpiar archivos de salida al comienzo
-rm -f stdout*
-rm -f time.txt
 
 echo "Archivos eliminados."
 

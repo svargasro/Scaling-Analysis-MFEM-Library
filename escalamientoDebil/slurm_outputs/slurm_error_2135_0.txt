@@ -1,9 +1,0 @@
-awk: cmd. line:7: (FILENAME=time_ex0p.txt FNR=1) fatal: division by zero attempted
-/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py:15: UserWarning: loadtxt: input contained no data: "metrics_ex0p.txt"
-  data = np.loadtxt(file, dtype={'names': ('nThreads', 'speedup', 'efficiency'),
-/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py:60: MatplotlibDeprecationWarning: Keeping empty pdf files is deprecated since 3.8 and support will be removed two minor releases later.
-  plt.close()
-Traceback (most recent call last):
-  File "/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py", line 50, in <module>
-    for exec_id in np.unique(data['execId']):
-ValueError: no field of name execId
