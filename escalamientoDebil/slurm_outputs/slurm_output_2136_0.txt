@@ -1,0 +1,376 @@
+Ejecución para el thread: 1
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 2
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 3
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 4
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 5
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 6
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 7
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 8
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 9
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 10
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 11
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 12
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 13
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 14
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 15
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 16
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+T1: 0.015, DT1: 0.00527046
+Contenido de time_ex0p.txt:
+1 0.015 0.00527046
+2 0.028 0.00421637
+3 0.039 0.00567646
+4 0.055 0.0171594
+5 0.058 0.00788811
+6 0.075 0.00849837
+7 0.095 0.00707107
+8 0.105 0.00849837
+9 0.113 0.00948683
+10 0.137 0.011595
+11 0.0785 0.0808035
+12 0.088 0.0905887
+13 0.1085 0.124658
+14 0.1055 0.108699
+15 0.121 0.128837
+16 0.132 0.136559
+Generando metrics_ex0p.txt
+Contenido de metrics_ex0p.txt:
+[rec.array([],
+          dtype=[('nThreads', '<U10')])]
+[]
+Archivos eliminados.
