@@ -69,6 +69,7 @@ with PdfPages(efficiency_file) as pdf:
         plt.plot([0, len(data['nThreads'])+0.2], [1, 1], color='red')  # Ideal Efficiency
         plt.plot([0, len(data['nThreads'])+0.2], [0.6, 0.6], color='blue')  # Aceptable Efficiency
         plt.scatter(data['nThreads'], data['efficiency'], label=f'{base_name}')
+        plt.scatter(data['nThreads'], data['efficiency'], yerr=data['errorefficiency'], fmt='o')
         plt.xlabel('Number of Threads')
         plt.ylabel('Efficiency')
         plt.title(f'Efficiency for {base_name}')
