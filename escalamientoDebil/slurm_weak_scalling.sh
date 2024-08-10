@@ -114,7 +114,6 @@ patterns_to_delete=(
     "slurm_error_2013_*.txt"
     "sol.*"
     "time*"
-    "metrics*"
 )
 
 # Recorrer y eliminar archivos según los patrones
