@@ -24,11 +24,8 @@ for entry in data_list:
 
 # Configuración de la gráfica
 plt.style.use('ggplot')
-<<<<<<< HEAD
+
 output_directory = "graficos"
-=======
-output_directory = "/graficos"
->>>>>>> 2298273 (Added desviation standar in plot.py)
 os.makedirs(output_directory, exist_ok=True)  # Crear la carpeta si no existe
 
 # Función para generar un nombre de archivo único

@@ -20,13 +20,13 @@ done
 executables=()
 
 # Llenar lista de ejecutables recorriendo la carpeta examples
-#for exe in examples/*; do
-#  if [[ -x "$exe" ]]; then
-#    executables+=("$exe")
-#  fi
-#done
+for exe in examples/*; do
+  if [[ -x "$exe" ]]; then
+    executables+=("$exe")
+  fi
+done
 
-executables="/examples/ex0p"
+#executables="/examples/ex0p"
 
 # Seleccionar el ejecutable basado en el índice del array
 executable=${executables[$SLURM_ARRAY_TASK_ID]}
@@ -35,7 +35,7 @@ exec_name=$(basename $executable)
 ORDER=1
 Reps=10
 MESH=../data/star.mesh
-# MESH=../../../data/
+
 
 # Loop para ejecutar comandos por cada thread y repetición
 for thread in $(seq 1 $(nproc)); do
