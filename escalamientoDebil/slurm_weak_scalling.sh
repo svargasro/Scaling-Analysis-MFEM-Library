@@ -3,8 +3,7 @@
 #SBATCH --output=slurm_outputs/slurm_output_%A_%a.txt
 #SBATCH --error=slurm_outputs/slurm_error_%A_%a.txt
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8 # Ajusta este valor según la configuración de tu clúster
-#SBATCH --array=0-39 # Ajusta esto al número total de ejecutables
+#SBATCH --array=0-2 # Ajusta esto al número total de ejecutables
 #SBATCH --partition=AMDRyzen7PRO5750G # Aquí especificas la partición 
 
 
@@ -35,7 +34,7 @@ exec_name=$(basename $executable)
 ORDER=1
 Reps=10
 MESH=../data/star.mesh
-
+echo nproc
 
 # Loop para ejecutar comandos por cada thread y repetición
 for thread in $(seq 1 $(nproc)); do
@@ -58,16 +57,16 @@ done
 
 # Asegurarse de que T1 y DT1 está correctamente calculado
 # Asegurarse de que T1 y DT1 está correctamente calculado
-T1=$(awk 'NR==1 {print $2}' time_ex0p.txt)
-DT1=$(awk 'NR==1 {print $3}' time_ex0p.txt)
+T1=$(awk 'NR==1 {print $2}' time_${exec_name}.txt)
+DT1=$(awk 'NR==1 {print $3}' time_${exec_name}.txt)
 echo "T1: $T1, DT1: $DT1"
 
 # Verificar el contenido de time_ex0p.txt
-echo "Contenido de time_ex0p.txt:"
-cat time_ex0p.txt
+echo "Contenido de time_${exec_name}.txt:"
+cat time_${exec_name}.txt
 
 # Asegurarse de que metrics.txt se llena correctamente
-echo "Generando metrics_ex0p.txt"
+echo "Generando metrics_${exec_name}.txt"
 awk '{
     t1 = $1;
     t2 = $2;
@@ -80,7 +79,7 @@ awk '{
     uncertainty2 = Efficiency * sqrt((1/t1)^2 + (dt2/t2)^2 + ("'"$DT1"'"/"'"$T1"'")^2);
 
     print $1, Speedup, uncertainty1, Efficiency, uncertainty2;
-}' time_ex0p.txt > metrics_ex0p.txt
+}' time_${exec_name}.txt > metrics/metrics_${exec_name}.txt
 
 
 # Verificar el contenido de metrics.txt
@@ -88,7 +87,7 @@ echo "Contenido de metrics_${exec_name}.txt:"
 cat metrics_${exec_name}.txt
 
 # Ejecutar el script de Python para generar las gráficas
-python plot.py
+#python plot.py
 
 # Limpiar archivos de tiempo
 for ((i=1; i<=$(nproc); i++)); do

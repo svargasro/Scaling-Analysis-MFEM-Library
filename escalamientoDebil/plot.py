@@ -6,13 +6,13 @@ from matplotlib.ticker import MaxNLocator
 import glob
 
 # Buscar todos los archivos metrics en el directorio actual
-metrics_files = glob.glob('metrics_*.txt')
+metrics_files = glob.glob('metrics/metrics_*.txt')
 
 
 # Leer datos desde todos los archivos metrics
 data_list = []
 for file in metrics_files:
-    base_name = os.path.splitext(os.path.basename(file))[0].replace('metrics_', '')
+    base_name = os.path.splitext(os.path.basename(file))[0].replace('metrics/metrics_', '')
     data = np.loadtxt(file, dtype={'names': ('nThreads', 'speedup', 'errorspeedup', 'efficiency', 'errorefficiency'),
                                    'formats': ('i4', 'f4', 'f4', 'f4', 'f4')})
     data_list.append({'base_name': base_name, 'data': data})
@@ -25,7 +25,7 @@ for entry in data_list:
 # Configuración de la gráfica
 plt.style.use('ggplot')
 
-output_directory = "graficos"
+output_directory = "../graficos"
 os.makedirs(output_directory, exist_ok=True)  # Crear la carpeta si no existe
 
 # Función para generar un nombre de archivo único
@@ -55,7 +55,7 @@ with PdfPages(speedup_file) as pdf:
         plt.title(f'Speedup for {base_name}')
         plt.legend()
         plt.grid(True)
-        pdf.savefig(output_directory)
+        pdf.savefig()
         plt.close()
 
 with PdfPages(efficiency_file) as pdf:
@@ -66,11 +66,11 @@ with PdfPages(efficiency_file) as pdf:
         plt.plot([0, len(data['nThreads'])+0.2], [1, 1], color='red')  # Ideal Efficiency
         plt.plot([0, len(data['nThreads'])+0.2], [0.6, 0.6], color='blue')  # Aceptable Efficiency
         plt.scatter(data['nThreads'], data['efficiency'], label=f'{base_name}')
-        plt.scatter(data['nThreads'], data['efficiency'], yerr=data['errorefficiency'], fmt='o')
+        plt.errorbar(data['nThreads'], data['efficiency'], yerr=data['errorefficiency'], fmt='o')
         plt.xlabel('Number of Threads')
         plt.ylabel('Efficiency')
         plt.title(f'Efficiency for {base_name}')
         plt.legend()
         plt.grid(True)
-        pdf.savefig(output_directory)
+        pdf.savefig()
         plt.close()
