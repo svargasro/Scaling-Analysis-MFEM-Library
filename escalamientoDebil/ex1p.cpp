@@ -62,6 +62,7 @@
 #include "mfem.hpp"
 #include <fstream>
 #include <iostream>
+#include <mpi.h>
 
 using namespace std;
 using namespace mfem;
@@ -81,7 +82,7 @@ int main(int argc, char *argv[])
    bool pa = false;
    bool fa = false;
    const char *device_config = "cpu";
-   bool visualization = false; //<------------------------------------------------------------------------------
+   bool visualization = false;
    bool algebraic_ceed = false;
 
    OptionsParser args(argc, argv);
@@ -111,7 +112,7 @@ int main(int argc, char *argv[])
    {
       if (myid == 0)
       {
-       //  args.PrintUsage(cout);
+//         args.PrintUsage(cout);
       }
       return 1;
    }
@@ -122,8 +123,10 @@ int main(int argc, char *argv[])
 
    // 3. Enable hardware devices such as GPUs, and programming models such as
    //    CUDA, OCCA, RAJA and OpenMP based on command line options.
+   double start;
+   if (myid == 0){ start = MPI_Wtime();}
    Device device(device_config);
-   //if (myid == 0) { device.Print(); }
+//   if (myid == 0) { device.Print(); }
 
    // 4. Read the (serial) mesh from the given mesh file on all processors.  We
    //    can handle triangular, quadrilateral, tetrahedral, hexahedral, surface
@@ -137,7 +140,7 @@ int main(int argc, char *argv[])
    //    more than 10,000 elements.
    {
       int ref_levels =
-         (int)floor((log(10000./mesh.GetNE())/log(2.)/dim)*1);//<-------------------------------------------------------------------------------------------------
+         (int)floor((log(10000./mesh.GetNE())/log(2.)/dim)*1);
       for (int l = 0; l < ref_levels; l++)
       {
          mesh.UniformRefinement();
@@ -173,7 +176,7 @@ int main(int argc, char *argv[])
       delete_fec = false;
       if (myid == 0)
       {
-    	cout << "Using isoparametric FEs: " << fec->Name() << endl;
+         cout << "Using isoparametric FEs: " << fec->Name() << endl;
       }
    }
    else
@@ -183,10 +186,10 @@ int main(int argc, char *argv[])
    }
    ParFiniteElementSpace fespace(&pmesh, fec);
    HYPRE_BigInt size = fespace.GlobalTrueVSize();
-   if (myid == 0)
+  /* if (myid == 0)
    {
-  // 	cout << "Number of finite element unknowns: " << size << endl;
-   }
+      cout << "Number of finite element unknowns: " << size << endl;
+   }*/
 
    // 8. Determine the list of true (i.e. parallel conforming) essential
    //    boundary dofs. In this example, the boundary conditions are defined
@@ -260,13 +263,20 @@ int main(int argc, char *argv[])
    }
    else
    {
-      prec = new HypreBoomerAMG(); //<-------------------------------------------------------------------------
+      prec = new HypreBoomerAMG;
    }
    CGSolver cg(MPI_COMM_WORLD);
-	//Con RelTol 1e-22 y Max iter 200000 no cambia el tiempo de ejecucion
-   cg.SetRelTol(1e-12); //Original 1e-12
-   cg.SetMaxIter(2000); //Original 2000
-   cg.SetPrintLevel(2); //<----------------------------------------------------------------------------------------------------------
+   cg.SetRelTol(1e-12);
+   cg.SetMaxIter(2000);
+   cg.SetPrintLevel(2);
+      /* From solvers.cpp
+      IterativeSolver::PrintLevel IterativeSolver::FromLegacyPrintLevel
+      -1: PrintLevel();
+      0: PrintLevel().Errors().Warnings();
+      1: PrintLevel().Errors().Warnings().Iterations();
+      2: PrintLevel().Errors().Warnings().Summary();
+      3: PrintLevel().Errors().Warnings().FirstAndLast();
+      */
    if (prec) { cg.SetPreconditioner(*prec); }
    cg.SetOperator(*A);
    cg.Mult(B, X);
@@ -278,7 +288,7 @@ int main(int argc, char *argv[])
 
    // 15. Save the refined mesh and the solution in parallel. This output can
    //     be viewed later using GLVis: "glvis -np <np> -m mesh -g sol".
-/*  {
+   {
       ostringstream mesh_name, sol_name;
       mesh_name << "mesh." << setfill('0') << setw(6) << myid;
       sol_name << "sol." << setfill('0') << setw(6) << myid;
@@ -290,10 +300,9 @@ int main(int argc, char *argv[])
       ofstream sol_ofs(sol_name.str().c_str());
       sol_ofs.precision(8);
       x.Save(sol_ofs);
-   }*/
+   }
 
    // 16. Send the solution by socket to a GLVis server.
-
    if (visualization)
    {
       char vishost[] = "localhost";
@@ -309,6 +318,9 @@ int main(int argc, char *argv[])
    {
       delete fec;
    }
-
+   if (myid == 0){
+      double end = MPI_Wtime();
+      std::cerr << end - start << std::endl;
+   }
    return 0;
 }
