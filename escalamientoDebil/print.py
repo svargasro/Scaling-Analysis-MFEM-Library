@@ -1,3 +1,4 @@
+#Archivo para graficar el uso de memoria
 import matplotlib.pyplot as plt
 import pandas as pd
 import glob

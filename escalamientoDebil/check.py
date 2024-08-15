@@ -1,3 +1,5 @@
+#Codigo para verificar los calculos hecho desde bash
+
 import os
 import numpy as np
 import glob
