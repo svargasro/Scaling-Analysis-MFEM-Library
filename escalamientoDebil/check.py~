@@ -1,0 +1,31 @@
+import os
+import numpy as np
+import glob
+
+# Ruta a los archivos time*.txt
+path = "."  # Reemplaza con la ruta correcta
+files = glob.glob(os.path.join(path, "time*.txt"))
+
+# Inicializar listas para almacenar los resultados
+means = []
+std_devs = []
+
+# Leer cada archivo y calcular la media y desviación estándar para cada fila
+for file in files:
+    data = np.loadtxt(file)  # Carga los datos del archivo como un array de NumPy
+    file_means = np.mean(data, axis=0)  # Calcula la media por fila
+    file_std_devs = np.std(data, axis=0)  # Calcula la desviación estándar por fila
+    
+    means.append(file_means)
+    std_devs.append(file_std_devs)
+
+# Convertir los resultados a arrays de NumPy para facilitar el manejo
+means = np.array(means)
+std_devs = np.array(std_devs)
+
+# Guardar los resultados en un archivo
+np.savetxt("medias.txt", means, fmt='%.5f', header="Media por archivo")
+np.savetxt("desviaciones_estandar.txt", std_devs, fmt='%.5f', header="Desviación Estándar por archivo")
+
+print("Resultados guardados en 'medias.txt' y 'desviaciones_estandar.txt'")
+

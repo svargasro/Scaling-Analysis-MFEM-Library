@@ -7,19 +7,20 @@
 # Limpiar archivos de salida al comienzo
 > metrics.txt
 
-TARGET=ex1p_v3
-MAX_THREADS=16
+TARGET=ex39p
+MAX_THREADS=$(nproc)
 THREADS=$(seq 1 $MAX_THREADS)
-REPS=$(seq 1 10)
-ORDER=3
-
+MAX_REPS=10
+REPS=$(seq 1 $MAX_REPS)
+ORDER=1
+#MESH=../data/star.mesh
 
 # Loop para ejecutar comandos
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
-        /usr/bin/time -f "%S" mpirun -np $thread ./${TARGET} -o $ORDER  1>> /dev/null 2>>time$thread.txt
+        /usr/bin/time -f "%S" mpirun -np $thread --oversubscribe ./$TARGET -o $ORDER  1>> std_out$thread 2>>time$thread.txt
     done
     # Calcular el promedio
     average=$(awk '{ sum += $1 } END { if (NR > 0) print sum / NR }' time$thread.txt)
@@ -30,15 +31,33 @@ for thread in $THREADS; do
     # Guardar el promedio y la desviación estándar en time.txt
     echo "$thread $average $stdev" >> time.txt
 done
-
 T1=$(awk 'NR==1 {print $2}' time.txt)
+DT1=$(awk 'NR==1 {print $3}' time.txt)
+echo "T1: $T1, DT1: $DT1"
 
-awk '{print $1, '$T1'/$2, '$T1'/$2/$1}' time.txt > metrics.txt
+echo "Contenido de time.txt:"
+cat time.txt
+
+echo "Generando metrics.txt"
+awk -v T1="$T1" -v DT1="$DT1" '{
+    t1 = $1;
+    t2 = $2;
+    dt2 = $3;
+    Speedup = T1 / t2;
+    uncertainty1 = Speedup * sqrt((DT1/T1)^2 + (dt2/t2)^2);
+    Efficiency = Speedup / t1;
+    uncertainty2 = Efficiency * sqrt((dt2/t2)^2 + (DT1/T1)^2);
+    print $1, Speedup, uncertainty1, Efficiency, uncertainty2;
+}' time.txt > metrics.txt
+
+#awk  -v T1="$1" -v DT1="$DT1" '{
+#	print $1, T1/$2, 3*DT1, 
+#	}'
+
+echo "Contenido de metrics.txt"
+cat metrics.txt
+
 
 python plot.py
 
-for ((i=1; i<=$MAX_THREADS; i++)); do
-    rm time${i}.txt
-done
-
-rm mesh* sol*
+rm std_out* sol* mesh* time*
