@@ -17,4 +17,4 @@ slurm_error_2013_*.txt
 sol.*
 time*
 metrics*
-escalamientoDebil/mesh.*
+escalamientoDebil/csv*

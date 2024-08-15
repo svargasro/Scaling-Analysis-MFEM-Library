@@ -1,0 +1,637 @@
+==103566== Memcheck, a memory error detector
+==103566== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==103566== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==103566== Command: ./ex39pVal
+==103566== Parent PID: 103561
+==103566== 
+==103566== Syscall param socketcall.getsockopt(optlen) points to uninitialised byte(s)
+==103566==    at 0x4DFF5EE: getsockopt_syscall (getsockopt.c:29)
+==103566==    by 0x4DFF5EE: getsockopt (getsockopt.c:94)
+==103566==    by 0x5F19157: pmix_ptl_base_set_timeout (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5F20A1A: pmix_ptl_base_make_connection (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5F27DF3: ??? (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5E273C1: PMIx_Init (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5DAFE4A: ext3x_client_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi3/mca_pmix_ext3x.so)
+==103566==    by 0x55998BF: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi3/mca_ess_pmi.so)
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566==  Address 0x1ffeffa41c is on thread 1's stack
+==103566==  in frame #2, created by pmix_ptl_base_make_connection (???:)
+==103566==  Uninitialised value was created by a stack allocation
+==103566==    at 0x5F208E4: pmix_ptl_base_make_connection (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566== 
+==103566== Syscall param socketcall.getsockopt(optlen_out) points to uninitialised byte(s)
+==103566==    at 0x4DFF5EE: getsockopt_syscall (getsockopt.c:29)
+==103566==    by 0x4DFF5EE: getsockopt (getsockopt.c:94)
+==103566==    by 0x5F19157: pmix_ptl_base_set_timeout (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5F20A1A: pmix_ptl_base_make_connection (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5F27DF3: ??? (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5E273C1: PMIx_Init (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5DAFE4A: ext3x_client_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi3/mca_pmix_ext3x.so)
+==103566==    by 0x55998BF: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi3/mca_ess_pmi.so)
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566==  Address 0x1ffeffa41c is on thread 1's stack
+==103566==  in frame #2, created by pmix_ptl_base_make_connection (???:)
+==103566==  Uninitialised value was created by a stack allocation
+==103566==    at 0x5F208E4: pmix_ptl_base_make_connection (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566== 
+==103566== Syscall param setsockopt(optlen) contains uninitialised byte(s)
+==103566==    at 0x4DFFACE: setsockopt_syscall (setsockopt.c:29)
+==103566==    by 0x4DFFACE: setsockopt (setsockopt.c:95)
+==103566==    by 0x5F20BA9: pmix_ptl_base_make_connection (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5F27DF3: ??? (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5E273C1: PMIx_Init (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566==    by 0x5DAFE4A: ext3x_client_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi3/mca_pmix_ext3x.so)
+==103566==    by 0x55998BF: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi3/mca_ess_pmi.so)
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566==  Uninitialised value was created by a stack allocation
+==103566==    at 0x5F208E4: pmix_ptl_base_make_connection (in /usr/lib/x86_64-linux-gnu/pmix2/lib/libpmix.so.2.5.2)
+==103566== 
+==103566== 
+==103566== HEAP SUMMARY:
+==103566==     in use at exit: 15,973 bytes in 51 blocks
+==103566==   total heap usage: 320,860 allocs, 320,809 frees, 54,458,339 bytes allocated
+==103566== 
+==103566== 1 bytes in 1 blocks are definitely lost in loss record 1 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x832D0F4: ???
+==103566==    by 0x83157C3: ???
+==103566==    by 0x501791F: mca_base_framework_components_register (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017C95: mca_base_framework_register (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017CF3: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4953823: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 5 bytes in 1 blocks are definitely lost in loss record 2 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x5E18D65: ???
+==103566==    by 0x5E1933C: ???
+==103566==    by 0x5E197DD: ???
+==103566==    by 0x5E7703F: ???
+==103566==    by 0x5E290C7: ???
+==103566==    by 0x5DA9C49: ???
+==103566==    by 0x559BFC4: ???
+==103566==    by 0x4F22384: orte_finalize (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x48CC308: ompi_mpi_finalize (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x43F42C: Finalize (communication.hpp:65)
+==103566==    by 0x43F42C: Finalize (communication.hpp:63)
+==103566==    by 0x43F42C: mfem::Mpi::~Mpi() (communication.hpp:107)
+==103566== 
+==103566== 13 bytes in 2 blocks are still reachable in loss record 3 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x5100DC7: event_config_avoid_method (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x502FD52: opal_event_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x502FD9A: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 15 bytes in 1 blocks are indirectly lost in loss record 4 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x7EB9301: ???
+==103566==    by 0x500CA9E: mca_base_framework_components_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x503C745: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x49537C4: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 16 bytes in 1 blocks are still reachable in loss record 5 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4013E4D: malloc (rtld-malloc.h:56)
+==103566==    by 0x4013E4D: allocate_dtv_entry (dl-tls.c:684)
+==103566==    by 0x4013E4D: allocate_and_init (dl-tls.c:709)
+==103566==    by 0x4013E4D: tls_get_addr_tail (dl-tls.c:907)
+==103566==    by 0x401820B: __tls_get_addr (tls_get_addr.S:55)
+==103566==    by 0x61CB0E7: ???
+==103566==    by 0x40021A1: call_destructors (dl-close.c:129)
+==103566==    by 0x4E4CAF4: _dl_catch_exception (dl-error-skeleton.c:182)
+==103566==    by 0x4002635: _dl_close_worker.part.0.isra.0 (dl-close.c:292)
+==103566==    by 0x40032A1: _dl_close_worker (dl-close.c:150)
+==103566==    by 0x40032A1: _dl_close (dl-close.c:818)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4E4CB62: _dl_catch_error (dl-error-skeleton.c:227)
+==103566==    by 0x4D6812D: _dlerror_run (dlerror.c:138)
+==103566==    by 0x4D67E57: dlclose@@GLIBC_2.34 (dlclose.c:31)
+==103566== 
+==103566== 23 bytes in 1 blocks are definitely lost in loss record 6 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x839F570: ???
+==103566==    by 0x400647D: call_init.part.0 (dl-init.c:70)
+==103566==    by 0x4006567: call_init (dl-init.c:33)
+==103566==    by 0x4006567: _dl_init (dl-init.c:117)
+==103566==    by 0x4E4CAF4: _dl_catch_exception (dl-error-skeleton.c:182)
+==103566==    by 0x400DFF5: dl_open_worker (dl-open.c:808)
+==103566==    by 0x400DFF5: dl_open_worker (dl-open.c:771)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566==    by 0x4D6863B: dlopen_doit (dlopen.c:56)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4E4CB62: _dl_catch_error (dl-error-skeleton.c:227)
+==103566== 
+==103566== 23 bytes in 1 blocks are definitely lost in loss record 7 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D60157: __vasprintf_internal (vasprintf.c:71)
+==103566==    by 0x4E0E192: __asprintf_chk (asprintf_chk.c:34)
+==103566==    by 0x5E18D50: ???
+==103566==    by 0x5E1933C: ???
+==103566==    by 0x5E197DD: ???
+==103566==    by 0x5E7703F: ???
+==103566==    by 0x5E290C7: ???
+==103566==    by 0x5DA9C49: ???
+==103566==    by 0x559BFC4: ???
+==103566==    by 0x4F22384: orte_finalize (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x48CC308: ompi_mpi_finalize (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566== 
+==103566== 26 bytes in 1 blocks are definitely lost in loss record 8 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D60157: __vasprintf_internal (vasprintf.c:71)
+==103566==    by 0x4E0E192: __asprintf_chk (asprintf_chk.c:34)
+==103566==    by 0x5E18CDD: ???
+==103566==    by 0x5E1933C: ???
+==103566==    by 0x5E197DD: ???
+==103566==    by 0x5E7703F: ???
+==103566==    by 0x5E290C7: ???
+==103566==    by 0x5DA9C49: ???
+==103566==    by 0x559BFC4: ???
+==103566==    by 0x4F22384: orte_finalize (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x48CC308: ompi_mpi_finalize (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566== 
+==103566== 26 bytes in 1 blocks are definitely lost in loss record 9 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x5E18F23: ???
+==103566==    by 0x5E18D78: ???
+==103566==    by 0x5E1933C: ???
+==103566==    by 0x5E197DD: ???
+==103566==    by 0x5E7703F: ???
+==103566==    by 0x5E290C7: ???
+==103566==    by 0x5DA9C49: ???
+==103566==    by 0x559BFC4: ???
+==103566==    by 0x4F22384: orte_finalize (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x48CC308: ompi_mpi_finalize (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566== 
+==103566== 30 bytes in 1 blocks are definitely lost in loss record 10 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x84174E6: ???
+==103566==    by 0x84198F5: ???
+==103566==    by 0x400647D: call_init.part.0 (dl-init.c:70)
+==103566==    by 0x4006567: call_init (dl-init.c:33)
+==103566==    by 0x4006567: _dl_init (dl-init.c:117)
+==103566==    by 0x4E4CAF4: _dl_catch_exception (dl-error-skeleton.c:182)
+==103566==    by 0x400DFF5: dl_open_worker (dl-open.c:808)
+==103566==    by 0x400DFF5: dl_open_worker (dl-open.c:771)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566==    by 0x4D6863B: dlopen_doit (dlopen.c:56)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4E4CB62: _dl_catch_error (dl-error-skeleton.c:227)
+==103566== 
+==103566== 32 bytes in 1 blocks are still reachable in loss record 11 of 45
+==103566==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5100CAE: event_get_supported_methods (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x502FC8E: opal_event_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x502FD9A: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 33 bytes in 1 blocks are still reachable in loss record 12 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4D8058E: strdup (strdup.c:42)
+==103566==    by 0x5025F70: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x494474F: ompi_pml_v_output_open (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x4946DF9: ??? (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x500CA9E: mca_base_framework_components_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4941C9E: ??? (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4953823: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 40 bytes in 1 blocks are still reachable in loss record 13 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x51213B6: ??? (in /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7.0.1)
+==103566==    by 0x510C2E6: event_global_setup_locks_ (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x512166E: evthread_use_pthreads (in /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7.0.1)
+==103566==    by 0x502FDB4: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 40 bytes in 1 blocks are still reachable in loss record 14 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x51213B6: ??? (in /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7.0.1)
+==103566==    by 0x5110407: evsig_global_setup_locks_ (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x510C2F9: event_global_setup_locks_ (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x512166E: evthread_use_pthreads (in /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7.0.1)
+==103566==    by 0x502FDB4: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566== 
+==103566== 40 bytes in 1 blocks are still reachable in loss record 15 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x51213B6: ??? (in /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7.0.1)
+==103566==    by 0x5107917: evutil_secure_rng_global_setup_locks_ (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x510C30F: event_global_setup_locks_ (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x512166E: evthread_use_pthreads (in /usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.7.0.1)
+==103566==    by 0x502FDB4: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566== 
+==103566== 48 bytes in 1 blocks are still reachable in loss record 16 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x500C0AB: mca_base_component_repository_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x500C8EA: mca_base_component_find (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x50177CD: mca_base_framework_components_register (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017C95: mca_base_framework_register (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017CF3: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x495372A: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 48 bytes in 2 blocks are still reachable in loss record 17 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5100DB7: event_config_avoid_method (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x502FD52: opal_event_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x502FD9A: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 48 bytes in 1 blocks are definitely lost in loss record 18 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5E9A83D: ???
+==103566==    by 0x5E9F91D: ???
+==103566==    by 0x5E9FEA1: ???
+==103566==    by 0x5E9FEE3: ???
+==103566==    by 0x5E76A70: ???
+==103566==    by 0x5E2663A: ???
+==103566==    by 0x5DAFE4A: ???
+==103566==    by 0x55998BF: ???
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566== 
+==103566== 56 bytes in 1 blocks are still reachable in loss record 19 of 45
+==103566==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5100756: event_config_new (in /usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.7.0.1)
+==103566==    by 0x502FCB6: opal_event_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x502FD9A: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4FF08CF: opal_init (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x4F952DB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 64 bytes in 1 blocks are definitely lost in loss record 20 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5F12323: ???
+==103566==    by 0x5E76A87: ???
+==103566==    by 0x5E2663A: ???
+==103566==    by 0x5DAFE4A: ???
+==103566==    by 0x55998BF: ???
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 70 bytes in 2 blocks are still reachable in loss record 21 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x40271DF: malloc (rtld-malloc.h:56)
+==103566==    by 0x40271DF: strdup (strdup.c:42)
+==103566==    by 0x4016A66: _dl_load_cache_lookup (dl-cache.c:527)
+==103566==    by 0x400A981: _dl_map_object (dl-load.c:2193)
+==103566==    by 0x4003494: openaux (dl-deps.c:64)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==103566==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566== 
+==103566== 70 bytes in 2 blocks are still reachable in loss record 22 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x400DD20: malloc (rtld-malloc.h:56)
+==103566==    by 0x400DD20: _dl_new_object (dl-object.c:199)
+==103566==    by 0x4008C82: _dl_map_object_from_fd (dl-load.c:1063)
+==103566==    by 0x400A600: _dl_map_object (dl-load.c:2327)
+==103566==    by 0x4003494: openaux (dl-deps.c:64)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==103566==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566== 
+==103566== 79 (64 direct, 15 indirect) bytes in 1 blocks are definitely lost in loss record 23 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7EB92AA: ???
+==103566==    by 0x500CA9E: mca_base_framework_components_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x503C745: ??? (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x5017D68: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/libopen-pal.so.40.30.2)
+==103566==    by 0x49537C4: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 128 bytes in 1 blocks are definitely lost in loss record 24 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5E8E0F1: ???
+==103566==    by 0x5E8E0B0: ???
+==103566==    by 0x5E26940: ???
+==103566==    by 0x5DAFE4A: ???
+==103566==    by 0x55998BF: ???
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 128 bytes in 1 blocks are definitely lost in loss record 25 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5E8E0F1: ???
+==103566==    by 0x5E8E0B0: ???
+==103566==    by 0x5E26A40: ???
+==103566==    by 0x5DAFE4A: ???
+==103566==    by 0x55998BF: ???
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 260 bytes in 1 blocks are definitely lost in loss record 26 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5E76226: ???
+==103566==    by 0x5E2663A: ???
+==103566==    by 0x5DAFE4A: ???
+==103566==    by 0x55998BF: ???
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 552 bytes in 1 blocks are definitely lost in loss record 27 of 45
+==103566==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5E2EC13: ???
+==103566==    by 0x5E2F22C: ???
+==103566==    by 0x5DB14B7: ???
+==103566==    by 0x5599FB5: ???
+==103566==    by 0x4F954CB: orte_init (in /usr/lib/x86_64-linux-gnu/libopen-rte.so.40.30.2)
+==103566==    by 0x4953418: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 552 bytes in 1 blocks are definitely lost in loss record 28 of 45
+==103566==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x5E2EC13: ???
+==103566==    by 0x5E2F22C: ???
+==103566==    by 0x5DB14B7: ???
+==103566==    by 0x48B915A: ompi_proc_complete_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x4953A97: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 600 bytes in 2 blocks are still reachable in loss record 29 of 45
+==103566==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x40162DC: calloc (rtld-malloc.h:44)
+==103566==    by 0x40162DC: _dl_check_map_versions (dl-version.c:273)
+==103566==    by 0x400ED13: dl_open_worker_begin (dl-open.c:600)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566==    by 0x4D6863B: dlopen_doit (dlopen.c:56)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4E4CB62: _dl_catch_error (dl-error-skeleton.c:227)
+==103566==    by 0x4D6812D: _dlerror_run (dlerror.c:138)
+==103566==    by 0x4D686C7: dlopen_implementation (dlopen.c:71)
+==103566==    by 0x4D686C7: dlopen@@GLIBC_2.34 (dlopen.c:81)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 30 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BAF63: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 31 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BAF63: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 32 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB02A: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 33 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB02A: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 34 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB0D6: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 35 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB0D6: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 36 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB184: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 37 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB184: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 38 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB2E6: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 39 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB2E6: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 40 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB446: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 41 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB446: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 42 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x4942BC6: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB5A4: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 688 bytes in 1 blocks are definitely lost in loss record 43 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x7E784FB: ???
+==103566==    by 0x4942EBE: ompi_op_base_op_select (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48BB5A4: ompi_op_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x495375D: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x48ECC58: PMPI_Init (in /usr/lib/x86_64-linux-gnu/libmpi.so.40.30.2)
+==103566==    by 0x440A6A: mfem::Mpi::Init(int*, char***, int, int*) (communication.hpp:47)
+==103566==    by 0x439AB2: main (ex39p.cpp:53)
+==103566== 
+==103566== 880 bytes in 1 blocks are still reachable in loss record 44 of 45
+==103566==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x400E146: malloc (rtld-malloc.h:56)
+==103566==    by 0x400E146: add_to_global_resize (dl-open.c:152)
+==103566==    by 0x400EFF7: dl_open_worker_begin (dl-open.c:716)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566==    by 0x4D6863B: dlopen_doit (dlopen.c:56)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4E4CB62: _dl_catch_error (dl-error-skeleton.c:227)
+==103566==    by 0x4D6812D: _dlerror_run (dlerror.c:138)
+==103566==    by 0x4D686C7: dlopen_implementation (dlopen.c:71)
+==103566==    by 0x4D686C7: dlopen@@GLIBC_2.34 (dlopen.c:81)
+==103566== 
+==103566== 2,410 bytes in 2 blocks are still reachable in loss record 45 of 45
+==103566==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==103566==    by 0x400DA02: calloc (rtld-malloc.h:44)
+==103566==    by 0x400DA02: _dl_new_object (dl-object.c:92)
+==103566==    by 0x4008C82: _dl_map_object_from_fd (dl-load.c:1063)
+==103566==    by 0x400A600: _dl_map_object (dl-load.c:2327)
+==103566==    by 0x4003494: openaux (dl-deps.c:64)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x4003C7B: _dl_map_object_deps (dl-deps.c:248)
+==103566==    by 0x400EA0E: dl_open_worker_begin (dl-open.c:592)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400DF99: dl_open_worker (dl-open.c:782)
+==103566==    by 0x4E4CA97: _dl_catch_exception (dl-error-skeleton.c:208)
+==103566==    by 0x400E34D: _dl_open (dl-open.c:883)
+==103566== 
+==103566== LEAK SUMMARY:
+==103566==    definitely lost: 11,562 bytes in 29 blocks
+==103566==    indirectly lost: 15 bytes in 1 blocks
+==103566==      possibly lost: 0 bytes in 0 blocks
+==103566==    still reachable: 4,396 bytes in 21 blocks
+==103566==         suppressed: 0 bytes in 0 blocks
+==103566== 
+==103566== For lists of detected and suppressed errors, rerun with: -s
+==103566== ERROR SUMMARY: 32 errors from 32 contexts (suppressed: 0 from 0)
