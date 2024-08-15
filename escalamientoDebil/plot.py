@@ -1,41 +1,105 @@
-import matplotlib.pyplot as plt
+"""import matplotlib.pyplot as plt
 import numpy as np
-import os
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.ticker import MaxNLocator
 
-# Buscar todos los archivos metrics en el directorio actual
-file ='metrics.txt'
+# Leer datos desde el archivo metrics.txt
+data = np.loadtxt('metrics.txt')
+
+nThreads = data[:, 0]
+speedup = data[:, 1]
+efficiency = data[:, 2]
+
+plt.style.use('ggplot')
+with PdfPages('weak_scaling.pdf') as pdf:
+    # SpeedUp Plot
+    plt.plot([0, len(nThreads)+0.2], [0, len(nThreads)+0.2], color='black')  #Ideal SpeedUp
+    plt.scatter(nThreads, speedup, color='green', label='SpeedUp')
+    plt.xlabel('nThreads')
+    plt.ylabel('SpeedUp')
+    plt.title('SpeedUp')
+    plt.xlim(0, len(nThreads)+0.2)
+    plt.ylim(0, len(nThreads)+0.2)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig() 
+    plt.close()
+    
+    #Efficiency Plot
+    plt.plot([0, len(nThreads)+0.2], [1, 1], color='red')  # Ideal Efficiency
+    plt.plot([0, len(nThreads)+0.2], [0.6, 0.6], color='blue')  #Aceptable Efficiency
+    plt.scatter(nThreads, efficiency, color='green', label='Efficiency')  
+    plt.xlabel('nThreads')
+    plt.ylabel('Efficiency')
+    plt.title('Efficiency')
+    plt.xlim(0, len(nThreads)+0.2)
+    plt.ylim(0, 1.1)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()  
+    plt.close()
 
 
-# Leer datos desde todos los archivos metrics
-data = np.loadtxt(file, dtype={'names': ('nThreads', 'speedup', 'errorspeedup', 'efficiency', 'errorefficiency'),
-                                   'formats': ('i4', 'f4', 'f4', 'f4', 'f4')})
+"""
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.backends.backend_pdf import PdfPages
+from matplotlib.ticker import MaxNLocator
+import os
 
-# Configuración de la gráfica
+# Leer datos desde el archivo metrics.txt
+data = np.loadtxt('metrics.txt')
 
- # Primer plot: Speedup
-plt.figure()
-plt.plot([0, len(data['nThreads']) + 0.2], [0, len(data['nThreads']) + 0.2], color='black')  # Ideal SpeedUp
-plt.scatter(data['nThreads'], data['speedup'])
-plt.errorbar(data['nThreads'], data['speedup'], yerr=data['errorspeedup'], fmt='o')
-plt.xlabel('Number of Threads')
-plt.ylabel('Speedup')
-plt.title(f'Speedup')
-#plt.legend()
-plt.grid(True)
-plt.savefig("Speedup.pdf")
+nThreads = data[:, 0]
+speedup = data[:, 1]
+efficiency = data[:, 2]
 
-# Segundo plot: Efficiency
-plt.figure()
-plt.plot([0, len(data['nThreads']) + 0.2], [1, 1], color='red')  # Ideal Efficiency
-plt.plot([0, len(data['nThreads']) + 0.2], [0.6, 0.6], color='blue')  # Acceptable Efficiency
-plt.scatter(data['nThreads'], data['efficiency'])
-plt.errorbar(data['nThreads'], data['efficiency'], yerr=data['errorefficiency'], fmt='o')
-plt.xlabel('Number of Threads')
-plt.ylabel('Efficiency')
-plt.title(f'Efficiency')
-#plt.legend()
-plt.grid(True)
-plt.savefig("Efficiency.pdf")
+# Función para generar un nombre de archivo único
+def get_unique_filename(base_name, directory):
+    counter = 1
+    unique_name = f"{base_name}.pdf"
+    while os.path.exists(os.path.join(directory, unique_name)):
+        unique_name = f"{base_name}_{counter}.pdf"
+        counter += 1
+    return unique_name
 
+# Directorio donde se guardarán los gráficos
+output_directory = "./graficos"
+
+# Asegúrate de que el directorio exista
+os.makedirs(output_directory, exist_ok=True)
+
+# Generar nombres únicos para los archivos PDF
+speedup_file = get_unique_filename("weak_scaling_speedup", output_directory)
+efficiency_file = get_unique_filename("weak_scaling_efficiency", output_directory)
+
+plt.style.use('ggplot')
+
+# Speedup Plot
+with PdfPages(os.path.join(output_directory, speedup_file)) as pdf:
+    plt.plot([0, len(nThreads)+0.2], [0, len(nThreads)+0.2], color='black')  # Ideal SpeedUp
+    plt.scatter(nThreads, speedup, color='green', label='SpeedUp')
+    plt.xlabel('nThreads')
+    plt.ylabel('SpeedUp')
+    plt.title('SpeedUp')
+    plt.xlim(0, len(nThreads)+0.2)
+    plt.ylim(0, len(nThreads)+0.2)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()
+    plt.close()
+
+# Efficiency Plot
+with PdfPages(os.path.join(output_directory, efficiency_file)) as pdf:
+    plt.plot([0, len(nThreads)+0.2], [1, 1], color='red')  # Ideal Efficiency
+    plt.plot([0, len(nThreads)+0.2], [0.6, 0.6], color='blue')  # Acceptable Efficiency
+    plt.scatter(nThreads, efficiency, color='green', label='Efficiency')
+    plt.xlabel('nThreads')
+    plt.ylabel('Efficiency')
+    plt.title('Efficiency')
+    plt.xlim(0, len(nThreads)+0.2)
+    plt.ylim(0, 1.1)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()
+    plt.close()
