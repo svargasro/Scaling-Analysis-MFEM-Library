@@ -1,0 +1,53 @@
+{
+  "dsets": {
+    "main": {
+      "cycle": 55,
+      "domains": 1,
+      "fields": {
+        "D": {
+          "path": "Volta-AMR-Parallel_000055/D.%06d",
+          "tags": {
+            "assoc": "nodes",
+            "comps": "3",
+            "lod": "1"
+          }
+        },
+        "E": {
+          "path": "Volta-AMR-Parallel_000055/E.%06d",
+          "tags": {
+            "assoc": "nodes",
+            "comps": "3",
+            "lod": "1"
+          }
+        },
+        "Phi": {
+          "path": "Volta-AMR-Parallel_000055/Phi.%06d",
+          "tags": {
+            "assoc": "nodes",
+            "comps": "1",
+            "lod": "1"
+          }
+        },
+        "Rho": {
+          "path": "Volta-AMR-Parallel_000055/Rho.%06d",
+          "tags": {
+            "assoc": "nodes",
+            "comps": "1",
+            "lod": "1"
+          }
+        }
+      },
+      "mesh": {
+        "format": "0",
+        "path": "Volta-AMR-Parallel_000055/mesh.%06d",
+        "tags": {
+          "max_lods": "32",
+          "spatial_dim": "3",
+          "topo_dim": "3"
+        }
+      },
+      "time": 79,
+      "time_step": 0
+    }
+  }
+}

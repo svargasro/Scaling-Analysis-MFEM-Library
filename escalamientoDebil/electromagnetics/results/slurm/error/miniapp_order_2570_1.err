@@ -1,0 +1,55 @@
+rm: cannot remove 'results/times/time_1_10.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_2.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_3.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_4.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_5.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_6.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_7.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_8.txt': No such file or directory
+rm: cannot remove 'results/times/time_1_9.txt': No such file or directory
+rm: cannot remove 'results/times/time_2_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_3_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_4_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_5_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_6_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_7_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_8_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_9_1.txt': No such file or directory
+rm: cannot remove 'results/times/time_order_1.txt': No such file or directory
+/home/cpenav/Documents/ProyectoFinal/mfem-4.7/miniapps/electromagnetics/results/plot.py:53: MatplotlibDeprecationWarning: Keeping empty pdf files is deprecated since 3.8 and support will be removed two minor releases later.
+  plt.close()
+Traceback (most recent call last):
+  File "/home/cpenav/Documents/ProyectoFinal/mfem-4.7/miniapps/electromagnetics/results/plot.py", line 38, in <module>
+    pdf.savefig() 
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 2766, in savefig
+    figure.savefig(self, format="pdf", **kwargs)
+  File "/usr/lib64/python3.9/site-packages/matplotlib/figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backend_bases.py", line 2193, in print_figure
+    result = print_method(
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backend_bases.py", line 2043, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 2798, in print_pdf
+    file = filename._ensure_file()
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 2719, in _ensure_file
+    self._file = PdfFile(self._filename, metadata=self._metadata)  # init.
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 688, in __init__
+    fh, opened = cbook.to_filehandle(filename, "wb", return_opened=True)
+  File "/usr/lib64/python3.9/site-packages/matplotlib/cbook.py", line 483, in to_filehandle
+    fh = open(fname, flag, encoding=encoding)
+FileNotFoundError: [Errno 2] No such file or directory: 'graficas/weak_scaling_order=2.pdf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpenav/Documents/ProyectoFinal/mfem-4.7/miniapps/electromagnetics/results/plot.py", line 53, in <module>
+    plt.close()
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 2715, in __exit__
+    self.close()
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 2735, in close
+    PdfFile(self._filename, metadata=self._metadata).close()  # touch the file.
+  File "/usr/lib64/python3.9/site-packages/matplotlib/backends/backend_pdf.py", line 688, in __init__
+    fh, opened = cbook.to_filehandle(filename, "wb", return_opened=True)
+  File "/usr/lib64/python3.9/site-packages/matplotlib/cbook.py", line 483, in to_filehandle
+    fh = open(fname, flag, encoding=encoding)
+FileNotFoundError: [Errno 2] No such file or directory: 'graficas/weak_scaling_order=2.pdf'
