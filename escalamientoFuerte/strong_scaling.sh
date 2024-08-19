@@ -1,7 +1,6 @@
 #!/bin/bash
 
-ORDER=$(seq 1 1)
-
+ORDER=$(seq 1 7)
 REPS=$(seq 1 10)
 
 rm ./output/*

@@ -6,6 +6,7 @@ import os
 directorio = './output/'
 # Obtener la lista de archivos en el directorio
 archivos = os.listdir(directorio)
+archivos.sort()
 # Contar la cantidad de archivos
 cantidadArchivos = len(archivos)
 
@@ -32,7 +33,6 @@ for i, archivo in enumerate(archivos):
 #Se normaliza el promedio y desviación estándar dividiendo por el tiempo y desviación estándar que tomó para el índice 0.
 
 
-print(timeDesv)
 errorbar= 10*timeDesv
 
 plt.style.use('ggplot')

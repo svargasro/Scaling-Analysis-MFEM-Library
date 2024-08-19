@@ -93,11 +93,9 @@ int main(int argc, char *argv[])
    args.AddOption(&order, "-o", "--order",
                   "Finite element order (polynomial degree) or -1 for"
                   " isoparametric space.");
-
    args.AddOption(&refLevelsParameter, "-rl", "--refLevels",
-                  "Comentario1"
-                  "Comentario2");
-
+                  "1"
+                  "2");
    args.AddOption(&static_cond, "-sc", "--static-condensation", "-no-sc",
                   "--no-static-condensation", "Enable static condensation.");
    args.AddOption(&pa, "-pa", "--partial-assembly", "-no-pa",
