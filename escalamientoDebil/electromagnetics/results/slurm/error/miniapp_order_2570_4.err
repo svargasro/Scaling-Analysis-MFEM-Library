@@ -1,3 +1,0 @@
-qt.qpa.xcb: X server does not support XInput 2
-QStandardPaths: error creating runtime directory '/run/user/1653' (Permission denied)
-Qt: Session management error: Authentication Rejected, reason : None of the authentication protocols specified are supported and host-based authentication failed

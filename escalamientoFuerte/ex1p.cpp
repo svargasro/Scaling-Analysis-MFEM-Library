@@ -93,11 +93,9 @@ int main(int argc, char *argv[])
    args.AddOption(&order, "-o", "--order",
                   "Finite element order (polynomial degree) or -1 for"
                   " isoparametric space.");
-
    args.AddOption(&refLevelsParameter, "-rl", "--refLevels",
-                  "Comentario1"
-                  "Comentario2");
-
+                  "1"
+                  "2");
    args.AddOption(&static_cond, "-sc", "--static-condensation", "-no-sc",
                   "--no-static-condensation", "Enable static condensation.");
    args.AddOption(&pa, "-pa", "--partial-assembly", "-no-pa",
@@ -128,8 +126,7 @@ int main(int argc, char *argv[])
    {
 //      args.PrintOptions(cout); //-----------------------------------Modified-----------------------------------
    }
-
-   auto start = std::chrono::system_clock::now(); // measures wall time
+   auto start=std::chrono::system_clock::now(); // measures wall time
 
 
    // 3. Enable hardware devices such as GPUs, and programming models such as
@@ -315,16 +312,17 @@ int main(int argc, char *argv[])
       sol_ofs.precision(8);
       x.Save(sol_ofs);
       }*/ //-------------------Modified-------------------
+   if (myid == 0){
+      auto end = std::chrono::system_clock::now(); // wall time
 
-   auto end = std::chrono::system_clock::now(); // wall time
+      std::chrono::duration<double> elapsed_seconds = end-start;
 
-   std::chrono::duration<double> elapsed_seconds = end-start;
-
-   double wtime = elapsed_seconds.count();
+      double wtime = elapsed_seconds.count();
 
 //   std::clog <<"Wall time:"<< wtime << " Order:"<< order <<std::endl; //" RefLevels: "<< refLevelsParameter <<std::endl;
 
-   std::clog << wtime <<" "<< size <<std::endl;
+      std::clog << wtime <<" "<< size <<std::endl;
+   }
    // 16. Send the solution by socket to a GLVis server.
    if (visualization)
    {

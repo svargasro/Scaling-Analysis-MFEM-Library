@@ -1,76 +1,82 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import os
+import pandas as pd
+import argparse
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.ticker import MaxNLocator
-import glob
+import os
 
-# Buscar todos los archivos metrics en el directorio actual
-metrics_files = glob.glob('metrics/metrics_*.txt')
+parser = argparse.ArgumentParser(description="Generar gráficas de SpeedUp y Eficiencia")
+parser.add_argument('input_file', type=str, help='Nombre del archivo de texto con los datos')
+args = parser.parse_args()
+
+time = pd.read_csv(f'{args.input_file}',header=None)
+
+time = time.drop(time.columns[0], axis=1)
 
 
-# Leer datos desde todos los archivos metrics
-data_list = []
-for file in metrics_files:
-    base_name = os.path.splitext(os.path.basename(file))[0].replace('metrics/metrics_', '')
-    data = np.loadtxt(file, dtype={'names': ('nThreads', 'speedup', 'errorspeedup', 'efficiency', 'errorefficiency'),
-                                   'formats': ('i4', 'f4', 'f4', 'f4', 'f4')})
-    data_list.append({'base_name': base_name, 'data': data})
 
-# Verificar si hay datos cargados
-for entry in data_list:
-    print(f"Data for {entry['base_name']}:")
-    print(entry['data'])
+nThreads = time.shape[0]
+#SpeedUp= T(1Thread)/T(Nthreads)
 
-# Configuración de la gráfica
+speedup = time.iloc[0,:] /time.iloc[:,:]
+
+threadsArray = np.arange(1,nThreads+1)
+efficiency = speedup/(threadsArray.reshape(-1, 1))
+
+mean_speedup = speedup.mean(axis=1)
+std_speedup = speedup.std(axis=1)
+mean_efficiency = efficiency.mean(axis=1)
+std_efficiency = efficiency.std(axis=1)
+
+# Extract the file name without the extension
+file_name = os.path.splitext(os.path.basename(args.input_file))[0]
+print('file_name:', file_name)
+
+# Extract the target and order from the file name
+target = file_name.split('_')[1]
+order = file_name.split('_')[3]
+
+print('target:', target)
+print('order:', order)
+
+# Leer datos desde el archivo metrics.txt
+
+
+output='./resultados/weak_'+ str(target) +'_order_' + str(order) +'.pdf'
+
+errorbarSpeedUp = 3*std_speedup
+errorbarEfficiency = 3*std_efficiency
 plt.style.use('ggplot')
 
-output_directory = "../graficos"
-os.makedirs(output_directory, exist_ok=True)  # Crear la carpeta si no existe
 
-# Función para generar un nombre de archivo único
-def get_unique_filename(base_name, directory):
-    counter = 1
-    unique_name = f"{base_name}.pdf"
-    while os.path.exists(os.path.join(directory, unique_name)):
-        unique_name = f"{base_name}_{counter}.pdf"
-        counter += 1
-    return os.path.join(directory, unique_name)
 
-# Generar nombres únicos para los archivos PDF
-speedup_file = get_unique_filename("weak_scaling_speedup", output_directory)
-efficiency_file = get_unique_filename("weak_scaling_efficiency", output_directory)
 
-# Ejemplo de generación de gráficos y guardado en archivos PDF
-with PdfPages(speedup_file) as pdf:
-    for entry in data_list:
-        base_name = entry['base_name']
-        data = entry['data']
-        plt.figure()
-        plt.plot([0, len(data['nThreads'])+0.2], [0, len(data['nThreads'])+0.2], color='black')  #Ideal SpeedUp
-        plt.scatter(data['nThreads'], data['speedup'], label=f'{base_name}')
-        plt.errorbar(data['nThreads'], data['speedup'], yerr=data['errorspeedup'], fmt='o')
-        plt.xlabel('Number of Threads')
-        plt.ylabel('Speedup')
-        plt.title(f'Speedup for {base_name}')
-        plt.legend()
-        plt.grid(True)
-        pdf.savefig()
-        plt.close()
+with PdfPages(output) as pdf:
+    # SpeedUp Plot
 
-with PdfPages(efficiency_file) as pdf:
-    for entry in data_list:
-        base_name = entry['base_name']
-        data = entry['data']
-        plt.figure()
-        plt.plot([0, len(data['nThreads'])+0.2], [1, 1], color='red')  # Ideal Efficiency
-        plt.plot([0, len(data['nThreads'])+0.2], [0.6, 0.6], color='blue')  # Aceptable Efficiency
-        plt.scatter(data['nThreads'], data['efficiency'], label=f'{base_name}')
-        plt.errorbar(data['nThreads'], data['efficiency'], yerr=data['errorefficiency'], fmt='o')
-        plt.xlabel('Number of Threads')
-        plt.ylabel('Efficiency')
-        plt.title(f'Efficiency for {base_name}')
-        plt.legend()
-        plt.grid(True)
-        pdf.savefig()
-        plt.close()
+    plt.plot([0, len(threadsArray)+0.2], [0, len(threadsArray)+0.2], color='black')  #Ideal SpeedUp
+    plt.errorbar(threadsArray, mean_speedup, yerr= errorbarSpeedUp, fmt='go', ecolor='black', markersize=3, label='SpeedUp')
+    plt.xlabel('nThreads')
+    plt.ylabel('SpeedUp')
+    plt.title('SpeedUp de ' + str(target) + ' con orden ' + str(order))
+    plt.xlim(0, len(threadsArray)+0.2)
+    plt.ylim(0, len(threadsArray)+0.2)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()
+    plt.close()
+
+    #Efficiency Plot
+    plt.plot([0, len(threadsArray)+0.2], [1, 1], color='red')  # Ideal Efficiency
+    plt.plot([0, len(threadsArray)+0.2], [0.6, 0.6], color='blue')  #Aceptable Efficiency
+    plt.errorbar(threadsArray, mean_efficiency, yerr= errorbarEfficiency, fmt='go', ecolor='black', markersize=3, label='Efficiency')
+    plt.xlabel('nThreads')
+    plt.ylabel('Efficiency')
+    plt.title('Eficiencia de ' + str(target) + ' con orden ' + str(order))
+    plt.xlim(0, len(threadsArray)+0.2)
+    plt.ylim(0, 1.1)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()
+    plt.close()
