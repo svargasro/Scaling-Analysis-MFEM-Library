@@ -45,8 +45,8 @@ print('order:', order)
 
 output='./resultados/graficas/weak_scaling_'+ str(target) +'order' + str(order) +'.pdf'
 
-errorbarSpeedUp = 3*std_speedup
-errorbarEfficiency = 3*std_efficiency
+errorbarSpeedUp = 10*std_speedup
+errorbarEfficiency = 10*std_efficiency
 plt.style.use('ggplot')
 
 
@@ -57,7 +57,7 @@ with PdfPages('weak_scaling.pdf') as pdf:
 
     plt.plot([0, len(threadsArray)+0.2], [0, len(threadsArray)+0.2], color='black')  #Ideal SpeedUp
     plt.errorbar(threadsArray, mean_speedup, yerr= errorbarSpeedUp, fmt='go', ecolor='black', markersize=3, label='SpeedUp')
-    plt.xlabel('threadsArray')
+    plt.xlabel('nThreads')
     plt.ylabel('SpeedUp')
     plt.title('SpeedUp de ' + str(target) + ' con orden ' + str(order))
     plt.xlim(0, len(threadsArray)+0.2)
@@ -71,7 +71,7 @@ with PdfPages('weak_scaling.pdf') as pdf:
     plt.plot([0, len(threadsArray)+0.2], [1, 1], color='red')  # Ideal Efficiency
     plt.plot([0, len(threadsArray)+0.2], [0.6, 0.6], color='blue')  #Aceptable Efficiency
     plt.errorbar(threadsArray, mean_efficiency, yerr= errorbarEfficiency, fmt='go', ecolor='black', markersize=3, label='Efficiency')
-    plt.xlabel('threadsArray')
+    plt.xlabel('nThreads')
     plt.ylabel('Efficiency')
     plt.title('Eficiencia de ' + str(target) + ' con orden ' + str(order))
     plt.xlim(0, len(threadsArray)+0.2)
