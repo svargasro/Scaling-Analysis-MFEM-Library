@@ -33,7 +33,7 @@ while kill -0 $PID 2>/dev/null; do
 
   if [ -n "$mem_kb" ]; then
     mem_gb=$(echo "scale=6; $mem_kb / 1048576" | bc)
-    echo "$elapsed,$mem_gb">> resultados/memory_${TARGET}_order_${ORDER}.txt;
+    echo "$elapsed,$mem_gb">> resultados/memory_${TARGET}_order_${ORDER}.csv;
   fi
 
   sleep $INTERVALO
