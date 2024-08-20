@@ -6,10 +6,10 @@
 #como sh (Shell estándar de UNIX).
 
 TARGET=ex1p
-MAX_THREADS=16
+MAX_THREADS=64
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 10)
-ORDER=1
+ORDER=7
 
 # Loop para ejecutar comandos
 for thread in $THREADS; do
