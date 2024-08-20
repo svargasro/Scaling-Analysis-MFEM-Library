@@ -1,0 +1,53 @@
+nproc
+Ejecución para el thread: 1
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 2
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
+Repetición: 4
+
+Repetición: 5
+
+Repetición: 6
+
+Repetición: 7
+
+Repetición: 8
+
+Repetición: 9
+
+Repetición: 10
+
+Ejecución para el thread: 3
+
+Repetición: 1
+
+Repetición: 2
+
+Repetición: 3
+
