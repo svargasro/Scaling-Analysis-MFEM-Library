@@ -1,61 +1,82 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import argparse
+from matplotlib.backends.backend_pdf import PdfPages
+from matplotlib.ticker import MaxNLocator
 import os
 
-# Ruta del directorio que quieres verificar
-directorio = './outputWeak/'
-# Obtener la lista de archivos en el directorio
-archivos = os.listdir(directorio)
-archivos.sort() #Ordena archivos de menor a mayor.
-print(archivos)
-# Contar la cantidad de archivos
-cantidadArchivos = len(archivos)
+parser = argparse.ArgumentParser(description="Generar gráficas de SpeedUp y Eficiencia")
+parser.add_argument('input_file', type=str, help='Nombre del archivo de texto con los datos')
+args = parser.parse_args()
 
+time = pd.read_csv(f'{args.input_file}',header=None)
 
-speedUp = np.zeros(cantidadArchivos)
-speedUpDesv = np.zeros(cantidadArchivos)
-size = np.zeros(cantidadArchivos)
+time = time.drop(time.columns[0], axis=1)
 
 
 
-for i, archivo in enumerate(archivos):
+nThreads = time.shape[0]
+#SpeedUp= T(1Thread)/T(Nthreads)
 
-    timeArray = np.genfromtxt(f'./outputWeak/{archivo}',delimiter=' ',unpack=True)
+speedup = time.iloc[0,:] /time.iloc[:,:]
 
-    meanTime = np.mean(timeArray)
-    if (i==0):
-        time0 = meanTime
+threadsArray = np.arange(1,nThreads+1)
+efficiency = speedup/(threadsArray.reshape(-1, 1))
 
-    speedUp[i] = time0/meanTime
+mean_speedup = speedup.mean(axis=1)
+std_speedup = speedup.std(axis=1)
+mean_efficiency = efficiency.mean(axis=1)
+std_efficiency = efficiency.std(axis=1)
 
-    speedUpDesv[i] = np.std(time0/timeArray)
+# Extract the file name without the extension
+file_name = os.path.splitext(os.path.basename(args.input_file))[0]
+print('file_name:', file_name)
 
-    size[i] = sizeArray[0]
+# Extract the target and order from the file name
+target = file_name.split('_')[1]
+order = file_name.split('_')[3]
 
-#Se normaliza el promedio y desviación estándar dividiendo por el tiempo y desviación estándar que tomó para el índice 0.
+print('target:', target)
+print('order:', order)
+
+# Leer datos desde el archivo metrics.txt
 
 
-print(timeDesv)
-errorbar= 10*speedUpDesv
+output='./resultados/graficas/weak_scaling_'+ str(target) +'order' + str(order) +'.pdf'
 
+errorbarSpeedUp = 3*std_speedup
+errorbarEfficiency = 3*std_efficiency
 plt.style.use('ggplot')
 
-fig, axes = plt.subplots(1, 1, figsize=(7, 6))
 
 
-#Se grafica el tiempo de ejecución normalizado vs. tamaño de la matriz.
-axes.errorbar(size, time, yerr= errorbar, fmt='go', ecolor='black', markersize=2, label="Puntos con barras de error. Errorbar=10*std")
 
-#Se ajustan demás detalles del gráfico.
-axes.set_xlabel('Número de incógnitas en el sistema de ecuaciones.', fontsize=12)
-axes.set_ylabel(r'Tiempo de ejecución normalizado [ ]',fontsize=12)
-axes.legend(loc='upper left')
-axes.grid(True)
-axes.set_title("Tiempo de ejecución normalizado vs. Número de incógnitas.\n 10 iteraciones", fontsize=14)
+with PdfPages('weak_scaling.pdf') as pdf:
+    # SpeedUp Plot
 
-axes.ticklabel_format(style='sci', axis='x', scilimits=(0,0))
+    plt.plot([0, len(threadsArray)+0.2], [0, len(threadsArray)+0.2], color='black')  #Ideal SpeedUp
+    plt.errorbar(threadsArray, mean_speedup, yerr= errorbarSpeedUp, fmt='go', ecolor='black', markersize=3, label='SpeedUp')
+    plt.xlabel('threadsArray')
+    plt.ylabel('SpeedUp')
+    plt.title('SpeedUp de ' + str(target) + ' con orden ' + str(order))
+    plt.xlim(0, len(threadsArray)+0.2)
+    plt.ylim(0, len(threadsArray)+0.2)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()
+    plt.close()
 
-plt.tight_layout()
-
-plt.savefig(f'EscalamientoFuerteSala29_np6.png')
-#plt.show()
+    #Efficiency Plot
+    plt.plot([0, len(threadsArray)+0.2], [1, 1], color='red')  # Ideal Efficiency
+    plt.plot([0, len(threadsArray)+0.2], [0.6, 0.6], color='blue')  #Aceptable Efficiency
+    plt.errorbar(threadsArray, mean_efficiency, yerr= errorbarEfficiency, fmt='go', ecolor='black', markersize=3, label='Efficiency')
+    plt.xlabel('threadsArray')
+    plt.ylabel('Efficiency')
+    plt.title('Eficiencia de ' + str(target) + ' con orden ' + str(order))
+    plt.xlim(0, len(threadsArray)+0.2)
+    plt.ylim(0, 1.1)
+    plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
+    plt.legend()
+    pdf.savefig()
+    plt.close()
