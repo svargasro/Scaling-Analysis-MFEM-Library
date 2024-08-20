@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py", line 15, in <module>
-    data = np.loadtxt(file, dtype={'names': ('nThreads', 'speedup', 'efficiency'),
-  File "/usr/lib64/python3.9/site-packages/numpy/lib/npyio.py", line 1373, in loadtxt
-    arr = _read(fname, dtype=dtype, comment=comment, delimiter=delimiter,
-  File "/usr/lib64/python3.9/site-packages/numpy/lib/npyio.py", line 1016, in _read
-    arr = _load_from_filelike(
-ValueError: the dtype passed requires 3 columns but 5 were found at row 1; use `usecols` to select a subset and avoid this error
