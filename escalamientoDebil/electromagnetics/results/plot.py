@@ -3,21 +3,42 @@ import numpy as np
 import argparse
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.ticker import MaxNLocator
+import os
 
 
 parser = argparse.ArgumentParser(description="Generar gráficas de SpeedUp y Eficiencia")
 parser.add_argument('input_file', type=str, help='Nombre del archivo de texto con los datos')
-parser.add_argument('--order', type=str, help='Orden de interpoalcion de la ejecucion')
-
-
 args = parser.parse_args()
 
+time = np.loadtxt(args.input_file)
+
+
+# Extract the file name without the extension
+file_name = os.path.splitext(os.path.basename(args.input_file))[0]
+print('file_name:', file_name)
+
+# Extract the target and order from the file name
+target = file_name.split('_')[1]
+order = file_name.split('_')[3]
+
+print('target:', target)
+print('order:', order)
+
+
+nThreads = time[:, 0]
+speedup = time[0, 1] / time[:, 1]
+efficiency = speedup / time[:, 0]
+
+mean_speedup = np.mean(speedup)
+std_speedup = np.std(speedup)
+mean_efficiency = np.mean(efficiency)
+std_efficiency = np.std(efficiency)
 
 # Leer datos desde el archivo metrics.txt
-data = np.loadtxt(args.input_file)
-order = args.order
 
-output='results/graficas/weak_scaling_order=' + str(order) +'.pdf'
+
+'metrics_'
+output='/resultados/graficas/weak_scaling_'+ str(target) +'_order_' + str(order) +'.pdf'
 
 nThreads = data[:, 0]
 speedup = data[:, 1]
@@ -35,6 +56,7 @@ with PdfPages(output) as pdf:
     plt.ylim(0, len(nThreads)+0.2)
     plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
     plt.legend()
+    plt.title('SpeedUp de ' + str(target) + ' con orden ' + str(order))
     pdf.savefig() 
     plt.close()
     
@@ -49,6 +71,7 @@ with PdfPages(output) as pdf:
     plt.ylim(0, 1.1)
     plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
     plt.legend()
+    plt.title('Eficiencia de ' + str(target) + ' con orden ' + str(order))
     pdf.savefig()  
     plt.close()
 
