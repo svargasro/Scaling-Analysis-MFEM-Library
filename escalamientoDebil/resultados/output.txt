@@ -1,0 +1,64 @@
+Iteración con 1 thread(s):
+PCG: Number of iterations: 18
+Average reduction factor = 0.21314
+-------------------------------------------------------------------------
+Iteración con 2 thread(s):
+PCG: Number of iterations: 23
+Average reduction factor = 0.293569
+-------------------------------------------------------------------------
+Iteración con 3 thread(s):
+PCG: Number of iterations: 22
+Average reduction factor = 0.282884
+-------------------------------------------------------------------------
+Iteración con 4 thread(s):
+PCG: Number of iterations: 24
+Average reduction factor = 0.315488
+-------------------------------------------------------------------------
+Iteración con 5 thread(s):
+PCG: Number of iterations: 22
+Average reduction factor = 0.275793
+-------------------------------------------------------------------------
+Iteración con 6 thread(s):
+PCG: Number of iterations: 22
+Average reduction factor = 0.279562
+-------------------------------------------------------------------------
+Iteración con 7 thread(s):
+PCG: Number of iterations: 24
+Average reduction factor = 0.303897
+-------------------------------------------------------------------------
+Iteración con 8 thread(s):
+PCG: Number of iterations: 24
+Average reduction factor = 0.311883
+-------------------------------------------------------------------------
+Iteración con 9 thread(s):
+PCG: Number of iterations: 22
+Average reduction factor = 0.277651
+-------------------------------------------------------------------------
+Iteración con 10 thread(s):
+PCG: Number of iterations: 22
+Average reduction factor = 0.272319
+-------------------------------------------------------------------------
+Iteración con 11 thread(s):
+PCG: Number of iterations: 23
+Average reduction factor = 0.28881
+-------------------------------------------------------------------------
+Iteración con 12 thread(s):
+PCG: Number of iterations: 25
+Average reduction factor = 0.319423
+-------------------------------------------------------------------------
+Iteración con 13 thread(s):
+PCG: Number of iterations: 23
+Average reduction factor = 0.292857
+-------------------------------------------------------------------------
+Iteración con 14 thread(s):
+PCG: Number of iterations: 22
+Average reduction factor = 0.283256
+-------------------------------------------------------------------------
+Iteración con 15 thread(s):
+PCG: Number of iterations: 24
+Average reduction factor = 0.308885
+-------------------------------------------------------------------------
+Iteración con 16 thread(s):
+PCG: Number of iterations: 24
+Average reduction factor = 0.302585
+-------------------------------------------------------------------------
