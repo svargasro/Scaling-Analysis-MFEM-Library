@@ -14,7 +14,7 @@ ORDER=1
 # Loop para ejecutar comandos
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
-    echo -e "Iteración con $thread thread(s):" >> resultados/output.txt
+    echo -e "Iteración con $thread thread(s):" >> resultados/output_${TARGET}_order_${ORDER}.txt
     echo -n "Thread_$thread," >> resultados/time_${TARGET}_order_${ORDER}.txt
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
@@ -23,11 +23,11 @@ for thread in $THREADS; do
 	echo -n "$resultado," >> resultados/time_${TARGET}_order_${ORDER}.txt
     else
         mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -o $ORDER > temp_out.txt 2>> resultados/time_${TARGET}_order_${ORDER}.txt;
-        tail -n 2 temp_out.txt >> resultados/output.txt;
+        tail -n 2 temp_out.txt >> resultados/output_${TARGET}_order_${ORDER}.txt;
     fi
 
     done
-    echo -e "-------------------------------------------------------------------------" >> resultados/output.txt
+    echo -e "-------------------------------------------------------------------------" >> resultados/output_${TARGET}_order_${ORDER}.txt
 done
 
 python3 plot.py resultados/time_${TARGET}_order_${ORDER}.txt

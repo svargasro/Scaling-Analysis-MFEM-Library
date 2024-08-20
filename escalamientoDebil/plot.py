@@ -43,10 +43,10 @@ print('order:', order)
 # Leer datos desde el archivo metrics.txt
 
 
-output='./resultados/weak_scaling_'+ str(target) +'_order_' + str(order) +'.pdf'
+output='./resultados/weak_'+ str(target) +'_order_' + str(order) +'.pdf'
 
-errorbarSpeedUp = 10*std_speedup
-errorbarEfficiency = 10*std_efficiency
+errorbarSpeedUp = 3*std_speedup
+errorbarEfficiency = 3*std_efficiency
 plt.style.use('ggplot')
 
 
