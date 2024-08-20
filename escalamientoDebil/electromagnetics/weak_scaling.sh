@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ORDER=2
+ORDER=4
 
 rm results/times/*${ORDER}.txt
 
