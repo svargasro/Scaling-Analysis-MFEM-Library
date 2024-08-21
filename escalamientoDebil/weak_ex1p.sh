@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #El comando !/bin/bash indica que el script se ejecutará en bash
 #Esto es esencial para scripts que utilizan características
@@ -9,7 +8,7 @@ TARGET=ex1p
 MAX_THREADS=64
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 10)
-ORDER=7
+ORDER=10
 
 # Loop para ejecutar comandos
 for thread in $THREADS; do
@@ -33,9 +32,5 @@ done
 python3 plot.py resultados/time_${TARGET}_order_${ORDER}.txt
 
 rm temp_out.txt;
-
-#for ((i=1; i<=$MAX_THREADS; i++)); do
-#    rm time${i}.txt output${i}.txt
-#done
 
 #rm mesh* sol*
