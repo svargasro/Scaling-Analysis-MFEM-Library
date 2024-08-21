@@ -1,5 +1,0 @@
-rm: cannot remove 'graficos/*': No such file or directory
-rm: cannot remove 'metrics': Is a directory
-basename: missing operand
-Try 'basename --help' for more information.
-slurmstepd: error: *** JOB 2449 ON sala22 CANCELLED AT 2024-08-10T12:13:20 ***
