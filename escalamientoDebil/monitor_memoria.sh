@@ -4,7 +4,7 @@
 TARGET=$1
 ORDER=$2
 THREADS=$3
-INTERVALO=$4  # Intervalo de medición en segundos
+LAPSE=$4  # Intervalo de medición en segundos
 
 # Ejecutar el comando y obtener el PID
 # mpirun se ejecuta en segundo plano para obtener el PID del proceso principal
@@ -35,7 +35,7 @@ while kill -0 $PID 2>/dev/null; do
     echo "$elapsed,$mem_gb">> resultados/memory_${TARGET}_order_${ORDER}.csv;
   fi
 
-  sleep $INTERVALO
+  sleep $LAPSE
 done
 
 python3 memory_plot.py resultados/memory_${TARGET}_order_${ORDER}.csv

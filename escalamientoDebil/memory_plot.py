@@ -17,7 +17,7 @@ file_name = os.path.splitext(os.path.basename(args.input_file))[0]
 target = file_name.split('_')[1]
 order = file_name.split('_')[3]
 
-output='resultados/memory_'+ str(target) +'_order_' + str(order) +'.pdf'
+output='resultados/graficas/memory_'+ str(target) +'_order_' + str(order) +'.pdf'
 
 # Extract the target and order from the file name
 target = file_name.split('_')[1]
