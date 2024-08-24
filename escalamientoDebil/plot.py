@@ -43,7 +43,7 @@ print('order:', order)
 # Leer datos desde el archivo metrics.txt
 
 
-output='./resultados/weak_'+ str(target) +'_order_' + str(order) +'.pdf'
+output='./resultados/graficas/weak_'+ str(target) +'_order_' + str(order) +'.pdf'
 
 errorbarSpeedUp = 3*std_speedup
 errorbarEfficiency = 3*std_efficiency

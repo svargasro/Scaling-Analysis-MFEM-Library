@@ -4,11 +4,12 @@
 #específicas de Bash que no están disponibles en otros shells
 #como sh (Shell estándar de UNIX).
 
-TARGET=ex1p
-MAX_THREADS=64
+TARGET=$1
+ORDER=$2
+MAX_THREADS=$3
+MAX_REPS=$4
 THREADS=$(seq 1 $MAX_THREADS)
-REPS=$(seq 1 10)
-ORDER=10
+REPS=$(seq 1 $MAX_REPS)
 
 # Loop para ejecutar comandos
 for thread in $THREADS; do

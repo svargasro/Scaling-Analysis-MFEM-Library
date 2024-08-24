@@ -1,17 +1,16 @@
 #!/bin/bash
 
 # Configuración de parámetros
-THREADS=8
-TARGET=ex1p
-ORDER=7
-INTERVALO=0.01  # Intervalo de medición en segundos
+TARGET=$1
+ORDER=$2
+THREADS=$3
+INTERVALO=$4  # Intervalo de medición en segundos
 
 # Ejecutar el comando y obtener el PID
 # mpirun se ejecuta en segundo plano para obtener el PID del proceso principal
 
 mpirun -np $THREADS --oversubscribe ./ejecutables/$TARGET -o $ORDER >/dev/null 2>&1 &
 PID=$!
-
 
 # Verificar si se obtuvo el PID
 if [ -z "$PID" ]; then
@@ -38,3 +37,5 @@ while kill -0 $PID 2>/dev/null; do
 
   sleep $INTERVALO
 done
+
+python3 memory_plot.py resultados/memory_${TARGET}_order_${ORDER}.csv
