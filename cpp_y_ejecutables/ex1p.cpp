@@ -62,7 +62,7 @@
 #include "mfem.hpp"
 #include <fstream>
 #include <iostream>
-#include <mpi.h>
+#include <mpi.h> //Importamos mpi para medir el tiempo de ejecución 
 
 using namespace std;
 using namespace mfem;
@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
    bool pa = false;
    bool fa = false;
    const char *device_config = "cpu";
-   bool visualization = false;
+   bool visualization = false; //Se desactiva la visualización para que no haga parte del tiempo de ejecución
    bool algebraic_ceed = false;
 
    OptionsParser args(argc, argv);
@@ -112,21 +112,21 @@ int main(int argc, char *argv[])
    {
       if (myid == 0)
       {
-//         args.PrintUsage(cout);
+//         args.PrintUsage(cout); //Se comenta para que la impresion no haga parte del tiempo de ejecución
       }
       return 1;
    }
    if (myid == 0)
    {
-//      args.PrintOptions(cout);
+//      args.PrintOptions(cout); //Se comenta para que la impresion no haga parte del tiempo de ejecución
    }
 
    // 3. Enable hardware devices such as GPUs, and programming models such as
    //    CUDA, OCCA, RAJA and OpenMP based on command line options.
-   double start;
-   if (myid == 0){ start = MPI_Wtime();}
+   double start; //Variable para medir el tiempo de ejecución
+   if (myid == 0){ start = MPI_Wtime();} //Se toma el tiempo de inicio de la ejecución
    Device device(device_config);
-//   if (myid == 0) { device.Print(); }
+//   if (myid == 0) { device.Print(); } //Se comenta para que la impresion no haga parte del tiempo de ejecución
 
    // 4. Read the (serial) mesh from the given mesh file on all processors.  We
    //    can handle triangular, quadrilateral, tetrahedral, hexahedral, surface
@@ -176,6 +176,7 @@ int main(int argc, char *argv[])
       delete_fec = false;
       if (myid == 0)
       {
+         //Como siempre tomamos orden mayor a cero nunca se entra aquí
          cout << "Using isoparametric FEs: " << fec->Name() << endl;
       }
    }
@@ -189,6 +190,7 @@ int main(int argc, char *argv[])
   /* if (myid == 0)
    {
       cout << "Number of finite element unknowns: " << size << endl;
+      //Comentado para que no haga parte del tiempo de ejecución
    }*/
 
    // 8. Determine the list of true (i.e. parallel conforming) essential
@@ -268,7 +270,7 @@ int main(int argc, char *argv[])
    CGSolver cg(MPI_COMM_WORLD);
    cg.SetRelTol(1e-12);
    cg.SetMaxIter(2000);
-   cg.SetPrintLevel(2);
+   cg.SetPrintLevel(2); //Cambiamos el modo de impresión a 2 (summary)
       /* From solvers.cpp
       IterativeSolver::PrintLevel IterativeSolver::FromLegacyPrintLevel
       -1: PrintLevel();
@@ -288,7 +290,7 @@ int main(int argc, char *argv[])
 
    // 15. Save the refined mesh and the solution in parallel. This output can
    //     be viewed later using GLVis: "glvis -np <np> -m mesh -g sol".
-  /*
+  /* //Comentado para que no genere archivos de salida que tomarian parte del tiempo de ejecución
    {
       ostringstream mesh_name, sol_name;
       mesh_name << "mesh." << setfill('0') << setw(6) << myid;
@@ -320,8 +322,9 @@ int main(int argc, char *argv[])
       delete fec;
    }
    if (myid == 0){
-      double end = MPI_Wtime();
-      std::cerr << end - start << std::endl;
+      double end = MPI_Wtime();  //Se toma el tiempo al momento de finalizar la ejecución
+      //El tiempo de ejecución sera el intervalo entre el tiempo final y el inicial
+      std::cerr << end - start << std::endl; //Enviamos el tiempo de ejecución al error estandar (stderr)
    }
    return 0;
 }
