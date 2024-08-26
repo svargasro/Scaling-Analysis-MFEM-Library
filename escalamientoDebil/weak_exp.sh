@@ -19,10 +19,11 @@ for thread in $THREADS; do
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
     if [ "$Nreps" -ne "$(echo "$REPS" | tail -n 1)" ]; then
-	resultado=$(mpirun -np $thread --oversubscribe ../cpp_y_ejecutables/${TARGET} -o $ORDER 2>&1 >/dev/null | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
+	resultado=$(mpirun -np $thread --oversubscribe ../cpp_y_ejecutables/${TARGET} -o $ORDER 2>&1 >/dev/null | tail -n 1) #Enviar stdout a /dev/null y la última línea del stderr a la variable
 	echo -n "$resultado," >> resultados/time_${TARGET}_order_${ORDER}.csv
     else
-        mpirun -np $thread --oversubscribe ../cpp_y_ejecutables/${TARGET} -o $ORDER > temp_out.txt 2>> resultados/time_${TARGET}_order_${ORDER}.csv;
+        resultado=$(mpirun -np $thread --oversubscribe ../cpp_y_ejecutables/${TARGET} -o $ORDER 2>&1 > temp_out.txt | tail -n 1) #Enviar stdout a temp_out.txt y la última línea del stderr a la variable
+        echo "$resultado" >> resultados/time_${TARGET}_order_${ORDER}.csv
         tail -n 2 temp_out.txt >> resultados/output_${TARGET}_order_${ORDER}.txt;
     fi
 

@@ -62,7 +62,7 @@
 #include "mfem.hpp"
 #include <fstream>
 #include <iostream>
-#include <mpi.h> //Importamos mpi para medir el tiempo de ejecución 
+#include <mpi.h> //Importamos mpi para medir el tiempo de ejecución
 
 using namespace std;
 using namespace mfem;
@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
    {
       if (myid == 0)
       {
-//         args.PrintUsage(cout); //Se comenta para que la impresion no haga parte del tiempo de ejecución
+        // args.PrintUsage(cout); //Se comenta para que la impresion no haga parte del tiempo de ejecución
       }
       return 1;
    }
@@ -126,7 +126,7 @@ int main(int argc, char *argv[])
    double start; //Variable para medir el tiempo de ejecución
    if (myid == 0){ start = MPI_Wtime();} //Se toma el tiempo de inicio de la ejecución
    Device device(device_config);
-//   if (myid == 0) { device.Print(); } //Se comenta para que la impresion no haga parte del tiempo de ejecución
+   // if (myid == 0) { device.Print(); } //Se comenta para que la impresion no haga parte del tiempo de ejecución
 
    // 4. Read the (serial) mesh from the given mesh file on all processors.  We
    //    can handle triangular, quadrilateral, tetrahedral, hexahedral, surface
@@ -187,6 +187,8 @@ int main(int argc, char *argv[])
    }
    ParFiniteElementSpace fespace(&pmesh, fec);
    HYPRE_BigInt size = fespace.GlobalTrueVSize();
+
+
   /* if (myid == 0)
    {
       cout << "Number of finite element unknowns: " << size << endl;
@@ -324,7 +326,8 @@ int main(int argc, char *argv[])
    if (myid == 0){
       double end = MPI_Wtime();  //Se toma el tiempo al momento de finalizar la ejecución
       //El tiempo de ejecución sera el intervalo entre el tiempo final y el inicial
-      std::cerr << end - start << std::endl; //Enviamos el tiempo de ejecución al error estandar (stderr)
+
+      std::cerr << size << "\n" << end - start << "\n"; //Enviamos el tiempo de ejecución al error estandar (stderr)
    }
    return 0;
 }
