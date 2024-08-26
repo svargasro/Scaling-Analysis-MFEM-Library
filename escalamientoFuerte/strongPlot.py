@@ -1,58 +1,56 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import argparse
+from matplotlib.backends.backend_pdf import PdfPages
+from matplotlib.ticker import MaxNLocator
 import os
 
-# Ruta del directorio que quieres verificar
-directorio = './output/'
-# Obtener la lista de archivos en el directorio
-archivos = os.listdir(directorio)
-archivos.sort()
-# Contar la cantidad de archivos
-cantidadArchivos = len(archivos)
+parser = argparse.ArgumentParser(description="Generar gráfica de escalamiento Fuerte")
+parser.add_argument('input_file', type=str, help='Nombre del archivo de texto con los datos')
+args = parser.parse_args()
+
+time = pd.read_csv(f'{args.input_file}',header=None)
+size= time.iloc[:, -1] # Se extrae la columna correspondiente a los tamaños del sistema.
+#print(time)
+time = time.drop(columns=[time.columns[0],time.columns[-1]], axis=1) #Se extraen únicamente los tiempos. Se descartan títulos y tamaños.
+
+meanTimeValue = time.loc[0].mean() #Se extrae el promedio de tiempo para el primero orden.
+
+time = time/meanTimeValue #Se construye un arrgelo de tiempos normalizados.
+meanTime = time.mean(axis=1) #Se toma el promedio de tiempo para cada órden.
+stdTime = time.std(axis=1) #Se toma la desviación estándar de cada arreglo de tiempos normalizados.
+
+# print("meanTimeValue:\n", meanTimeValue)
+# print("time:\n",time)
+# print("mean:\n" , meanTime)
+# print("std:\n", stdTime)
+
+# Extract the file name without the extension
+file_name = os.path.splitext(os.path.basename(args.input_file))[0]
+print('file_name:', file_name)
+
+# Extract the target and order from the file name
+target = file_name.split('_')[1]
+threads = file_name.split('_')[3]
+reps  = file_name.split('_')[5]
+
+print('Target:', target)
+print('Threads:', threads)
+print('Reps:', reps)
 
 
-time = np.zeros(cantidadArchivos)
-timeDesv = np.zeros(cantidadArchivos)
-size = np.zeros(cantidadArchivos)
-
-
-
-for i, archivo in enumerate(archivos):
-
-    timeArray, sizeArray = np.genfromtxt(f'./output/{archivo}',delimiter=' ', usecols=(0,1),unpack=True)
-
-    meanTime = np.mean(timeArray)
-    if (i==0):
-        time0 = meanTime
-
-    time[i] = meanTime/time0
-    timeDesv[i] = np.std(timeArray/meanTime)
-
-    size[i] = sizeArray[0]
-
-#Se normaliza el promedio y desviación estándar dividiendo por el tiempo y desviación estándar que tomó para el índice 0.
-
-
-errorbar= 10*timeDesv
-
+output='./resultados/graficas/strong_scaling_'+ str(target) +'_threads_' + str(threads) +'_reps_'+ str(reps) +'.pdf'
+errorbarTime = 3*stdTime
 plt.style.use('ggplot')
-
-fig, axes = plt.subplots(1, 1, figsize=(7, 6))
-
-
-#Se grafica el tiempo de ejecución normalizado vs. tamaño de la matriz.
-axes.errorbar(size, time, yerr= errorbar, fmt='go', ecolor='black', markersize=2, label="Puntos con barras de error. Errorbar=10*std")
-
-#Se ajustan demás detalles del gráfico.
-axes.set_xlabel('Número de incógnitas en el sistema de ecuaciones.', fontsize=12)
-axes.set_ylabel(r'Tiempo de ejecución normalizado [ ]',fontsize=12)
-axes.legend(loc='upper left')
-axes.grid(True)
-axes.set_title("Tiempo de ejecución normalizado vs. Número de incógnitas.\n 10 iteraciones", fontsize=14)
-
-axes.ticklabel_format(style='sci', axis='x', scilimits=(0,0))
-
+plt.errorbar(size, meanTime, yerr= errorbarTime, fmt='go', ecolor='black', markersize=2, label="errorbar= 3*std")
+plt.xlabel('Número de incógnitas en el sistema de ecuaciones.', fontsize=12)
+plt.ylabel(r'Tiempo de ejecución normalizado [ ]',fontsize=12)
+plt.title('Escalamiento fuerte de ' + str(target) + ' con ' + str(reps) + ' repeticiones.\n Threads: '+str(threads))
+plt.ticklabel_format(style='sci', axis='x', scilimits=(0,0))
+plt.grid(True)
+plt.legend()
 plt.tight_layout()
+plt.savefig(output)
+plt.close()
 
-plt.savefig(f'EscalamientoFuerteSala29_np6.png')
-#plt.show()

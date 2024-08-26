@@ -62,7 +62,7 @@
 #include "mfem.hpp"
 #include <fstream>
 #include <iostream>
-#include <chrono>
+#include <mpi.h> //Importamos mpi para medir el tiempo de ejecución
 
 using namespace std;
 using namespace mfem;
@@ -75,7 +75,6 @@ int main(int argc, char *argv[])
    int myid = Mpi::WorldRank();
    Hypre::Init();
 
-
    // 2. Parse command-line options.
    const char *mesh_file = "../data/star.mesh";
    int order = 1;
@@ -83,9 +82,8 @@ int main(int argc, char *argv[])
    bool pa = false;
    bool fa = false;
    const char *device_config = "cpu";
-   bool visualization = false; //-----------------------------------Modified-----------------------------------
+   bool visualization = false; //Se desactiva la visualización para que no haga parte del tiempo de ejecución
    bool algebraic_ceed = false;
-   double refLevelsParameter = 10000.0;
 
    OptionsParser args(argc, argv);
    args.AddOption(&mesh_file, "-m", "--mesh",
@@ -93,9 +91,6 @@ int main(int argc, char *argv[])
    args.AddOption(&order, "-o", "--order",
                   "Finite element order (polynomial degree) or -1 for"
                   " isoparametric space.");
-   args.AddOption(&refLevelsParameter, "-rl", "--refLevels",
-                  "1"
-                  "2");
    args.AddOption(&static_cond, "-sc", "--static-condensation", "-no-sc",
                   "--no-static-condensation", "Enable static condensation.");
    args.AddOption(&pa, "-pa", "--partial-assembly", "-no-pa",
@@ -104,7 +99,6 @@ int main(int argc, char *argv[])
                   "--no-full-assembly", "Enable Full Assembly.");
    args.AddOption(&device_config, "-d", "--device",
                   "Device configuration string, see Device::Configure().");
-
 #ifdef MFEM_USE_CEED
    args.AddOption(&algebraic_ceed, "-a", "--algebraic",
                   "-no-a", "--no-algebraic",
@@ -118,21 +112,21 @@ int main(int argc, char *argv[])
    {
       if (myid == 0)
       {
- //        args.PrintUsage(cout); //-----------------------------------Modified-----------------------------------
+        // args.PrintUsage(cout); //Se comenta para que la impresion no haga parte del tiempo de ejecución
       }
       return 1;
    }
    if (myid == 0)
    {
-//      args.PrintOptions(cout); //-----------------------------------Modified-----------------------------------
+//      args.PrintOptions(cout); //Se comenta para que la impresion no haga parte del tiempo de ejecución
    }
-   auto start=std::chrono::system_clock::now(); // measures wall time
-
 
    // 3. Enable hardware devices such as GPUs, and programming models such as
    //    CUDA, OCCA, RAJA and OpenMP based on command line options.
+   double start; //Variable para medir el tiempo de ejecución
+   if (myid == 0){ start = MPI_Wtime();} //Se toma el tiempo de inicio de la ejecución
    Device device(device_config);
-//   if (myid == 0) { device.Print(); } //-----------------------------------Modified-----------------------------------
+   // if (myid == 0) { device.Print(); } //Se comenta para que la impresion no haga parte del tiempo de ejecución
 
    // 4. Read the (serial) mesh from the given mesh file on all processors.  We
    //    can handle triangular, quadrilateral, tetrahedral, hexahedral, surface
@@ -145,12 +139,8 @@ int main(int argc, char *argv[])
    //    'ref_levels' to be the largest number that gives a final mesh with no
    //    more than 10,000 elements.
    {
-
-
-         int ref_levels =
-         (int)floor(log(refLevelsParameter/mesh.GetNE())/log(2.)/dim);
-
-
+      int ref_levels =
+         (int)floor((log(10000./mesh.GetNE())/log(2.)/dim)*1);
       for (int l = 0; l < ref_levels; l++)
       {
          mesh.UniformRefinement();
@@ -186,7 +176,8 @@ int main(int argc, char *argv[])
       delete_fec = false;
       if (myid == 0)
       {
-//         cout << "Using isoparametric FEs: " << fec->Name() << endl; //-----------------------------------Modified-----------------------------------
+         //Como siempre tomamos orden mayor a cero nunca se entra aquí
+         cout << "Using isoparametric FEs: " << fec->Name() << endl;
       }
    }
    else
@@ -196,10 +187,13 @@ int main(int argc, char *argv[])
    }
    ParFiniteElementSpace fespace(&pmesh, fec);
    HYPRE_BigInt size = fespace.GlobalTrueVSize();
-   if (myid == 0)
+
+
+  /* if (myid == 0)
    {
-//      cout << "Number of finite element unknowns: " << size << endl; //-----------------------------------Modified-----------------------------------
-   }
+      cout << "Number of finite element unknowns: " << size << endl;
+      //Comentado para que no haga parte del tiempo de ejecución
+   }*/
 
    // 8. Determine the list of true (i.e. parallel conforming) essential
    //    boundary dofs. In this example, the boundary conditions are defined
@@ -278,8 +272,8 @@ int main(int argc, char *argv[])
    CGSolver cg(MPI_COMM_WORLD);
    cg.SetRelTol(1e-12);
    cg.SetMaxIter(2000);
-   cg.SetPrintLevel(-1); //-----------------------------------Modified-----------------------------------
-    /* Adaptado de solvers.cpp
+   cg.SetPrintLevel(2); //Cambiamos el modo de impresión a 2 (summary)
+      /* From solvers.cpp
       IterativeSolver::PrintLevel IterativeSolver::FromLegacyPrintLevel
       -1: PrintLevel();
       0: PrintLevel().Errors().Warnings();
@@ -298,8 +292,8 @@ int main(int argc, char *argv[])
 
    // 15. Save the refined mesh and the solution in parallel. This output can
    //     be viewed later using GLVis: "glvis -np <np> -m mesh -g sol".
-
-   /*{
+  /* //Comentado para que no genere archivos de salida que tomarian parte del tiempo de ejecución
+   {
       ostringstream mesh_name, sol_name;
       mesh_name << "mesh." << setfill('0') << setw(6) << myid;
       sol_name << "sol." << setfill('0') << setw(6) << myid;
@@ -311,18 +305,8 @@ int main(int argc, char *argv[])
       ofstream sol_ofs(sol_name.str().c_str());
       sol_ofs.precision(8);
       x.Save(sol_ofs);
-      }*/ //-------------------Modified-------------------
-   if (myid == 0){
-      auto end = std::chrono::system_clock::now(); // wall time
-
-      std::chrono::duration<double> elapsed_seconds = end-start;
-
-      double wtime = elapsed_seconds.count();
-
-//   std::clog <<"Wall time:"<< wtime << " Order:"<< order <<std::endl; //" RefLevels: "<< refLevelsParameter <<std::endl;
-
-      std::clog << wtime <<" "<< size <<std::endl;
    }
+   */
    // 16. Send the solution by socket to a GLVis server.
    if (visualization)
    {
@@ -339,6 +323,11 @@ int main(int argc, char *argv[])
    {
       delete fec;
    }
+   if (myid == 0){
+      double end = MPI_Wtime();  //Se toma el tiempo al momento de finalizar la ejecución
+      //El tiempo de ejecución sera el intervalo entre el tiempo final y el inicial
 
+      std::cerr << size << "\n" << end - start << "\n"; //Enviamos el tiempo de ejecución al error estandar (stderr)
+   }
    return 0;
 }
