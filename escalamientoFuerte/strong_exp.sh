@@ -18,6 +18,7 @@ timeOutput=resultados/time_${TARGET}_threads_${THREADS}_reps_${MAX_REPS}.csv
 # Loop para ejecutar comandos
 echo -e "Escalamiento Fuerte del ejemplo: ${TARGET}. $THREADS thread(s). $MAX_REPS repeticiones.\n"
 rm ./resultados/*.csv
+rm ./resultados/graficas/*
 
 for orden in $ORDER; do
     echo -e "Ejecucion para el orden: $orden\n"
