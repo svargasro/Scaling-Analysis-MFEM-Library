@@ -4,18 +4,19 @@
 #específicas de Bash que no están disponibles en otros shells
 #como sh (Shell estándar de UNIX).
 
-TARGET=volta
-MAX_THREADS=16
+TARGET=$1
+ORDER=$2
+MAX_THREADS=$3
+MAX_REPS=$4
 THREADS=$(seq 1 $MAX_THREADS)
-REPS=$(seq 1 10)
-ORDER=${1:-1}
-echo ${ORDER}
+REPS=$(seq 1 $MAX_REPS)
 
 
 PC='0.5 0.42 20 0.5 0.5 -12 0.5 0.545 15'  # Point charge params
 DBCS='1 2 3 4'  # Dirichlet Boundary Condition Surfaces
 DBCV='0 0 0 0'  # Dirichlet Boundary Condition Values
 MAXIT=25
+MESH="../data/ball-nurbs.mesh"
 
 output_file="resultados/output_${TARGET}_order_${ORDER}.txt"
 time_file="resultados/time_${TARGET}_order_${ORDER}.txt"
@@ -33,11 +34,12 @@ for thread in $THREADS; do
     for Nreps in $REPS; do
         echo -e "Repeticion: $Nreps\n"
     if [ "$Nreps" -ne "$(echo "$REPS" | tail -n 1)" ]; then
-	resultado=$(mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} 2>&1 >/dev/null | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
+	resultado=$(mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} -m ${MESH} 2>&1 >/dev/null | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
 	echo -n "$resultado," >> "$time_file"
     else
-        mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} 2>> "$time_file";
-        tail -n 2 temp_out.txt >> "$output_file";
+	resultado=$(mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} -m ${MESH} 2>&1 >temp_out.txt | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
+	echo "$resultado," >> "$time_file"
+        awk '/Volume integral of charge density:/ {print "Volume integral of charge density: "$NF} /Surface integral of dielectric flux:/ {print "Surface integral of dielectric flux: "$NF}' temp_out.txt >> "$output_file";
     fi
 
     done

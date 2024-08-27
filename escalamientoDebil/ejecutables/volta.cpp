@@ -65,7 +65,6 @@
 #include "volta_solver.hpp"
 #include <fstream>
 #include <iostream>
-#include <chrono>
 
 using namespace std;
 using namespace mfem;
@@ -108,11 +107,11 @@ int main(int argc, char *argv[])
 
    if ( Mpi::Root() ) { 
 	double start =  MPI_Wtime();
-	display_banner(cout); 
+//	display_banner(cout); 
 	}
 
    // Parse command-line options.
-   const char *mesh_file = "../data/ball-nurbs.mesh";
+   const char *mesh_file = "../../data/ball-nurbs.mesh";
    int order = 1;
    int maxit = 100;
    int serial_ref_levels = 0;
@@ -286,11 +285,11 @@ int main(int argc, char *argv[])
    const int max_dofs = 10000000;
    for (int it = 1; it <= maxit; it++)
    {
-      if (Mpi::Root())
-      {
-         cout << "\nAMR Iteration " << it << endl;
-      }
-
+//      if (Mpi::Root())
+//      {
+//         cout << "\nAMR Iteration " << it << endl;
+//      }
+//
       // Display the current number of DoFs in each finite element space
       Volta.PrintSizes();
 
@@ -314,18 +313,18 @@ int main(int argc, char *argv[])
       {
          Volta.DisplayToGLVis();
       }
-
-      if (Mpi::Root())
-      {
-         cout << "AMR iteration " << it << " complete." << endl;
-      }
+//
+//      if (Mpi::Root())
+//      {
+//         cout << "AMR iteration " << it << " complete." << endl;
+//      }
 
       // Check stopping criteria
       if (prob_size > max_dofs)
       {
          if (Mpi::Root())
          {
-            cout << "Reached maximum number of dofs, exiting..." << endl;
+//            cout << "Reached maximum number of dofs, exiting..." << endl;
          }
          break;
       }
@@ -505,7 +504,7 @@ void voltaic_pile(const Vector &x, Vector &p)
    {
       xu[i] -= vp_params_[i];
       a[i]   = vp_params_[x.Size()+i] - vp_params_[i];
-   }
+	   }
 
    real_t h = a.Norml2();
 
@@ -543,3 +542,4 @@ real_t phi_bc_uniform(const Vector &x)
 
    return phi;
 }
+
