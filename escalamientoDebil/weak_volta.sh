@@ -4,10 +4,10 @@
 #específicas de Bash que no están disponibles en otros shells
 #como sh (Shell estándar de UNIX).
 
-TARGET=$1
-ORDER=$2
-MAX_THREADS=$3
-MAX_REPS=$4
+TARGET=volta
+ORDER=${1:-1}  #${1:-default_value}
+MAX_THREADS=${2:-16}
+MAX_REPS=${3:-10}
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 $MAX_REPS)
 
@@ -37,7 +37,7 @@ for thread in $THREADS; do
 	resultado=$(mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} -m ${MESH} 2>&1 >/dev/null | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
 	echo -n "$resultado," >> "$time_file"
     else
-	resultado=$(mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} -m ${MESH} 2>&1 >temp_out.txt | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
+	resultado=$(mpirun -np $thread --oversubscribe ./ejecutables/${TARGET} -pc "${PC}" -dbcs "${DBCS}" -dbcv "${DBCV}" -no-vis --no-visit -maxit ${MAXIT} -o ${ORDER} -m ${MESH} 2>&1 >temp_out.txt | tail -n 1) #Enviar stdout a temp_out y el stderr a la variable
 	echo "$resultado," >> "$time_file"
         awk '/Volume integral of charge density:/ {print "Volume integral of charge density: "$NF} /Surface integral of dielectric flux:/ {print "Surface integral of dielectric flux: "$NF}' temp_out.txt >> "$output_file";
     fi

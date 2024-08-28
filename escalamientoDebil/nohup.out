@@ -13618,3 +13618,1742 @@ Options used:
 tail: cannot open 'temp_out.txt' for reading: No such file or directory
 ./weak_volta.sh: line 46: unexpected EOF while looking for matching `''
 ./weak_volta.sh: line 62: syntax error: unexpected end of file
+resultados/time_volta_order_5.txt y resultados/output_volta_order_5.txt eliminados.
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 7
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 8
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 9
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 10
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 11
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 12
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 13
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 14
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 15
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 16
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+file_name: time_volta_order_5
+target: volta
+order: 5
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 218, in _na_arithmetic_op
+    result = func(left, right)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/computation/expressions.py", line 242, in evaluate
+    return _evaluate(op, op_str, a, b)  # type: ignore[misc]
+  File "/usr/lib64/python3.9/site-packages/pandas/core/computation/expressions.py", line 73, in _evaluate_standard
+    return op(a, b)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/roperator.py", line 27, in rtruediv
+    return right / left
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py", line 22, in <module>
+    speedup = time.iloc[0,:] /time.iloc[:,:]
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/arraylike.py", line 214, in __rtruediv__
+    return self._arith_method(other, roperator.rtruediv)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/frame.py", line 7900, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/frame.py", line 7943, in _dispatch_frame_op
+    bm = self._mgr.operate_blockwise(
+  File "/usr/lib64/python3.9/site-packages/pandas/core/internals/managers.py", line 1511, in operate_blockwise
+    return operate_blockwise(self, other, array_op)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/internals/ops.py", line 65, in operate_blockwise
+    res_values = array_op(lvals, rvals)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 283, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 227, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 163, in _masked_arith_op
+    result[mask] = op(xrav[mask], yrav[mask])
+  File "/usr/lib64/python3.9/site-packages/pandas/core/roperator.py", line 27, in rtruediv
+    return right / left
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+resultados/time_volta_order_volta.txt y resultados/output_volta_order_volta.txt eliminados.
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+resultados/time_volta_order_6.txt y resultados/output_volta_order_6.txt eliminados.
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+resultados/time_volta_order_6.txt y resultados/output_volta_order_6.txt eliminados.
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+resultados/time_volta_order_volta.txt y resultados/output_volta_order_volta.txt eliminados.
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 14
+
+Repeticion: 2
+
+Repeticion: 15
+
+Repeticion: 3
+
+Repeticion: 16
+
+Repeticion: 4
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 218, in _na_arithmetic_op
+    result = func(left, right)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/computation/expressions.py", line 242, in evaluate
+    return _evaluate(op, op_str, a, b)  # type: ignore[misc]
+  File "/usr/lib64/python3.9/site-packages/pandas/core/computation/expressions.py", line 73, in _evaluate_standard
+    return op(a, b)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/roperator.py", line 27, in rtruediv
+    return right / left
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py", line 22, in <module>
+    speedup = time.iloc[0,:] /time.iloc[:,:]
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/arraylike.py", line 214, in __rtruediv__
+    return self._arith_method(other, roperator.rtruediv)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/frame.py", line 7900, in _arith_method
+    new_data = self._dispatch_frame_op(other, op, axis=axis)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/frame.py", line 7943, in _dispatch_frame_op
+    bm = self._mgr.operate_blockwise(
+  File "/usr/lib64/python3.9/site-packages/pandas/core/internals/managers.py", line 1511, in operate_blockwise
+    return operate_blockwise(self, other, array_op)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/internals/ops.py", line 65, in operate_blockwise
+    res_values = array_op(lvals, rvals)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 283, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 227, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+  File "/usr/lib64/python3.9/site-packages/pandas/core/ops/array_ops.py", line 163, in _masked_arith_op
+    result[mask] = op(xrav[mask], yrav[mask])
+  File "/usr/lib64/python3.9/site-packages/pandas/core/roperator.py", line 27, in rtruediv
+    return right / left
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+Repeticion: 5
+
+Repeticion: 6
+
+Ejecucion para el thread: 1
+
+Repeticion: 1
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+                                                                                                                Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 2
+
+               Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+                            Repeticion: 16
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 13
+
+Repeticion: 14
+
+Repeticion: 15
+
+Repeticion: 16
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Repeticion: 11
+
+Repeticion: 12
+
+Repeticion: 3
+
+
+Repeticion: 14
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 7
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 8
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 9
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 10
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 11
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 12
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 13
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 14
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 15
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 16
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+file_name: time_volta_order_3
+target: volta
+order: 3
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 2
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 3
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 4
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 5
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 6
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 7
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 8
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 9
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 10
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 11
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 12
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 13
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 14
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 15
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+Ejecucion para el thread: 16
+
+Repeticion: 1
+
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
+Repeticion: 9
+
+Repeticion: 10
+
+file_name: time_volta_order_4
+target: volta
+order: 4
+Repeticion: 2
+
+Repeticion: 3
+
+Repeticion: 4
+
+Repeticion: 5
+
+Repeticion: 6
+
+Repeticion: 7
+
+Repeticion: 8
+
