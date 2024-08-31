@@ -327,7 +327,7 @@ pmesh.Save("mesh");
    if (Mpi::Root()){
     auto end= MPI_Wtime();
     auto duration = end - start;
-    std::clog<<duration<<std::endl;
+    std::clog << size << "\n" << duration << "\n"; //Enviamos el tiempo de ejecución al error estandar (stderr)
 }
    return 0;
 }
