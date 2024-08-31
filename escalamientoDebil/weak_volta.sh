@@ -18,8 +18,8 @@ DBCV='0 0 0 0'  # Dirichlet Boundary Condition Values
 MAXIT=25
 MESH="../data/ball-nurbs.mesh"
 
-output_file="resultados/output_${TARGET}_order_${ORDER}_Maxwell.txt"
-time_file="resultados/time_${TARGET}_order_${ORDER}_Maxwell.txt"
+output_file="resultados/output/output_${TARGET}_order_${ORDER}.txt"
+time_file="resultados/times/time_${TARGET}_order_${ORDER}.txt"
 if [ -f "$time_file" ]; then
     rm "$time_file" "$output_file"
     echo "$time_file y $output_file eliminados."
