@@ -1,107 +1,13 @@
-Iteración con 1 thread(s):
+
+ Iteración con 1 thread(s):
 Repeticion: 1
 Repeticion: 2
 Volume integral of charge density: 20.2408
 Surface integral of dielectric flux: 20.2408
-Volume integral of charge density: 24.3329
-Surface integral of dielectric flux: 24.3329
-Volume integral of charge density: 23.6031
-Surface integral of dielectric flux: 23.6031
-Volume integral of charge density: 23.3213
-Surface integral of dielectric flux: 23.3213
-Volume integral of charge density: 23.3623
-Surface integral of dielectric flux: 23.3623
-Volume integral of charge density: 22.9505
-Surface integral of dielectric flux: 22.9505
-Volume integral of charge density: 22.9112
-Surface integral of dielectric flux: 22.9112
-Volume integral of charge density: 22.9265
-Surface integral of dielectric flux: 22.9265
-Volume integral of charge density: 23.0107
-Surface integral of dielectric flux: 23.0107
-Volume integral of charge density: 23.2513
-Surface integral of dielectric flux: 23.2513
-Volume integral of charge density: 23.152
-Surface integral of dielectric flux: 23.152
-Volume integral of charge density: 23.0814
-Surface integral of dielectric flux: 23.0814
-Volume integral of charge density: 23.0021
-Surface integral of dielectric flux: 23.0021
-Volume integral of charge density: 22.996
-Surface integral of dielectric flux: 22.996
-Volume integral of charge density: 23.0035
-Surface integral of dielectric flux: 23.0035
-Volume integral of charge density: 22.997
-Surface integral of dielectric flux: 22.997
-Volume integral of charge density: 23.0155
-Surface integral of dielectric flux: 23.0155
-Volume integral of charge density: 23.037
-Surface integral of dielectric flux: 23.037
-Volume integral of charge density: 23.018
-Surface integral of dielectric flux: 23.018
-Volume integral of charge density: 23.0103
-Surface integral of dielectric flux: 23.0103
-Volume integral of charge density: 23.011
-Surface integral of dielectric flux: 23.011
-Volume integral of charge density: 23.0009
-Surface integral of dielectric flux: 23.0009
-Volume integral of charge density: 23.0019
-Surface integral of dielectric flux: 23.0019
-Volume integral of charge density: 23.002
-Surface integral of dielectric flux: 23.002
-Volume integral of charge density: 23.0016
-Surface integral of dielectric flux: 23.0016
--------------------------------------------------------------------------Iteración con 2 thread(s):
+-------------------------------------------------------------------------
+ Iteración con 2 thread(s):
 Repeticion: 1
 Repeticion: 2
 Volume integral of charge density: 20.2408
 Surface integral of dielectric flux: 20.2408
-Volume integral of charge density: 24.3329
-Surface integral of dielectric flux: 24.3329
-Volume integral of charge density: 23.6031
-Surface integral of dielectric flux: 23.6031
-Volume integral of charge density: 23.3213
-Surface integral of dielectric flux: 23.3213
-Volume integral of charge density: 23.3623
-Surface integral of dielectric flux: 23.3623
-Volume integral of charge density: 22.9505
-Surface integral of dielectric flux: 22.9505
-Volume integral of charge density: 22.9112
-Surface integral of dielectric flux: 22.9112
-Volume integral of charge density: 22.9265
-Surface integral of dielectric flux: 22.9265
-Volume integral of charge density: 23.0107
-Surface integral of dielectric flux: 23.0107
-Volume integral of charge density: 23.2513
-Surface integral of dielectric flux: 23.2513
-Volume integral of charge density: 23.152
-Surface integral of dielectric flux: 23.152
-Volume integral of charge density: 23.0814
-Surface integral of dielectric flux: 23.0814
-Volume integral of charge density: 23.0021
-Surface integral of dielectric flux: 23.0021
-Volume integral of charge density: 22.996
-Surface integral of dielectric flux: 22.996
-Volume integral of charge density: 23.0035
-Surface integral of dielectric flux: 23.0035
-Volume integral of charge density: 22.997
-Surface integral of dielectric flux: 22.997
-Volume integral of charge density: 23.0155
-Surface integral of dielectric flux: 23.0155
-Volume integral of charge density: 23.037
-Surface integral of dielectric flux: 23.037
-Volume integral of charge density: 23.018
-Surface integral of dielectric flux: 23.018
-Volume integral of charge density: 23.0103
-Surface integral of dielectric flux: 23.0103
-Volume integral of charge density: 23.011
-Surface integral of dielectric flux: 23.011
-Volume integral of charge density: 23.0009
-Surface integral of dielectric flux: 23.0009
-Volume integral of charge density: 23.0019
-Surface integral of dielectric flux: 23.0019
-Volume integral of charge density: 23.002
-Surface integral of dielectric flux: 23.002
-Volume integral of charge density: 23.0016
-Surface integral of dielectric flux: 23.0016
 -------------------------------------------------------------------------

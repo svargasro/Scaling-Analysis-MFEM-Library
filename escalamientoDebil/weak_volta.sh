@@ -14,7 +14,7 @@ REPS=$(seq 1 $MAX_REPS)
 PC='0.5 0.42 20 0.5 0.5 -12 0.5 0.545 15' # Point charge params
 DBCS='1 2 3 4'                            # Dirichlet Boundary Condition Surfaces
 DBCV='0 0 0 0'                            # Dirichlet Boundary Condition Values
-MAXIT=25
+MAXIT=1
 #MESH="../data/ball-nurbs.mesh"
 MESH="../data/inline-quad.mesh"
 
@@ -28,7 +28,7 @@ fi
 # Loop para ejecutar comandos
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
-    echo -e "Iteración con $thread thread(s):" >>"$output_file"
+    echo -e "\n Iteración con $thread thread(s):" >>"$output_file"
     echo -n "Thread_$thread," >>"$time_file"
     for Nreps in $REPS; do
 
