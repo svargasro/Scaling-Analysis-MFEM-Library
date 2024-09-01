@@ -1,5 +1,6 @@
 
 Iteración con 1 thread(s):
+<<<<<<< HEAD
 Volume integral of charge density: 23
 Surface integral of dielectric flux: 23
 -------------------------------------------------------------------------
@@ -16,3 +17,5 @@ Volume integral of charge density: 23
 Surface integral of dielectric flux: 23
 -------------------------------------------------------------------------
 Iteración con 5 thread(s):
+=======
+>>>>>>> e99607e (Added order 11 in Maxwell)
