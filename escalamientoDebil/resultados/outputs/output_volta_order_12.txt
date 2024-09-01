@@ -1,0 +1,18 @@
+
+Iteración con 1 thread(s):
+Volume integral of charge density: 23
+Surface integral of dielectric flux: 23
+-------------------------------------------------------------------------
+Iteración con 2 thread(s):
+Volume integral of charge density: 23
+Surface integral of dielectric flux: 23
+-------------------------------------------------------------------------
+Iteración con 3 thread(s):
+Volume integral of charge density: 23
+Surface integral of dielectric flux: 23
+-------------------------------------------------------------------------
+Iteración con 4 thread(s):
+Volume integral of charge density: 23
+Surface integral of dielectric flux: 23
+-------------------------------------------------------------------------
+Iteración con 5 thread(s):
