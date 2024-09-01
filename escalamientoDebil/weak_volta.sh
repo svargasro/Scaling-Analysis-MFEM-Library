@@ -28,7 +28,7 @@ fi
 # Loop para ejecutar comandos
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
-    echo -e "\n Iteración con $thread thread(s):" >>"$output_file"
+    echo -e "\nIteración con $thread thread(s):" >>"$output_file"
     echo -n "Thread_$thread," >>"$time_file"
     for Nreps in $REPS; do
 

@@ -1,11 +1,11 @@
 
- Iteración con 1 thread(s):
+Iteración con 1 thread(s):
 Repeticion: 1
 Repeticion: 2
 Volume integral of charge density: 20.2408
 Surface integral of dielectric flux: 20.2408
 -------------------------------------------------------------------------
- Iteración con 2 thread(s):
+Iteración con 2 thread(s):
 Repeticion: 1
 Repeticion: 2
 Volume integral of charge density: 20.2408
