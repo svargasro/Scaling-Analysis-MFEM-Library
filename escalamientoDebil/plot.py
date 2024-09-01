@@ -60,7 +60,7 @@ with PdfPages(output) as pdf:
     plt.xlabel('nThreads')
     plt.ylabel('SpeedUp')
     plt.title('SpeedUp de ' + str(target) + ' con orden ' + str(order))
-    plt.xlim(git 0, len(threadsArray)+0.2)
+    plt.xlim(0, len(threadsArray)+0.2)
     plt.ylim(0, len(threadsArray)+0.2)
     plt.gca().xaxis.set_major_locator(MaxNLocator(integer=True))
     plt.legend()
