@@ -7,7 +7,7 @@ bash weak_exp.sh ex1p 2 3 3   #Ejemplo 1 version paralela
 #/escalamientoDebil/weak_volta.sh
 
 #Construir gráfica de uso de memoria RAM
-#bash monitor_memoria.sh ex1p 2 1 0.001
+bash monitor_memoria.sh ex1p 2 1 0.001
 #
 cd ./../escalamientoFuerte/
 #Ejecuta el .sh del escalamiento fuerte: ./strong_exp.sh Ejecutable MáximoOrden Threads #Repeticiones

@@ -9,7 +9,7 @@ LAPSE=$4  # Intervalo de medición en segundos
 # Ejecutar el comando y obtener el PID
 # mpirun se ejecuta en segundo plano para obtener el PID del proceso principal
 
-mpirun -np $THREADS --oversubscribe ./ejecutables/$TARGET -o $ORDER >/dev/null 2>&1 &
+mpirun -np $THREADS --oversubscribe ../cpp_y_ejecutables/$TARGET -o $ORDER >/dev/null 2>&1 &
 PID=$!
 
 # Verificar si se obtuvo el PID
