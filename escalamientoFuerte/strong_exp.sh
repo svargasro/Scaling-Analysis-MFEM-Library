@@ -31,12 +31,10 @@ for orden in $ORDER; do
             resultado=$(mpirun -np $THREADS --oversubscribe ./../cpp_y_ejecutables/${TARGET} -o $orden 2>&1 >/dev/null | tail -n 2) #Similar al anterior pero se capturan las últimas dos líneas en vez de solo una, para capturar el tamaño.
             size=$(echo "$resultado" | awk 'NR==1') #Extrae la primera línea del resultado.
             time=$(echo "$resultado" | awk 'NR==2') #Extrae la segunda línea del resultado.
-	        echo -n "$time," >> $timeOutput
+            echo -n "$time," >> $timeOutput
             echo "$size" >> $timeOutput
         fi
     done
 done
 
 python3 strongPlot.py $timeOutput
-
-#rm mesh* sol*
