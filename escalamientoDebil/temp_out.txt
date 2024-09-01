@@ -1,0 +1,914 @@
+Options used:
+   --mesh ../data/inline-quad.mesh
+   --order 20
+   --serial-ref-levels 0
+   --parallel-ref-levels 0
+   --uniform-e-bc ''
+   --piecewise-eps ''
+   --dielectric-sphere-params ''
+   --charged-sphere-params ''
+   --point-charge-params '0.5 0.42 20 0.5 0.5 -12 0.5 0.545 15'
+   --voltaic-pile-params ''
+   --dirichlet-bc-surf '1 2 3 4'
+   --dirichlet-bc-vals '0 0 0 0'
+   --no-dirichlet-bc-gradient
+   --neumann-bc-surf ''
+   --neumann-bc-vals ''
+   --max-amr-iterations 25
+   --no-visualization
+   --no-visit
+Starting initialization.
+Initialization done.
+Number of H1      unknowns: 6561
+Number of H(Curl) unknowns: 12960
+Number of H(Div)  unknowns: 12960
+Number of L2      unknowns: 6400
+Assembling ... done.
+Running solver ... 
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 6
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0    6561  3101121  0.072   441 1681   472.7  -1.276e-11   1.000e+00
+  1    1001   132011  0.132    84  333   131.9  -9.042e-13   9.200e-11
+  2     319    20179  0.198    31  129    63.3  -2.708e-13   1.060e-10
+  3      75     2665  0.474    13   59    35.5  -5.246e-15   1.169e-10
+  4      18      300  0.926    13   18    16.7   4.602e-12   6.940e-11
+  5       5       25  1.000     5    5     5.0   3.808e-11   4.664e-11
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0  6561 x 1001    0    4   1.5   8.733e-02   1.133e+00   0.000e+00   1.133e+00
+  1  1001 x 319     1    4   3.5   9.214e-03   6.864e-01   1.374e-01   1.019e+00
+  2   319 x 75      0    4   3.5   3.421e-03   8.526e-01   0.000e+00   1.009e+00
+  3    75 x 18      0    4   3.1   8.769e-03   6.688e-01   0.000e+00   1.000e+00
+  4    18 x 5       0    4   3.0   1.195e-02   4.414e-01   0.000e+00   1.000e+00
+
+
+     Complexity:    grid = 1.216126
+                operator = 1.050040
+                memory = 1.054255
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.029409 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.029391 seconds
+  cpu MFLOPS      = 0.000000
+
+<C*b,b>: 3.958639e+13
+
+
+Iters       ||r||_C     conv.rate  ||r||_C/||b||_C
+-----    ------------    ---------  ------------ 
+    1    2.149684e+06    0.341666    3.416659e-01
+    2    5.852257e+05    0.272238    9.301446e-02
+    3    1.240686e+05    0.212001    1.971918e-02
+    4    3.573916e+04    0.288060    5.680302e-03
+    5    9.894343e+03    0.276849    1.572585e-03
+    6    2.951013e+03    0.298253    4.690273e-04
+    7    8.398586e+02    0.284600    1.334852e-04
+    8    2.250418e+02    0.267952    3.576763e-05
+    9    6.950259e+01    0.308843    1.104659e-05
+   10    1.798732e+01    0.258801    2.858864e-06
+   11    4.478612e+00    0.248987    7.118205e-07
+   12    1.345408e+00    0.300407    2.138361e-07
+   13    4.444646e-01    0.330357    7.064220e-08
+   14    1.124188e-01    0.252931    1.786759e-08
+   15    2.998808e-02    0.266753    4.766237e-09
+   16    8.900182e-03    0.296791    1.414575e-09
+   17    2.561416e-03    0.287794    4.071057e-10
+   18    6.452770e-04    0.251922    1.025589e-10
+   19    1.663057e-04    0.257728    2.643226e-11
+   20    5.275509e-05    0.317217    8.384775e-12
+   21    1.527758e-05    0.289594    2.428183e-12
+   22    4.229040e-06    0.276814    6.721542e-13
+
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 0.368992 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.368669 seconds
+  cpu MFLOPS      = 0.000000
+
+PCG Iterations = 22
+Final PCG Relative Residual Norm = 6.72154e-13
+Computing D ...done.
+Total charge: 
+   Volume integral of charge density:   22.9155
+   Surface integral of dielectric flux: 22.9155
+Solver done. 
+Estimating Error ... done.
+Refining ...
+Updating ...
+Number of H1      unknowns: 11281
+Number of H(Curl) unknowns: 22480
+Number of H(Div)  unknowns: 22480
+Number of L2      unknowns: 11200
+Assembling ... done.
+Running solver ... 
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 6
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0   11281  5416161  0.043   441 2481   480.1  -1.276e-11   1.000e+00
+  1    1654   237812  0.087    85  430   143.8  -9.039e-13   9.200e-11
+  2     545    45391  0.153    31  178    83.3  -2.719e-13   1.059e-10
+  3     137     6939  0.370    12   80    50.6  -8.993e-15   1.171e-10
+  4      29      711  0.845    17   29    24.5   7.864e-14   6.988e-11
+  5       6       36  1.000     6    6     6.0   2.178e-11   4.336e-11
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0 11281 x 1654    0    6   1.5   3.004e-02   1.133e+00   0.000e+00   1.133e+00
+  1  1654 x 545     1    4   3.6   4.199e-03   1.000e+00   1.374e-01   1.018e+00
+  2   545 x 137     0    4   3.6   3.531e-03   9.247e-01   0.000e+00   1.008e+00
+  3   137 x 29      0    4   3.5   8.517e-03   9.995e-01   0.000e+00   1.000e+00
+  4    29 x 6       0    4   2.9   1.639e-02   5.373e-01   0.000e+00   1.000e+00
+
+
+     Complexity:    grid = 1.210176
+                operator = 1.053708
+                memory = 1.057929
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.053432 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.053401 seconds
+  cpu MFLOPS      = 0.000000
+
+<C*b,b>: 4.444062e+13
+
+
+Iters       ||r||_C     conv.rate  ||r||_C/||b||_C
+-----    ------------    ---------  ------------ 
+    1    2.285938e+06    0.342905    3.429055e-01
+    2    6.946741e+05    0.303890    1.042056e-01
+    3    1.887487e+05    0.271708    2.831352e-02
+    4    7.695919e+04    0.407734    1.154438e-02
+    5    2.741624e+04    0.356244    4.112613e-03
+    6    1.100141e+04    0.401274    1.650283e-03
+    7    4.898444e+03    0.445256    7.347981e-04
+    8    2.427790e+03    0.495625    3.641841e-04
+    9    9.943788e+02    0.409582    1.491632e-04
+   10    4.438409e+02    0.446350    6.657900e-05
+   11    1.904498e+02    0.429095    2.856870e-05
+   12    8.239305e+01    0.432623    1.235949e-05
+   13    3.301952e+01    0.400756    4.953141e-06
+   14    1.293463e+01    0.391727    1.940278e-06
+   15    6.151260e+00    0.475565    9.227287e-07
+   16    2.463129e+00    0.400427    3.694852e-07
+   17    1.051855e+00    0.427040    1.577850e-07
+   18    4.197663e-01    0.399072    6.296765e-08
+   19    1.523877e-01    0.363030    2.285913e-08
+   20    6.197905e-02    0.406720    9.297257e-09
+   21    2.468501e-02    0.398280    3.702910e-09
+   22    9.271553e-03    0.375594    1.390793e-09
+   23    4.294710e-03    0.463214    6.442342e-10
+   24    1.822974e-03    0.424470    2.734578e-10
+   25    7.953451e-04    0.436290    1.193069e-10
+   26    3.964803e-04    0.498501    5.947461e-11
+   27    1.584717e-04    0.399696    2.377177e-11
+   28    6.925234e-05    0.437001    1.038830e-11
+   29    2.783359e-05    0.401916    4.175218e-12
+   30    1.196871e-05    0.430010    1.795384e-12
+   31    5.331795e-06    0.445478    7.998036e-13
+
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 0.879326 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.878197 seconds
+  cpu MFLOPS      = 0.000000
+
+PCG Iterations = 31
+Final PCG Relative Residual Norm = 7.99804e-13
+Computing D ...done.
+Total charge: 
+   Volume integral of charge density:   22.9986
+   Surface integral of dielectric flux: 22.9986
+Solver done. 
+Estimating Error ... done.
+Refining ...
+Updating ...
+Number of H1      unknowns: 16001
+Number of H(Curl) unknowns: 32000
+Number of H(Div)  unknowns: 32000
+Number of L2      unknowns: 16000
+Assembling ... done.
+Running solver ... 
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 6
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0   16001  7731201  0.030   441 2481   483.2  -1.276e-11   1.000e+00
+  1    2306   340658  0.064    85  446   147.7  -9.039e-13   9.200e-11
+  2     763    69953  0.120    31  203    91.7  -2.720e-13   1.059e-10
+  3     187    10441  0.299    12   90    55.8  -1.303e-14   1.088e-10
+  4      40     1230  0.769    21   36    30.8  -3.791e-18   6.975e-11
+  5       7       49  1.000     7    7     7.0   6.142e-12   4.005e-11
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0 16001 x 2306    0    7   1.5   3.001e-02   1.133e+00   0.000e+00   1.133e+00
+  1  2306 x 763     1    4   3.6   1.299e-03   1.000e+00   1.374e-01   1.018e+00
+  2   763 x 187     0    4   3.6   3.636e-03   1.000e+00   0.000e+00   1.009e+00
+  3   187 x 40      0    4   3.5   3.569e-03   7.853e-01   0.000e+00   1.000e+00
+  4    40 x 7       0    4   3.2   1.056e-02   5.946e-01   0.000e+00   1.000e+00
+
+
+     Complexity:    grid = 1.206425
+                operator = 1.054627
+                memory = 1.058847
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.076323 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.076278 seconds
+  cpu MFLOPS      = 0.000000
+
+<C*b,b>: 4.597759e+13
+
+
+Iters       ||r||_C     conv.rate  ||r||_C/||b||_C
+-----    ------------    ---------  ------------ 
+    1    2.660741e+06    0.392400    3.924004e-01
+    2    8.086877e+05    0.303933    1.192635e-01
+    3    2.409079e+05    0.297900    3.552859e-02
+    4    9.520184e+04    0.395179    1.404017e-02
+    5    3.496759e+04    0.367300    5.156946e-03
+    6    1.381866e+04    0.395185    2.037947e-03
+    7    6.256366e+03    0.452748    9.226756e-04
+    8    2.978199e+03    0.476027    4.392184e-04
+    9    1.146408e+03    0.384933    1.690698e-04
+   10    5.960949e+02    0.519967    8.791081e-05
+   11    2.337608e+02    0.392154    3.447455e-05
+   12    1.035494e+02    0.442972    1.527125e-05
+   13    4.063555e+01    0.392427    5.992845e-06
+   14    1.634315e+01    0.402188    2.410253e-06
+   15    7.590556e+00    0.464449    1.119439e-06
+   16    3.067759e+00    0.404155    4.524265e-07
+   17    1.308875e+00    0.426655    1.930302e-07
+   18    5.140637e-01    0.392752    7.581302e-08
+   19    1.899482e-01    0.369503    2.801315e-08
+   20    7.740418e-02    0.407502    1.141540e-08
+   21    3.131585e-02    0.404576    4.618396e-09
+   22    1.164769e-02    0.371942    1.717777e-09
+   23    5.321977e-03    0.456913    7.848739e-10
+   24    2.131231e-03    0.400458    3.143094e-10
+   25    9.946578e-04    0.466706    1.466900e-10
+   26    4.673513e-04    0.469861    6.892397e-11
+   27    1.887856e-04    0.403948    2.784171e-11
+   28    8.424801e-05    0.446263    1.242472e-11
+   29    3.208169e-05    0.380801    4.731340e-12
+   30    1.425177e-05    0.444234    2.101820e-12
+   31    6.445789e-06    0.452280    9.506114e-13
+
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 1.274745 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 1.273123 seconds
+  cpu MFLOPS      = 0.000000
+
+PCG Iterations = 31
+Final PCG Relative Residual Norm = 9.50611e-13
+Computing D ...done.
+Total charge: 
+   Volume integral of charge density:   23.0003
+   Surface integral of dielectric flux: 23.0003
+Solver done. 
+Estimating Error ... done.
+Refining ...
+Updating ...
+Number of H1      unknowns: 20681
+Number of H(Curl) unknowns: 41480
+Number of H(Div)  unknowns: 41480
+Number of L2      unknowns: 20800
+Assembling ... done.
+Running solver ... 
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 7
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0   20681 10042161  0.023   441 3281   485.6  -1.276e-11   1.000e+00
+  1    2912   436470  0.051    85  565   149.9  -9.039e-13   9.200e-11
+  2     985    98765  0.102    31  241   100.3  -1.418e-13   8.229e-11
+  3     254    16210  0.251    12  114    63.8  -4.891e-15   9.675e-11
+  4      54     2026  0.695    24   47    37.5  -8.107e-18   7.000e-11
+  5      10      100  1.000    10   10    10.0   3.095e-13   4.045e-11
+  6       2        4  1.000     2    2     2.0   4.025e-11   5.367e-11
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0 20681 x 2912    0    7   1.5   3.001e-02   1.133e+00   0.000e+00   1.133e+00
+  1  2912 x 985     1    4   3.7  -7.351e-03   1.000e+00   1.374e-01   1.018e+00
+  2   985 x 254     1    4   3.6   4.008e-03   1.000e+00   1.124e-01   1.005e+00
+  3   254 x 54      0    4   3.6   5.731e-03   1.000e+00   0.000e+00   1.000e+00
+  4    54 x 10      0    4   3.4   2.437e-03   7.309e-01   0.000e+00   1.000e+00
+  5    10 x 2       1    2   2.0   3.846e-02   6.325e-01   1.662e-01   1.000e+00
+
+
+     Complexity:    grid = 1.203907
+                operator = 1.055125
+                memory = 1.059334
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.103560 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.103509 seconds
+  cpu MFLOPS      = 0.000000
+
+<C*b,b>: 4.471643e+13
+
+
+Iters       ||r||_C     conv.rate  ||r||_C/||b||_C
+-----    ------------    ---------  ------------ 
+    1    2.948764e+06    0.440967    4.409674e-01
+    2    9.441074e+05    0.320171    1.411848e-01
+    3    3.763729e+05    0.398655    5.628398e-02
+    4    1.560065e+05    0.414500    2.332970e-02
+    5    5.340953e+04    0.342354    7.987028e-03
+    6    2.416436e+04    0.452435    3.613614e-03
+    7    1.158736e+04    0.479523    1.732810e-03
+    8    5.528847e+03    0.477145    8.268010e-04
+    9    3.297090e+03    0.596343    4.930572e-04
+   10    1.462783e+03    0.443659    2.187491e-04
+   11    7.467614e+02    0.510507    1.116730e-04
+   12    3.155689e+02    0.422583    4.719116e-05
+   13    1.559762e+02    0.494270    2.332516e-05
+   14    7.080136e+01    0.453924    1.058786e-05
+   15    2.790416e+01    0.394119    4.172875e-06
+   16    1.274728e+01    0.456824    1.906267e-06
+   17    6.002543e+00    0.470888    8.976390e-07
+   18    2.775753e+00    0.462430    4.150948e-07
+   19    1.485813e+00    0.535283    2.221931e-07
+   20    6.884823e-01    0.463371    1.029578e-07
+   21    3.486424e-01    0.506393    5.213707e-08
+   22    1.612895e-01    0.462622    2.411973e-08
+   23    8.345135e-02    0.517401    1.247958e-08
+   24    4.080989e-02    0.489026    6.102838e-09
+   25    1.698849e-02    0.416284    2.540512e-09
+   26    6.880096e-03    0.404986    1.028871e-09
+   27    2.916640e-03    0.423924    4.361635e-10
+   28    1.290626e-03    0.442504    1.930043e-10
+   29    5.629447e-04    0.436180    8.418451e-11
+   30    2.435222e-04    0.432586    3.641707e-11
+   31    1.009368e-04    0.414487    1.509441e-11
+   32    4.256832e-05    0.421732    6.365800e-12
+   33    1.825319e-05    0.428797    2.729638e-12
+   34    9.129348e-06    0.500151    1.365231e-12
+   35    4.060030e-06    0.444723    6.071496e-13
+
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 1.860038 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 1.857635 seconds
+  cpu MFLOPS      = 0.000000
+
+PCG Iterations = 35
+Final PCG Relative Residual Norm = 6.0715e-13
+Computing D ...done.
+Total charge: 
+   Volume integral of charge density:   23
+   Surface integral of dielectric flux: 23
+Solver done. 
+Estimating Error ... done.
+Refining ...
+Updating ...
+Number of H1      unknowns: 23101
+Number of H(Curl) unknowns: 46300
+Number of H(Div)  unknowns: 46300
+Number of L2      unknowns: 23200
+Assembling ... done.
+Running solver ... 
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 7
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0   23101 11205801  0.021   441 3281   485.1  -1.276e-11   1.000e+00
+  1    3309   503485  0.046    85  565   152.2  -9.039e-13   9.200e-11
+  2    1110   107878  0.088    31  244    97.2  -1.418e-13   8.229e-11
+  3     282    17712  0.223    12  112    62.8  -1.568e-14   9.675e-11
+  4      60     2376  0.660    23   50    39.6  -3.430e-17   6.997e-11
+  5      12      144  1.000    12   12    12.0   8.745e-13   4.464e-11
+  6       2        4  1.000     2    2     2.0   4.429e-11   5.584e-11
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0 23101 x 3309    0    7   1.5   3.001e-02   1.133e+00   0.000e+00   1.133e+00
+  1  3309 x 1110    1    4   3.7   1.290e-03   1.000e+00   1.374e-01   1.018e+00
+  2  1110 x 282     1    4   3.6   4.008e-03   1.000e+00   1.124e-01   1.005e+00
+  3   282 x 60      0    4   3.6   3.620e-03   1.000e+00   0.000e+00   1.000e+00
+  4    60 x 12      0    4   3.5   7.328e-03   7.744e-01   0.000e+00   1.000e+00
+  5    12 x 2       1    2   2.0   1.413e-02   5.875e-01   9.281e-02   1.000e+00
+
+
+     Complexity:    grid = 1.206701
+                operator = 1.056364
+                memory = 1.060603
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.114807 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.114748 seconds
+  cpu MFLOPS      = 0.000000
+
+<C*b,b>: 4.777758e+13
+
+
+Iters       ||r||_C     conv.rate  ||r||_C/||b||_C
+-----    ------------    ---------  ------------ 
+    1    2.929131e+06    0.423767    4.237665e-01
+    2    8.099384e+05    0.276512    1.171763e-01
+    3    2.811925e+05    0.347178    4.068100e-02
+    4    1.224924e+05    0.435618    1.772136e-02
+    5    4.289592e+04    0.350192    6.205888e-03
+    6    2.165593e+04    0.504848    3.133032e-03
+    7    1.117983e+04    0.516248    1.617421e-03
+    8    5.056698e+03    0.452306    7.315683e-04
+    9    2.821013e+03    0.557877    4.081248e-04
+   10    1.349982e+03    0.478545    1.953062e-04
+   11    6.889372e+02    0.510331    9.967071e-05
+   12    2.934224e+02    0.425906    4.245034e-05
+   13    1.303683e+02    0.444302    1.886079e-05
+   14    6.472999e+01    0.496516    9.364691e-06
+   15    2.469658e+01    0.381532    3.572932e-06
+   16    1.167306e+01    0.472659    1.688779e-06
+   17    5.537273e+00    0.474363    8.010946e-07
+   18    2.684646e+00    0.484832    3.883961e-07
+   19    1.297959e+00    0.483475    1.877798e-07
+   20    5.972700e-01    0.460161    8.640893e-08
+   21    3.401996e-01    0.569591    4.921775e-08
+   22    1.533043e-01    0.450630    2.217901e-08
+   23    7.411138e-02    0.483427    1.072193e-08
+   24    3.657830e-02    0.493558    5.291898e-09
+   25    1.507906e-02    0.412241    2.181535e-09
+   26    6.401314e-03    0.424517    9.260981e-10
+   27    2.767153e-03    0.432279    4.003327e-10
+   28    1.115444e-03    0.403102    1.613748e-10
+   29    4.905953e-04    0.439821    7.097596e-11
+   30    2.039006e-04    0.415619    2.949894e-11
+   31    9.155670e-05    0.449026    1.324580e-11
+   32    3.969558e-05    0.433563    5.742884e-12
+   33    1.771615e-05    0.446300    2.563051e-12
+   34    8.370974e-06    0.472505    1.211055e-12
+   35    3.850936e-06    0.460034    5.571270e-13
+
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 2.076038 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 2.073582 seconds
+  cpu MFLOPS      = 0.000000
+
+PCG Iterations = 35
+Final PCG Relative Residual Norm = 5.57127e-13
+Computing D ...done.
+Total charge: 
+   Volume integral of charge density:   23
+   Surface integral of dielectric flux: 23
+Solver done. 
+Estimating Error ... done.
+Refining ...
+Updating ...
+Number of H1      unknowns: 32541
+Number of H(Curl) unknowns: 65340
+Number of H(Div)  unknowns: 65340
+Number of L2      unknowns: 32800
+Assembling ... done.
+Running solver ... 
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 7
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0   32541 15835881  0.015   441 3281   486.6  -1.276e-11   1.000e+00
+  1    4613   708339  0.033    85  565   153.6  -9.039e-13   9.200e-11
+  2    1562   157524  0.065    31  254   100.8  -1.418e-13   8.229e-11
+  3     386    24708  0.166    11  126    64.0  -1.831e-14   9.684e-11
+  4      83     3529  0.512    24   57    42.5  -2.082e-17   7.077e-11
+  5      17      289  1.000    17   17    17.0   1.236e-14   4.774e-11
+  6       2        4  1.000     2    2     2.0   3.182e-11   3.317e-11
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0 32541 x 4613    0    7   1.6   3.001e-02   1.133e+00   0.000e+00   1.133e+00
+  1  4613 x 1562    1    4   3.7   1.290e-03   1.000e+00   1.374e-01   1.018e+00
+  2  1562 x 386     1    4   3.6   4.150e-03   1.000e+00   1.124e-01   1.005e+00
+  3   386 x 83      0    4   3.6   5.272e-03   8.717e-01   0.000e+00   1.000e+00
+  4    83 x 17      0    4   3.6   1.215e-02   7.022e-01   0.000e+00   1.000e+00
+  5    17 x 2       0    2   1.8   3.524e-02   8.923e-01   0.000e+00   1.000e+00
+
+
+     Complexity:    grid = 1.204757
+                operator = 1.056479
+                memory = 1.060718
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+=============================================
+Setup phase times:
+=============================================
+PCG Setup:
+  wall clock time = 0.164630 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 0.164551 seconds
+  cpu MFLOPS      = 0.000000
+
+<C*b,b>: 5.544395e+13
+
+
+Iters       ||r||_C     conv.rate  ||r||_C/||b||_C
+-----    ------------    ---------  ------------ 
+    1    3.202667e+06    0.430115    4.301151e-01
+    2    9.064591e+05    0.283033    1.217366e-01
+    3    3.084421e+05    0.340271    4.142347e-02
+    4    1.462189e+05    0.474056    1.963706e-02
+    5    5.873433e+04    0.401688    7.887965e-03
+    6    2.790986e+04    0.475188    3.748268e-03
+    7    1.524515e+04    0.546228    2.047409e-03
+    8    7.433300e+03    0.487585    9.982851e-04
+    9    4.317001e+03    0.580765    5.797692e-04
+   10    2.158464e+03    0.499991    2.898796e-04
+   11    1.095184e+03    0.507391    1.470822e-04
+   12    5.870433e+02    0.536022    7.883936e-05
+   13    2.681042e+02    0.456703    3.600614e-05
+   14    1.503794e+02    0.560899    2.019581e-05
+   15    7.099905e+01    0.472133    9.535104e-06
+   16    4.017309e+01    0.565826    5.395207e-06
+   17    1.969349e+01    0.490216    2.644817e-06
+   18    9.141109e+00    0.464169    1.227642e-06
+   19    4.551762e+00    0.497944    6.112973e-07
+   20    2.263903e+00    0.497368    3.040400e-07
+   21    1.144934e+00    0.505735    1.537636e-07
+   22    5.372460e-01    0.469237    7.215163e-08
+   23    2.992074e-01    0.556928    4.018327e-08
+   24    1.556353e-01    0.520159    2.090167e-08
+   25    8.644227e-02    0.555416    1.160911e-08
+   26    4.644450e-02    0.537289    6.237452e-09
+   27    2.100431e-02    0.452245    2.820859e-09
+   28    1.021185e-02    0.486179    1.371442e-09
+   29    4.554281e-03    0.445980    6.116356e-10
+   30    2.139204e-03    0.469713    2.872931e-10
+   31    1.113212e-03    0.520386    1.495033e-10
+   32    5.542660e-04    0.497898    7.443740e-11
+   33    2.955172e-04    0.533169    3.968768e-11
+   34    1.315922e-04    0.445295    1.767271e-11
+   35    6.366194e-05    0.483782    8.549738e-12
+   36    2.983333e-05    0.468621    4.006588e-12
+   37    1.303083e-05    0.436788    1.750028e-12
+   38    5.820204e-06    0.446649    7.816478e-13
+
+
+=============================================
+Solve phase times:
+=============================================
+PCG Solve:
+  wall clock time = 3.176019 seconds
+  wall MFLOPS     = 0.000000
+  cpu clock time  = 3.172310 seconds
+  cpu MFLOPS      = 0.000000
+
+PCG Iterations = 38
+Final PCG Relative Residual Norm = 7.81648e-13
+Computing D ...done.
+Total charge: 
+   Volume integral of charge density:   23
+   Surface integral of dielectric flux: 23
+Solver done. 
+Estimating Error ... done.
+Refining ...
+Updating ...
+Number of H1      unknowns: 41941
+Number of H(Curl) unknowns: 84340
+Number of H(Div)  unknowns: 84340
+Number of L2      unknowns: 42400
+Assembling ... 

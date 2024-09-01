@@ -1,0 +1,737 @@
+Ejecucion para el thread: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 11
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 12
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 13
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 14
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 15
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Ejecucion para el thread: 16
+
+/var/spool/slurm/d/job02763/slurm_script: line 31: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 32: resultados/times/time_volta_order_1.txt: No such file or directory
+Repeticion: 1
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 2
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 3
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 4
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 5
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 6
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 7
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 8
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 9
+
+/var/spool/slurm/d/job02763/slurm_script: line 38: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+Repeticion: 10
+
+/var/spool/slurm/d/job02763/slurm_script: line 41: resultados/times/time_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 42: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 45: resultados/outputs/output_volta_order_1.txt: No such file or directory
+/var/spool/slurm/d/job02763/slurm_script: line 47: resultados/outputs/output_volta_order_1.txt: No such file or directory
+python3: can't open file '/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/plot.py': [Errno 2] No such file or directory
