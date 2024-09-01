@@ -1,832 +1,225 @@
+
 Iteración con 1 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 2 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 3 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 4 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 5 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 6 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 7 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 8 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 9 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 10 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 11 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 12 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 13 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 14 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 15 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------
 Iteración con 16 thread(s):
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
-Volume integral of charge density: 0
-Surface integral of dielectric flux: 0
+Repeticion: 1
+Repeticion: 2
+Repeticion: 3
+Repeticion: 4
+Repeticion: 5
+Repeticion: 6
+Repeticion: 7
+Repeticion: 8
+Repeticion: 9
+Repeticion: 10
+Volume integral of charge density: 22.4647
+Surface integral of dielectric flux: 20.9807
 -------------------------------------------------------------------------

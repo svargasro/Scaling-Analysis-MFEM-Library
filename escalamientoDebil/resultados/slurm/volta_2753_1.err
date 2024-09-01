@@ -1,0 +1,4 @@
+  File "/home/cpenav/Documents/ProyectoFinal/IntroHPC_MFEM/escalamientoDebil/plot.py", line 63
+    plt.xlim(git 0, len(threadsArray)+0.2)
+                 ^
+SyntaxError: invalid syntax

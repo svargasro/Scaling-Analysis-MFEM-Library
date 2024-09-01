@@ -2,7 +2,7 @@
 #SBATCH --job-name=volta
 #SBATCH --output=resultados/slurm/volta_%A_%a.out
 #SBATCH --error=resultados/slurm/volta_%A_%a.err
-#SBATCH --array=1-6
+#SBATCH --array=7-10
 #SBATCH --nodelist=sala23
 #SBATCH --exclusive
 #SBATCH --partition=AMDRyzen7PRO5750G
