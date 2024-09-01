@@ -43,7 +43,7 @@
 #include "mfem.hpp"
 #include <fstream>
 #include <iostream>
-
+#include <mpi.h> //Importación de mpi en razón de medir el tiempo de ejecución
 using namespace std;
 using namespace mfem;
 
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
    int order = 1;
    string source_name = "Rose Even";
    string ess_name = "Boundary";
-   bool visualization = true;
+   bool visualization = false; //Desactivación de la visualización
 
    OptionsParser args(argc, argv);
    args.AddOption(&mesh_file, "-m", "--mesh",
@@ -74,8 +74,8 @@ int main(int argc, char *argv[])
                   "Enable or disable GLVis visualization.");
    args.ParseCheck();
    double start;
-   if (Mpi::Root() ){
-      auto start = MPI_Wtime();
+   if (Mpi::Root() ){ //Se inicia a meedir el tiempo 
+      auto start = MPI_Wtime(); // Variable usada para medir el tiempo. 
 //      display_banner(cout);
 }
    // 3. Read the serial mesh from the given mesh file.
@@ -219,10 +219,11 @@ int main(int argc, char *argv[])
    H1_FECollection fec(order, dim);
    ParFiniteElementSpace fespace(&pmesh, &fec);
    HYPRE_BigInt size = fespace.GlobalTrueVSize();
-   if (Mpi::Root())
+   /* Las siguientes líneas se comentan para que no alteren el tiempo de ejecución. 
+if (Mpi::Root())
    {
       cout << "Number of finite element unknowns: " << size << endl;
-   }
+   } */
 
    // 8. Determine the list of true (i.e. parallel conforming) essential
    //    boundary dofs. In this example, the boundary conditions are defined
@@ -286,7 +287,15 @@ int main(int argc, char *argv[])
    CGSolver cg(MPI_COMM_WORLD);
    cg.SetRelTol(1e-12);
    cg.SetMaxIter(2000);
-   cg.SetPrintLevel(1);
+   cg.SetPrintLevel(2); //Cambiamos el modo de impresión a 2 (summary)
+      /* From solvers.cpp
+      IterativeSolver::PrintLevel IterativeSolver::FromLegacyPrintLevel
+      -1: PrintLevel();
+      0: PrintLevel().Errors().Warnings();
+      1: PrintLevel().Errors().Warnings().Iterations();
+      2: PrintLevel().Errors().Warnings().Summary();
+      3: PrintLevel().Errors().Warnings().FirstAndLast();
+      */
    cg.SetPreconditioner(M);
    cg.SetOperator(A);
    cg.Mult(B, X);
@@ -297,8 +306,11 @@ int main(int argc, char *argv[])
 
    // 15. Save the refined mesh and the solution in parallel. This output can
    //     be viewed later using GLVis: "glvis -np <np> -m mesh -g sol".
-   pmesh.Save("mesh");
-   x.Save("sol");
+
+  /* Comentación de las líneas para evitar el guardado de files mesh y sol
+pmesh.Save("mesh");
+   x.Save("sol");  
+*/
 
    // 16. Send the solution by socket to a GLVis server.
    if (visualization)
@@ -315,7 +327,7 @@ int main(int argc, char *argv[])
    if (Mpi::Root()){
     auto end= MPI_Wtime();
     auto duration = end - start;
-    std::clog<<duration<<std::endl;
+    std::clog << size << "\n" << duration << "\n"; //Enviamos el tiempo de ejecución al error estandar (stderr)
 }
    return 0;
 }

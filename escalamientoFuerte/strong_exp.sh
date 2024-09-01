@@ -28,25 +28,13 @@ for orden in $ORDER; do
 	        resultado=$(mpirun -np $THREADS --oversubscribe ./../cpp_y_ejecutables/${TARGET} -o $orden 2>&1 >/dev/null | tail -n 1) #Enviar stdout a /dev/null y el stderr a la variable
 	        echo -n "$resultado," >> $timeOutput
         else
-            ./monitor_memoria.sh $$ >> resultados/memoria_orden${orden}.csv &
-             MONITOR_PID=$!
-
             resultado=$(mpirun -np $THREADS --oversubscribe ./../cpp_y_ejecutables/${TARGET} -o $orden 2>&1 >/dev/null | tail -n 2) #Similar al anterior pero se capturan las últimas dos líneas en vez de solo una, para capturar el tamaño.
             size=$(echo "$resultado" | awk 'NR==1') #Extrae la primera línea del resultado.
             time=$(echo "$resultado" | awk 'NR==2') #Extrae la segunda línea del resultado.
             echo -n "$time," >> $timeOutput
             echo "$size" >> $timeOutput
-
-             # Detiene el monitoreo de memoria
-             kill $MONITOR_PID
-             wait $MONITOR_PID 2>/dev/null  # Espera a que termine el proceso de monitoreo
-             sleep 1  # Pequeña pausa para asegurar que el monitoreo se ha detenido
         fi
     done
 done
 
 python3 strongPlot.py $timeOutput
-python3 memoryPlot.py
-
-
-
