@@ -389,9 +389,9 @@ int main(int argc, char *argv[])
    double duration = end - start;
 
    //Guardar la duracion en segundos
-   std::clog<<duration<<std::endl;
+   int prob_size = Volta.GetProblemSize();
+   std::clog<<prob_size << "\n" <<duration<<std::endl;
 
-	
    }
 
    return 0;
