@@ -95,7 +95,7 @@ with PdfPages(output) as pdf:
     plt.plot(sizeLog,timesAdjusted, color='purple',label=r'$log(time)$ = {} $log(size)$ + {} ($R^2$ ={})'.format(round(a,2),round(b,2),round(r2,4)))
     plt.xlabel('Log(Número de incógnitas en el sistema de ecuaciones)', fontsize=12)
     plt.ylabel(r'Log(Tiempo de ejecución normalizado)',fontsize=12)
-    plt.title('Escalamiento fuerte de ' + str(target) + ' con ' + str(reps) + ' repeticiones.\n Threads: '+str(threads)+ '. Escala loglog')
+    plt.title('Escalamiento fuerte de ' + str(target) + ' con ' + str(reps) + ' repeticiones.\n Threads: '+str(threads)+ '. Escala logarítmica.')
     plt.ticklabel_format(style='sci', axis='x', scilimits=(0,0))
     plt.grid(True)
     plt.legend()
