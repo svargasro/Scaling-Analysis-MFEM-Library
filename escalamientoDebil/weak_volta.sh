@@ -18,8 +18,8 @@ MAXIT=25
 #MESH="../data/ball-nurbs.mesh"
 MESH="../data/inline-quad.mesh"
 
-output_file="resultados/outputs/output_${TARGET}_order_${ORDER}.txt"
-time_file="resultados/times/time_${TARGET}_order_${ORDER}.txt"
+output_file="resultados/output_${TARGET}_order_${ORDER}.txt"
+time_file="resultados/time_${TARGET}_order_${ORDER}.txt"
 
 if [ -f "$time_file" ]; then
     rm "$time_file" "$output_file"
