@@ -5,6 +5,16 @@ ORDER=$2     #Parámetro de orden
 THREADS=$3   #Número de threads para la ejecución paralela
 LAPSE=$4     #Intervalo de tiempo en segundos entre mediciones de memoria.
 
+
+memory_file="resultados/memory_${TARGET}_order_${ORDER}.csv"
+
+#Bucle para elimiar los archivos de memoria, si existen.
+if [ -f "$memory_file" ]; then
+    rm "$memory_file"
+    echo "$memory_file eliminado."
+fi
+
+
 # Ejecutar el comando con mpirun en segundo plano y obtener su PID
 mpirun -np $THREADS --oversubscribe ../cpp_y_ejecutables/$TARGET -o $ORDER >/dev/null 2>&1 &
 PID=$!

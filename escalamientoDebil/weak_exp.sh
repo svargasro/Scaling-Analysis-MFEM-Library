@@ -11,6 +11,16 @@ MAX_REPS=$4       #Número de repeticiones para cada ejecución
 THREADS=$(seq 1 $MAX_THREADS)
 REPS=$(seq 1 $MAX_REPS)
 
+output_file="resultados/output_${TARGET}_order_${ORDER}.txt"
+time_file="resultados/time_${TARGET}_order_${ORDER}.csv"
+
+#Bucle para elimiar los archivos de tiempo y de salida, si ya existen.
+if [ -f "$time_file" ]; then
+    rm "$time_file" "$output_file"
+    echo "$time_file y $output_file eliminados."
+fi
+
+echo -e "Escalamiento Debil del ejemplo: ${TARGET}. Hasta $MAX_THREADS thread(s). $MAX_REPS repeticiones. Orden $ORDER\n" #Se imprime información de interés al inicio del escalamiento.
 # Bucle para ejecutar el comando con diferentes números de threads
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"
@@ -37,7 +47,7 @@ for thread in $THREADS; do
 done
 
 # Generar las gráficas de escalamiento débil
-python3 plot.py resultados/time_${TARGET}_order_${ORDER}.csv
+python3 weakPlot.py resultados/time_${TARGET}_order_${ORDER}.csv
 
 # Eliminar el archivo temporal
 rm temp_out.txt;

@@ -27,6 +27,7 @@ if [ -f "$time_file" ]; then
     echo "$time_file y $output_file eliminados."
 fi
 
+echo -e "Escalamiento Debil de la miniapp: ${TARGET}. Hasta $MAX_THREADS thread(s). $MAX_REPS repeticiones. Orden $ORDER\n" #Se imprime información de interés al inicio del escalamiento.
 # Bucle para ejecutar el comando con diferentes números de threads
 for thread in $THREADS; do
     echo -e "Ejecucion para el thread: $thread\n"

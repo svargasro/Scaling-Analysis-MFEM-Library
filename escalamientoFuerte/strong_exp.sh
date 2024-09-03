@@ -17,6 +17,11 @@ REPS=$(seq 1 $MAX_REPS) #Se crea la secuencia para las repeticiones.
 #Dirección en donde se guardan los archivos de salida de la ejecución:
 timeOutput=resultados/time_${TARGET}_threads_${THREADS}_reps_${MAX_REPS}.csv #El nombre del archivo será por ejemplo: time_ex1p_threads_4_reps_10.csv
 
+#Bucle para elimiar el archivo de tiempo, si ya existe.
+if [ -f "$timeOutput" ]; then
+    rm "$timeOutput"
+    echo "$timeOutput eliminado."
+fi
 
 echo -e "Escalamiento Fuerte del ejemplo: ${TARGET}. $THREADS thread(s). $MAX_REPS repeticiones.\n" #Se imprime información de interés al inicio del escalamiento.
 # rm ./resultados/*.csv
