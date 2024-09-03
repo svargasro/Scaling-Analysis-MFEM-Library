@@ -49,7 +49,7 @@ Repository to develop the final project of Introduction to High Performance Comp
 
 7. Otorgar permisos de ejecución a los scripts:
    - Darle permisos de ejecución a los scripts de sh, concediento permisos a la carpeta con el siguiente comando:
-     chomd -R +x IntroHPC_MFEM  #IntroHPC_MFEM es el nombre de la carpeta .zip
+     chmod -R +x IntroHPC_MFEM  #IntroHPC_MFEM es el nombre de la carpeta .zip
 
 8. Ejecutar el script:
    - Para ejecutar los escalamientos débil, fuerte y monitoreo de RAM, correr el script scaling.sh:
