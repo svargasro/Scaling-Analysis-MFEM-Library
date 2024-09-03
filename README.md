@@ -9,14 +9,14 @@ Repository to develop the final project of Introduction to High Performance Comp
 
 3. Mover los archivos .cpp del directorio /cpp_y_ejecutables a las carpetas de MFEM:
 
-     **Para ejemplos 1 y 39**
+    **Para ejemplos 1 y 39**
      
    - Reemplazar los archivos ex1p.cpp y ex39p.cpp en la siguiente dirección:
      /mfem-4.7/examples
      Puede usar el siguiente comando en la terminal:
      cp ex1p.cpp /mfem-4.7/examples
      
-     **Para miniapp volta**
+    **Para miniapp volta**
      
    - Reemplazar el archivo volta.cpp a la siguiente dirección:
      /mfem-4.7/miniapps/electromagnetics
