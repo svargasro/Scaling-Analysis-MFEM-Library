@@ -47,7 +47,7 @@ for thread in $THREADS; do
 done
 
 # Generar las gráficas de escalamiento débil
-python3 plot.py resultados/time_${TARGET}_order_${ORDER}.csv
+python3 weakPlot.py resultados/time_${TARGET}_order_${ORDER}.csv
 
 # Eliminar el archivo temporal
 rm temp_out.txt;

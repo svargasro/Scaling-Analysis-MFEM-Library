@@ -60,5 +60,5 @@ Repository to develop the final project of Introduction to High Performance Comp
 
 Notas Adicionales:
 - Todos los resultados obtenidos y reportados tienen la palabra "Final" al inicio del nombre del archivo para evitar que se sobreescriba ó se elimine por error al ejecutar. 
-
+- En caso de que quiera cambiar los parámetros para los que corre el escalamiento, dirígase a scaling.sh.
 
