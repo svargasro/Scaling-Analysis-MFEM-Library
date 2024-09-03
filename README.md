@@ -63,5 +63,8 @@ Notas Adicionales:
 - En caso de que quiera cambiar los parámetros para los que corre el escalamiento, dirígase a scaling.sh.
 - Para las gráficas con Python tener instalado Pandas, Matplotlib y Scipy.
 - Link del repositorio: https://github.com/AFMartinezF/IntroHPC_MFEM.git
+- Tener cuidado si se llega a jecutar dos veces ./scaling los archivos generados pueden sobreescribirse dando resultados
+inesperados
+
 
 
