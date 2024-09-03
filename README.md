@@ -8,12 +8,16 @@ Repository to develop the final project of Introduction to High Performance Comp
 2. Descargar y descomprimir la carpeta .zip de este proyecto. 
 
 3. Mover los archivos .cpp del directorio /cpp_y_ejecutables a las carpetas de MFEM:
+
      **Para ejemplos 1 y 39**
+     
    - Reemplazar los archivos ex1p.cpp y ex39p.cpp en la siguiente dirección:
      /mfem-4.7/examples
      Puede usar el siguiente comando en la terminal:
      cp ex1p.cpp /mfem-4.7/examples
+     
      **Para miniapp volta**
+     
    - Reemplazar el archivo volta.cpp a la siguiente dirección:
      /mfem-4.7/miniapps/electromagnetics
      Puedes usar el siguiente comando en la terminal:
@@ -31,21 +35,26 @@ Repository to develop the final project of Introduction to High Performance Comp
 5. Compilar la miniapp y los ejemplos:
 
    **Para ejemplos 1 y 39**
+   
     - Ejecute los siguientes comandos para compilar ex1p.cpp y ex39p.cpp:
       make ex1p
       make ex39p
    
    **Para miniapp volta**
+   
    - Ejecuta el siguiente comando para compilar volta.cpp:
      make volta
 
 6. Copiar los ejecutables a la carpeta cpp_y_ejecutables:
+   
    **Para ejemplos 1 y 39**
+   
    - Una vez compilado, copie el ejecutable generado a la carpeta cpp_y_ejecutables:
      cp ex1p /cpp_y_ejecutables
      cp ex39p /cpp_y_ejecutables
 
     **Para miniapp volta**
+    
     - Una vez compilado, copie el ejecutable generado a la carpeta cpp_y_ejecutables:
      cp volta /cpp_y_ejecutables
 
