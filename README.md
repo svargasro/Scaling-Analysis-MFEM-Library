@@ -4,17 +4,20 @@ Repository to develop the final project of Introduction to High Performance Comp
 # Instrucciones para correr el escalamiento. 
 *Para las siguientes instrucciones, todos los PATHS indicados serán relativos.*
 
-1. Descargar e instalar MFEM siguiendo los pasos del tutorial https://mfem.org/building/, para los correr los ejemplos es necesario compilar la version Paralela de MFEM . Ignorar la parte de GLVIS.
+1. Descargar e instalar MFEM siguiendo los pasos del tutorial https://mfem.org/building/, para los correr los ejemplos es necesario compilar la version Paralela de MFEM con MPI. Ignorar la parte de GLVIS.
 2. Descargar y descomprimir la carpeta .zip de este proyecto. 
-3. Pasar los archivos ex1p.cpp que se encuentran en el directorio cpp_y_ejecutables a la carpeta examples de mfem. 
 
 3. Mover los archivos .cpp del directorio /cpp_y_ejecutables a las carpetas de MFEM:
-     *Para ejemplos 1 y 39*
+
+    **Para ejemplos 1 y 39**
+     
    - Reemplazar los archivos ex1p.cpp y ex39p.cpp en la siguiente dirección:
      /mfem-4.7/examples
      Puede usar el siguiente comando en la terminal:
      cp ex1p.cpp /mfem-4.7/examples
-     *Para miniapp volta*
+     
+    **Para miniapp volta**
+     
    - Reemplazar el archivo volta.cpp a la siguiente dirección:
      /mfem-4.7/miniapps/electromagnetics
      Puedes usar el siguiente comando en la terminal:
@@ -22,28 +25,36 @@ Repository to develop the final project of Introduction to High Performance Comp
 
 4. Cambiar de directorio:
    - Navega al directorio donde se encuentra el archivo copiado:
-     *Para ejemplos 1 y 39*
+     
+     **Para ejemplos 1 y 39**
      cd /mfem-4.7/examples
-     *Para miniapp volta*
+     
+     **Para miniapp volta**
      cd /mfem-4.7/miniapps/electromagnetics
 
 5. Compilar la miniapp y los ejemplos:
-   *Para ejemplos 1 y 39*
+
+   **Para ejemplos 1 y 39**
+   
     - Ejecute los siguientes comandos para compilar ex1p.cpp y ex39p.cpp:
       make ex1p
       make ex39p
    
-   *Para miniapp volta*
+   **Para miniapp volta**
+   
    - Ejecuta el siguiente comando para compilar volta.cpp:
      make volta
 
 6. Copiar los ejecutables a la carpeta cpp_y_ejecutables:
-   *Para ejemplos 1 y 39*
+   
+   **Para ejemplos 1 y 39**
+   
    - Una vez compilado, copie el ejecutable generado a la carpeta cpp_y_ejecutables:
      cp ex1p /cpp_y_ejecutables
      cp ex39p /cpp_y_ejecutables
 
-    *Para miniapp volta*
+    **Para miniapp volta**
+    
     - Una vez compilado, copie el ejecutable generado a la carpeta cpp_y_ejecutables:
      cp volta /cpp_y_ejecutables
 
@@ -61,10 +72,10 @@ Repository to develop the final project of Introduction to High Performance Comp
 Notas Adicionales:
 - Todos los resultados obtenidos y reportados tienen la palabra "Final" al inicio del nombre del archivo para evitar que se sobreescriba ó se elimine por error al ejecutar. 
 - En caso de que quiera cambiar los parámetros para los que corre el escalamiento, dirígase a scaling.sh.
+- Tenga en cuenta que al ejecutar dos veces ./scaling con los mismos parámetros, los archivos generados se reescriben.
 - Para las gráficas con Python tener instalado Pandas, Matplotlib y Scipy.
 - Link del repositorio: https://github.com/AFMartinezF/IntroHPC_MFEM.git
-- Tener cuidado si se llega a jecutar dos veces ./scaling los archivos generados pueden sobreescribirse dando resultados
-inesperados
+
 
 
 
