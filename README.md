@@ -4,7 +4,7 @@ Repository to develop the final project of Introduction to High Performance Comp
 # Instrucciones para correr el escalamiento. 
 *Para las siguientes instrucciones, todos los PATHS indicados serán relativos.*
 
-1. Descargar e instalar MFEM siguiendo los pasos del tutorial https://mfem.org/building/ Ignorar la parte de GLVIS.
+1. Descargar e instalar MFEM siguiendo los pasos del tutorial https://mfem.org/building/, para los correr los ejemplos es necesario compilar la version Paralela de MFEM . Ignorar la parte de GLVIS.
 2. Descargar y descomprimir la carpeta .zip de este proyecto. 
 3. Pasar los archivos ex1p.cpp que se encuentran en el directorio cpp_y_ejecutables a la carpeta examples de mfem. 
 
@@ -63,4 +63,5 @@ Notas Adicionales:
 - En caso de que quiera cambiar los parámetros para los que corre el escalamiento, dirígase a scaling.sh.
 - Para las gráficas con Python tener instalado Pandas, Matplotlib y Scipy.
 - Link del repositorio: https://github.com/AFMartinezF/IntroHPC_MFEM.git
+
 
