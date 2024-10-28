@@ -1,84 +1,105 @@
 # IntroHPC_MFEM
-Repository to develop the final project of Introduction to High Performance Computing at UNAL.
+Repository for developing the final project of Introduction to High Performance Computing at UNAL.
 
-Link al repositorio: https://github.com/AFMartinezF/IntroHPC_MFEM.git
+Link to the repository: https://github.com/AFMartinezF/IntroHPC_MFEM.git
 
-Link al video explicativo: https://youtu.be/D8S_hBBu0Lo
+Link to the explanatory video: https://youtu.be/D8S_hBBu0Lo
 
-## Instrucciones para correr el escalamiento. 
-*Para las siguientes instrucciones, todos los PATHS indicados serán relativos.*
+## Instructions to run the scaling. 
+*For the following instructions, all indicated PATHS will be relative.*
 
-1. Descargar e instalar MFEM siguiendo los pasos del tutorial https://mfem.org/building/, para los correr los ejemplos es necesario compilar la version Paralela de MFEM con MPI. Se puede ignorar la parte de GLVIS pues los ejemplos fueron modificados para no enviar información al puerto de visualización. 
+1. Download and install MFEM following the steps in the tutorial https://mfem.org/building/. To run the examples, it is necessary to compile the parallel version of MFEM with MPI. You can ignore the GLVIS part as the examples have been modified not to send information to the visualization port.
 
-2. Descargar y descomprimir la carpeta .zip de este proyecto. 
+2. Download and unzip the .zip folder of this project.
 
-3. Mover los archivos .cpp del directorio /cpp_y_ejecutables a las carpetas de MFEM:
+3. Move the .cpp files from the /cpp_y_ejecutables directory to the MFEM folders:
 
-    **Para ejemplos 1 y 39**
+    **For examples 1 and 39**
      
-   - Reemplazar los archivos ex1p.cpp y ex39p.cpp en la siguiente dirección:
+   - Replace the files ex1p.cpp and ex39p.cpp in the following directory:
      /mfem-4.7/examples
-     Puede usar el siguiente comando en la terminal:
-     ```cp ex1p.cpp /mfem-4.7/examples```
+     You can use the following command in the terminal:
+     ```
+     cp ex1p.cpp /mfem-4.7/examples
+     ```
      
-    **Para miniapp volta**
+    **For miniapp volta**
      
-   - Reemplazar el archivo volta.cpp a la siguiente dirección:
+   - Replace the file volta.cpp in the following directory:
      /mfem-4.7/miniapps/electromagnetics
-     Puedes usar el siguiente comando en la terminal:
-     ```cp volta.cpp /mfem-4.7/miniapps/electromagnetics```
+     You can use the following command in the terminal:
+     ```
+     cp volta.cpp /mfem-4.7/miniapps/electromagnetics
+     ```
 
-4. Cambiar de directorio:
-   - Navega al directorio donde se encuentra el archivo copiado:
+4. Change directory:
+   - Navigate to the directory where the copied file is located:
      
-     **Para ejemplos 1 y 39**
-     ```cd /mfem-4.7/examples```
+     **For examples 1 and 39**
+     ```
+     cd /mfem-4.7/examples
+     ```
      
-     **Para miniapp volta**
-     ```cd /mfem-4.7/miniapps/electromagnetics```
+     **For miniapp volta**
+     ```
+     cd /mfem-4.7/miniapps/electromagnetics
+     ```
 
-5. Compilar la miniapp y los ejemplos:
+5. Compile the miniapp and the examples:
 
-   **Para ejemplos 1 y 39**
+   **For examples 1 and 39**
    
-    - Ejecute los siguientes comandos para compilar ex1p.cpp y ex39p.cpp:
+    - Execute the following commands to compile ex1p.cpp and ex39p.cpp:
 
-      ```make ex1p```       ```make ex39p```
+      ```
+      make ex1p
+      make ex39p
+      ```
    
-   **Para miniapp volta**
+   **For miniapp volta**
    
-   - Ejecuta el siguiente comando para compilar volta.cpp:
+   - Run the following command to compile volta.cpp:
 
-     ```make volta```
+     ```
+     make volta
+     ```
 
-6. Copiar los ejecutables a la carpeta cpp_y_ejecutables:
+6. Copy the executables to the cpp_y_ejecutables folder:
    
-   **Para ejemplos 1 y 39**
+   **For examples 1 and 39**
    
-   - Una vez compilado, copie el ejecutable generado a la carpeta cpp_y_ejecutables:
-     ```cp ex1p /cpp_y_ejecutables```
-     ```cp ex39p /cpp_y_ejecutables```
+   - Once compiled, copy the generated executable to the cpp_y_ejecutables folder:
+     ```
+     cp ex1p /cpp_y_ejecutables
+     cp ex39p /cpp_y_ejecutables
+     ```
 
-    **Para miniapp volta**
+    **For miniapp volta**
     
-    - Una vez compilado, copie el ejecutable generado a la carpeta cpp_y_ejecutables:
-    ```cp volta /cpp_y_ejecutables```
+    - Once compiled, copy the generated executable to the cpp_y_ejecutables folder:
+    ```
+    cp volta /cpp_y_ejecutables
+    ```
 
-7. Otorgar permisos de ejecución a los scripts:
-   - Darle permisos de ejecución a los scripts de sh, concediento permisos a la carpeta con el siguiente comando:
-     ```chmod -R +x IntroHPC_MFEM```  IntroHPC_MFEM es el nombre de la carpeta .zip
+7. Grant execution permissions to the scripts:
+   - Grant execution permissions to the .sh scripts, providing permissions to the folder with the following command:
+     ```
+     chmod -R +x IntroHPC_MFEM
+     ```
+     IntroHPC_MFEM is the name of the .zip folder.
 
-8. Ejecutar el script:
-   - Para ejecutar los escalamientos débil, fuerte y monitoreo de RAM, correr el script scaling.sh:
-    ```./scaling.sh ```
+8. Run the script:
+   - To execute weak scaling, strong scaling, and RAM monitoring, run the script scaling.sh:
+    ```
+    ./scaling.sh
+    ```
 
-   *Dentro del script scaling.sh se encuentran instrucciones de cómo variar los parámetros para cada escalamiento.*
-   *Por defecto se corre para valores bajos de orden, repeticiones y threads*
+   *Inside the scaling.sh script, there are instructions on how to vary the parameters for each scaling.*
+   *By default, it runs for low values of order, repetitions, and threads.*
 
-
-Notas Adicionales:
-- Todos los resultados obtenidos y reportados tienen la palabra "Final" al inicio del nombre del archivo para evitar que se sobreescriba ó se elimine por error al ejecutar. 
-- En caso de que quiera cambiar los parámetros para los que corre el escalamiento, dirígase a scaling.sh.
-- Tenga en cuenta que al ejecutar dos veces ./scaling con los mismos parámetros, los archivos generados se reescriben.
-- Para las gráficas con Python tener instalado Pandas, Matplotlib y Scipy.
-- Todos los archivos y graficas generados se encuentran en la carpeta /resultados dentro de /escalamientoDebil y /escalamientoFuerte.
+Additional Notes:
+- All obtained and reported results have the word "Final" at the beginning of the file name to prevent overwriting or accidental deletion when running.
+- If you want to change the parameters for the scaling runs, go to scaling.sh.
+- Keep in mind that running ./scaling twice with the same parameters will overwrite the generated files.
+- For graphs with Python, ensure that Pandas, Matplotlib, and Scipy are installed.
+- All generated files and graphs can be found in the /results folder within /weakScaling and /strongScaling.
